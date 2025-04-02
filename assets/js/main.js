@@ -212,4 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
           swiper: swiper
       }
   });
+
+ 
+
 });
