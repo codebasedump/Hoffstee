@@ -1,94 +1,151 @@
-document.getElementById("myForm").addEventListener("submit", function (event) {
-  event.preventDefault();
+document.getElementById('form').addEventListener('submit', function(event) {
+	event.preventDefault();
+		const path = window.location.pathname;
 
-  const serviceID = "service_c5n38bl";
-  const templateID = "template_tzqul6p";
+		const form = document.getElementById('form');
+
+		const firstname = document.getElementById('firstname').value;
+		const lastname = document.getElementById('lastname').value;
+		const phoneno = document.getElementById('phoneno').value;
+		const emailid = document.getElementById('emailid').value;
+		const message = document.getElementById('message').value;
 
 
-  emailjs.sendForm(serviceID, templateID, this).then(
-    (response) => {
-      console.log("SUCCESS!", response.status, response.text);
-      sentmessage.style.visibility = "visible";
-      errormessage.style.visibility = "hidden";
-      document.getElementById("name").value='',
-      document.getElementById("email").value='',
-      document.getElementById("subject").value='',
-      document.getElementById("message").value=''
-    },
-    (error) => {
-      console.log("FAILED...", error);
-      sentmessage.style.visibility = "hidden";
-      errormessage.style.visibility = "visible";
-    }
-  );
+		const firstError = document.getElementById('first-error');
+		const lastError = document.getElementById('last-error');
+		const emailError = document.getElementById('email-error');
+		const phonenoError = document.getElementById('phone-error');
+		const messageError = document.getElementById('message-error');
+
+		
+
+		function isPhone(phone) {
+			return /^[+]{1}(?:[0-9\-\\(\\)\\/.]\s?){6,15}[0-9]{1}$/.test(phone);
+		}
+		function isEmail(email) {
+			return !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+		}
+
+		if(firstname.trim() === '') {
+			firstError.textContent = "Firstname is required";
+			setErrorFor(firstError);
+			
+			return false;
+        }else {
+			firstError.textContent = "";
+			setSuccessFor(firstError);
+		}
+
+		if(lastname.trim() === '') {
+			lastError.textContent = "Lastname is required";
+			setErrorFor(lastError)
+			return false;
+			
+        }else {
+			lastError.textContent = "";
+			setSuccessFor(lastError);
+		}
+
+		if(phoneno.trim() === ''){
+			phonenoError.textContent = "Phone No is required";
+			setErrorFor(phonenoError);
+			return false;
+		}
+		else if(isPhone(phoneno)){
+			phonenoError.textContent = "Invalid phone format";
+			setWarningFor(phonenoError)
+			return false;
+		}else {
+			phonenoError.textContent = "";
+			setSuccessFor(phonenoError);
+		}
+
+		if(emailid.trim() === '')
+		{	
+			emailError.textContent = "Email is required";
+			setErrorFor(emailError)
+			return false;
+        }else if(isEmail(emailid)) {
+			emailError.textContent = 'Invalid email format';
+			setWarningFor(emailError)
+			return false;
+		}else {
+			emailError.textContent = "";
+			setSuccessFor(emailError);
+		}
+
+		if(message.trim() === '') {
+			messageError.textContent = 'Message is required';
+			setErrorFor(messageError);
+			return false;
+		}else {
+			messageError.textContent = "";
+			setSuccessFor(messageError);
+		}
+
+		if (path === "/contact.html") {
+			const checkboxes = document.getElementById('websitedesign');
+			const checkboxes1 = document.getElementById('webdevelopment');
+			const checkboxes2 = document.getElementById('productdiscovery');
+			const checkboxes3 = document.getElementById('userresearch');
+			const checkboxes4 = document.getElementById('userexperience');
+			const checkboxes5 = document.getElementById('digitalmarketing');
+			const checkboxes6 = document.getElementById('designsystem');
+			const checkboxes7 = document.getElementById('wordpress');
+			const checkboxes8 = document.getElementById('maintainsupport');
+			const checkboxes9 = document.getElementById('ecommerce');
+			const checkboxes10 = document.getElementById('branddesign');
+			const checkboxes11 = document.getElementById('printdesign');
+			const checkboxes12 = document.getElementById('logodesign');
+			const checkboxes13 = document.getElementById('other');
+
+			let checked = false;
+			if (checkboxes.checked || checkboxes1.checked || checkboxes2.checked ||
+				checkboxes3.checked || checkboxes4.checked || checkboxes5.checked ||
+				checkboxes6.checked || checkboxes7.checked || checkboxes8.checked ||
+				checkboxes9.checked || checkboxes10.checked || checkboxes11.checked ||
+				checkboxes12.checked || checkboxes13.checked) {
+				checked = true;
+			}
+
+			if (!checked) {
+				document.getElementById('checkboxError').style.display = 'inline';
+				return false;
+			} else {
+				document.getElementById('checkboxError').style.display = 'none';
+			}
+		}
+	
+	emailjs.sendForm('service_c5n38bl', 'template_tzqul6p', this).then(
+		(response) => {
+			console.log('SUCCESS!', response.status, response.text);
+			document.getElementById('firstname').value = '';
+			document.getElementById('lastname').value= '';
+			document.getElementById('emailid').value= '';
+			document.getElementById('phoneno').value= '';
+			document.getElementById('message').value = '';
+			document.getElementById('sentmessage').style.visibility = "visible";
+      		document.getElementById('errormessage').style.visibility = "hidden";
+		},
+		(error) => {
+			console.log('FAILED...', error);
+		  	document.getElementById('errormessage').style.visibility = "visible";
+      		document.getElementById('sentmessage').style.visibility = "hidden";
+		},
+	  );
 });
 
-const eJS_sendJoke = document.getElementById('sendJoke');
-const eJS_message = document.getElementById('message');
-const eJS_fullName = document.getElementById('name');
-const eJS_email = document.getElementById('email');
-const eJS_subject = document.getElementById('subject');
-
-let canSubmit = false;
-let reaction = null;
-
-function eJS_set_event_listeners() {
-  eJS_fullName.addEventListener('keyup', eJS_can_submit);
-  eJS_email.addEventListener('keyup', eJS_can_submit);
-  eJS_subject.addEventListener('keyup', eJS_can_submit);
-  eJS_message.addEventListener('keyup', eJS_can_submit);
-}
-eJS_set_event_listeners();
-
-
-function eJS_validateEmail(email) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+function setErrorFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control error';
 }
 
-function eJS_can_submit () {
-  //check the required field
-
-  let message = eJS_message.value.trim();
-  let email = eJS_email.value.trim();
-  let fullName = eJS_fullName.value.trim();
-  let subject = eJS_subject.value.trim();
-
-  if (message.length > 4 && email.length > 4 && fullName.length > 1 && subject.length > 1) {
-      alertComment.style.visibility = "hidden";
-      if (eJS_validateEmail(email)) {
-          eJS_sendJoke.classList.add('activated');
-          eJS_sendJoke.disabled = false;
-          canSubmit = true;
-
-      }else {
-          eJS_disabled_submit();
-      }
-  } else {
-      alertComment.style.visibility = "visible";
-      eJS_disabled_submit();
-  }
-};
-
-function eJS_disabled_submit() {
-  eJS_sendJoke.classList.remove('activated');
-  eJS_sendJoke.disabled = true;
-  canSubmit = false;
-};
-
-
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("industrial");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("Indusicon-box");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+function setWarningFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control warning';
 }
 
-
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+}

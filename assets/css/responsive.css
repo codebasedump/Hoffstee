@@ -1,0 +1,84 @@
+@media screen and (max-width: 1500px) {
+	.mobile {
+        display:block;
+    }
+    .desktop{
+        display: none;
+    }
+    .client_image{
+        width: 19%;
+    }
+    .tooltip1 .tooltiptext, .tab-pane img{
+        display: none;
+    }
+    .model_video{width:100%}
+}
+@media screen and (max-width: 900px) {
+    .form-control{
+        width: 100%;
+        margin-left: 0;
+    }
+    .form_contact {
+        height: auto;
+    }
+    .tooltip1 .tooltiptext, .tab-pane img{
+        display: none;
+    }
+    .client_image{
+        width: 32%;
+    }
+    .industrial{
+        background-size: contain;
+    }
+    .services_talkbtn{
+        display: none;
+    }
+    .aboutmain_div{
+        padding: 0;
+    }
+    .about_img {
+        width: 24%;
+        top: -17%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .client_image{
+        width: 46%;
+    }
+    .services_btn, .services .nav-item .nav-link{
+         text-align: left;
+    }
+    .sidebar{
+        top:127px
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .client_image{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .form-control{
+        width:100%
+    }
+    .client_image{
+        width: 23%;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .service_accordian .accordion, .service_accordian .accordion1, .service_accordian .accordion2, .service_accordian .accordion3, .service_accordian .accordion4, .service_accordian .accordion5 {
+        transform: none;
+    }
+    .service_accordian{
+        height: auto;
+    }
+    .mobile img {
+        width:100%
+    }
+}

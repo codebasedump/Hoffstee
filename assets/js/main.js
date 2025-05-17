@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
           window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
       }
   }
+  
   scrollTop.addEventListener('click', (e) => {
       e.preventDefault();
       window.scrollTo({
@@ -22,9 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Preloader
   $(window).on('load', function () {
-    $('.lds-ellipsis').fadeOut(); // will first fade out the loading animation
-    $('.preloader').delay(333).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(333);
+    setTimeout(() => {
+        $('.lds-ellipsis').fadeOut(); // will first fade out the loading animation
+        $('.preloader').delay(333).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(333);
+    }, 500)
 });
 
   /**
@@ -70,43 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /**
-   * Mobile nav toggle
-   */
-  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-
-  function mobileNavToogle() {
-      document.querySelector('body').classList.toggle('mobile-nav-active');
-      mobileNavToggleBtn.classList.toggle('bi-list');
-      mobileNavToggleBtn.classList.toggle('bi-x');
-  }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
-
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-      navmenu.addEventListener('click', () => {
-          if (document.querySelector('.mobile-nav-active')) {
-              mobileNavToogle();
-          }
-      });
-  });
-
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  document.querySelectorAll('.navmenu .has-dropdown i').forEach(navmenu => {
-      navmenu.addEventListener('click', function(e) {
-          if (document.querySelector('.mobile-nav-active')) {
-              e.preventDefault();
-              this.parentNode.classList.toggle('active');
-              this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-              e.stopImmediatePropagation();
-          }
-      });
-  });
-
-  /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
   window.addEventListener('load', function(e) {
@@ -123,61 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
       }
   });
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
-
-  /**
-   * Init isotope layout and filters
-   */
-  function initIsotopeLayout() {
-      document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
-          let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
-          let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
-          let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
-          let initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-              itemSelector: '.isotope-item',
-              layoutMode: layout,
-              filter: filter,
-              sortBy: sort
-          });
-          isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-              filters.addEventListener('click', function() {
-                  isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-                  this.classList.add('filter-active');
-                  initIsotope.arrange({
-                      filter: this.getAttribute('data-filter')
-                  });
-                  if (typeof aosInit === 'function') {
-                      aosInit();
-                  }
-              }, false);
-          });
-      });
-  }
-  window.addEventListener('load', initIsotopeLayout);
-
-  /**
-   * Frequently Asked Questions Toggle
-   */
-  document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => {
-      faqItem.addEventListener('click', () => {
-          faqItem.parentNode.classList.toggle('faq-active');
-      });
-  });
-
-  /**
-   * Init swiper sliders
-   */
-  function initSwiper() {
-      document.querySelectorAll('.swiper').forEach(function(swiper) {
-          let config = JSON.parse(swiper.querySelector('.swiper-config').innerHTML.trim());
-          new Swiper(swiper, config);
-      });
-  }
-  window.addEventListener('load', initSwiper);
-
+  
   /**
    * Animation on scroll function and init
    */
@@ -190,37 +102,99 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
   window.addEventListener('load', aosInit);
-  const mySwiper2_wrapper = document.querySelector(".mySwiper2 .swiper-wrapper"),
-      mySwiper_container = document.querySelector(".mySwiper"),
-      clone = mySwiper2_wrapper.cloneNode(true);
-  mySwiper_container.appendChild(clone);
-  const swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 10,
-      slidesPerView: mySwiper2_wrapper.childNodes.length,
-      freeMode: true,
-      watchSlidesProgress: true
-  });
-  const swiper2 = new Swiper(".mySwiper2", {
-      autoplay: {
-          delay: 5000,
-          disableOnInteraction: false
-      },
-      slidesPerView: "auto",
-      centeredSlides: true,
-      loop: true,
-      loopedSlides: mySwiper2_wrapper.childNodes.length,
-      spaceBetween: 10,
-      speed: 800,
-      navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-      },
-      thumbs: {
-          swiper: swiper
-      }
-  });
-
- 
 
 });
+
+$(document).ready(function () {
+    $("#news-slider").owlCarousel({
+      items: 4,
+      itemsDesktop: [1199, 3],
+      itemsDesktopSmall: [980, 2],
+      itemsMobile: [600, 1],
+      navigation: true,
+      navigationText: ["", ""],
+      pagination: true,
+      autoPlay: true
+    });
+});
+
+const images = document.querySelectorAll('.round_about');
+
+document.addEventListener('mousemove', (event) => {
+  images.forEach((image) => {
+    const x = event.clientX / window.innerWidth;
+    const y = event.clientY / window.innerHeight;
+    const width = image.offsetWidth;
+    const height = image.offsetHeight;
+
+    image.style.transform = `translateX(${(x - 0.5) * 100}px) translateY(${(y - 0.5) * 50}px)`;
+
+  });
+});
+
+$(window).mousemove(function (e) {
+  $(".ring").css(
+    "transform",
+    `translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem))`
+  );
+});
+
+// var menu_btn = document.querySelector("#toggle");
+// var togglespan = document.querySelector("#toggle span");
+// var sidebar = document.querySelector(".sidebar");
+
+// const sidenav_a = document.querySelectorAll('.sidenav');
+
+// menu_btn.addEventListener("click", () => {
+//   togglespan.classList.toggle("toggle");
+//   sidebar.classList.toggle("sidebarshow");
+// });
+
+// sidenav_a.forEach(function(el) {
+//   el.onclick = function() {
+//     togglespan.classList.toggle("toggle");
+//     sidebar.classList.toggle("sidebarshow");
+//   };
+// });
+
+
+let isDown = false;
+let startX;
+let scrollLeft;
+const slider = document.querySelector('.items');
+
+const end = () => {
+	isDown = false;
+  slider.classList.remove('active');
+}
+
+const start = (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;	
+}
+
+const move = (e) => {
+	if(!isDown) return;
+
+  e.preventDefault();
+  const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+  const dist = (x - startX);
+  slider.scrollLeft = scrollLeft - dist;
+}
+
+(() => {
+	slider.addEventListener('mousedown', start);
+	slider.addEventListener('touchstart', start);
+
+	slider.addEventListener('mousemove', move);
+	slider.addEventListener('touchmove', move);
+
+	slider.addEventListener('mouseleave', end);
+	slider.addEventListener('mouseup', end);
+	slider.addEventListener('touchend', end);
+})();
+
+
+
