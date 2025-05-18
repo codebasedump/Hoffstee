@@ -939,7 +939,7 @@ footer .container-fluid .copyrights p {
 	z-index: -1;
   }
   .button_navigate .qube .front::after {
-	background: #FFF;
+	/* background: #FFF; */
 	content: "";
 	height: 155px;
 	left: -75px;
