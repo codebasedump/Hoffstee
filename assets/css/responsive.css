@@ -81,4 +81,7 @@
     .mobile img {
         width:100%
     }
+    .service_domain{
+        display: none;
+    }
 }
