@@ -138,11 +138,11 @@ section {
 
 .textshadow{
 	color: #0970ed; 
-	background-image: linear-gradient(45deg, #0970ed , #30f42e 50%, #99ac16 100%); 
+	/* background-image: linear-gradient(45deg, #0970ed , #30f42e 50%, #99ac16 100%);  */
+	background-image: linear-gradient(45deg, #0970ed , #30f42e);
 	background-clip: text; 
 	-webkit-background-clip: text; 
 	-webkit-text-fill-color: transparent;
-
 }
 
 .cursor {
@@ -1736,15 +1736,8 @@ footer .container-fluid .copyrights p {
 	border-radius: 5px;
 	color: var(--color-default);
 	background-color: #fff;
-	/* border-color: rgba(var(--color-default-rgb), 0.2); */
 	border: 2px solid #fff;
 }
-
-/* .contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-	border-color: var(--button-color);
-} */
 
 .contact .php-email-form input[type=text]::-moz-placeholder,
 .contact .php-email-form input[type=email]::-moz-placeholder,
@@ -2075,6 +2068,7 @@ input[type="radio"].asButton:disabled + label
 .servicepage_accordian .accordion .accordion-item{
 	border: 0;
 	padding: 10px;
+	
 }
 
 .servicepage_accordian .accordion .accordion-button:not(.collapsed){
@@ -2108,7 +2102,7 @@ input[type="radio"].asButton:disabled + label
 }
 
 .servicepage_accordian button.accordion-button {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -2549,5 +2543,43 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 	height: 100%;
 	right: 0;
 	display: block;
-	
+}
+
+.faq{
+	background-color: #f3f1e6;
+}
+
+.faq .container-fluid{
+	margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.faq.servicepage_accordian .accordion .accordion-item{
+	border: 0;
+	padding: 15px 50px;
+	background-color: #f3f1e6;
+	border-bottom: 1px solid #ffffffdb;
+}
+
+.faq.servicepage_accordian .accordion .accordion-button.active{
+	background-color: #fff;
+}
+
+.faq.servicepage_accordian button.accordion-button {
+    font-size: 26px;
+    font-weight: bold;
+	padding: 2% 60px;
+}
+
+#accordionExample1 .accordion-item{
+	padding:0
+}
+
+#accordionExample1 .accordion-collapse{
+	padding: 0px 60px;
+	background-color: #fff;
+}
+#accordionExample1 .accordion-collapse.show{
+	background-color: #fff;
 }
