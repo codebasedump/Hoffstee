@@ -549,6 +549,7 @@ section {
     -webkit-text-stroke: 0.2vw #ffffff59;
     text-transform: uppercase;
     bottom: 0px;
+	opacity: 0.2;
 }
 .footer_end::before {
     content: attr(data-text);
@@ -623,7 +624,7 @@ footer .container-fluid .socials_link_wrapper .singleLineLink {
 }
 
 footer .container-fluid .footerEmail {
-    margin-top: 11vw;
+    margin-top: 5vw;
     border-bottom: 1px solid #3a3a3a !important; 
     padding-bottom: 20px;
     padding-right: 40px;
