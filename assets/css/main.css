@@ -35,10 +35,10 @@
 	width:100%
 }
 
-.line{
+/* .line{
 	border-bottom: 1px solid #0f294312;
 	padding-bottom: 20px;
-}
+} */
 
 i.bi.bi-plus {
     font-size: 60px;
@@ -1983,8 +1983,22 @@ input[type="radio"].asButton:disabled + label
 	top: -45px;
 	z-index: 1;
 	border-radius: 10px;
+	animation: linear infinite alternate;
+  	animation-name: run;
+  	animation-duration: 2s;
 }
-  
+
+@-webkit-keyframes run {
+    0% {
+      left: 0;
+      transform: translateX(0);
+    }
+    100% {
+      left: 10%;
+      transform: translateX(-10%);
+    }
+}
+
 .tooltip1:hover .tooltiptext {
 	visibility: visible;
 }
@@ -2040,12 +2054,12 @@ input[type="radio"].asButton:disabled + label
 }
 
 .service_devstra .o-square{
-	padding: 20px 30px;
+	padding: 13px 26px;
 	border-radius: 10px;
 }
 
 .service_devstra span{
-	font-size: 64px;
+	font-size: 60px;
     color: #ffffff3d;
     position: relative;
     top: 0;
@@ -2221,6 +2235,34 @@ input[type="radio"].asButton:disabled + label
 .js-sticky .ourclient_inner{
 	margin-top:65px;
 }
+
+section .container-fluid .line {
+    border-bottom: 1px solid #3a3a3a21 !important; 
+    padding-bottom: 20px;
+    padding-right: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+section .container-fluid .line:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #b3ec11;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .8s cubic-bezier(.19,1,.22,1);
+}
+
+
+section .container-fluid .line:hover:before {
+    transform: scaleX(1)
+}
+
+
 
 /*Servicepage_Webdevelopment*/
 
