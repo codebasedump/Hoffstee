@@ -1602,7 +1602,6 @@ footer .container-fluid .copyrights p {
   min-width: 150px;
   width: 100%;
   margin: 0px 15px;
-  box-sixing: border-box;
   border-radius: 25px
 }
 
@@ -2549,5 +2548,5 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 	height: 100%;
 	right: 0;
 	display: block;
-	/* background-image: linear-gradient(180deg, rgba(60, 26, 229, 0) 0%, #3C1AE5 50%, rgba(60, 26, 229, 0) 100%); */
+	
 }
