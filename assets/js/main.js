@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
 $(document).ready(function () {
     $("#news-slider").owlCarousel({
       items: 4,
@@ -139,62 +140,20 @@ $(window).mousemove(function (e) {
   );
 });
 
-// var menu_btn = document.querySelector("#toggle");
-// var togglespan = document.querySelector("#toggle span");
-// var sidebar = document.querySelector(".sidebar");
-
-// const sidenav_a = document.querySelectorAll('.sidenav');
-
-// menu_btn.addEventListener("click", () => {
-//   togglespan.classList.toggle("toggle");
-//   sidebar.classList.toggle("sidebarshow");
-// });
-
-// sidenav_a.forEach(function(el) {
-//   el.onclick = function() {
-//     togglespan.classList.toggle("toggle");
-//     sidebar.classList.toggle("sidebarshow");
-//   };
-// });
+var header = document.getElementById("accordionExample1");
+const acc = document.getElementsByClassName("accordion-button");
 
 
-let isDown = false;
-let startX;
-let scrollLeft;
-const slider = document.querySelector('.items');
-
-const end = () => {
-	isDown = false;
-  slider.classList.remove('active');
+for (let i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+    if(this.classList.contains('active')){
+      this.classList.remove("active");
+    } else {
+      if(document.querySelector('.accordion-button.active')){
+        document.querySelector('.accordion-button.active').classList.remove('active');
+      }
+      this.classList.add("active");
+    }
+  
+  });
 }
-
-const start = (e) => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;	
-}
-
-const move = (e) => {
-	if(!isDown) return;
-
-  e.preventDefault();
-  const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
-  const dist = (x - startX);
-  slider.scrollLeft = scrollLeft - dist;
-}
-
-(() => {
-	slider.addEventListener('mousedown', start);
-	slider.addEventListener('touchstart', start);
-
-	slider.addEventListener('mousemove', move);
-	slider.addEventListener('touchmove', move);
-
-	slider.addEventListener('mouseleave', end);
-	slider.addEventListener('mouseup', end);
-	slider.addEventListener('touchend', end);
-})();
-
-
-
