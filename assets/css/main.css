@@ -521,19 +521,6 @@ section {
 	font-size: 13px;
 }
 
-.footer-map {
-	position: absolute;
-	right: 0%;
-	top: 36%;
-	transform: translateY(-40%);
-	z-index: 0;
-	opacity: .8;
-}
-
-.footer-map img {
-	width: 78%;
-}
-
 .footertext_end {
 	width: 100%;
     overflow: hidden;
@@ -730,8 +717,6 @@ footer .container-fluid .copyrights p {
 	font-size: 14px;
 }
 
-
-
 /*--------------------------------------------------------------
 # Home Page
 --------------------------------------------------------------*/
@@ -915,7 +900,7 @@ footer .container-fluid .copyrights p {
   .button_navigate .qube {
 	position: relative;
 	height: 60px;
-	width: 200px;
+	width: 220px;
 	perspective: 1800px;
   }
   .button_navigate .qube .front, .button_navigate .qube .back {
@@ -1057,9 +1042,7 @@ footer .container-fluid .copyrights p {
     font-weight: 700;
   }
  
-  
   .sidebar ul li a:hover {
-	/* color: var(--button-color); */
 	color: #b3ec11;
   }
   
@@ -1102,10 +1085,6 @@ footer .container-fluid .copyrights p {
 /*--------------------------------------------------------------
 # About Lists
 --------------------------------------------------------------*/
-/* .about{
-	background-image: url(../../assets/img/business/company.png);
-	background-color: var(--button-color);
-} */
 
 .about_section{
 	padding: 90px 0;
@@ -1367,7 +1346,6 @@ footer .container-fluid .copyrights p {
 }
 
 /*Our project*/
-
 
 .ourproject {
 	--x: 0px;
@@ -2053,7 +2031,7 @@ input[type="radio"].asButton:disabled + label
 }
 
 .service_devstra span{
-	font-size: 60px;
+	font-size: 45px;
     color: #ffffff3d;
     position: relative;
     top: 0;
@@ -2087,7 +2065,7 @@ input[type="radio"].asButton:disabled + label
     height: auto;
     transition: all .8s cubic-bezier(.19,1,.22,1);
 	position: absolute;
-	right: 0;
+	right: 37px;
 
 }
 
@@ -2100,15 +2078,12 @@ input[type="radio"].asButton:disabled + label
 }
 .servicepage_accordian .accordion-button{
 	background: none;
+	box-shadow: none;
 }
 
 .servicepage_accordian button.accordion-button {
     font-size: 26px;
     font-weight: bold;
-}
-
-.servicepage_accordian .accordion-button{
-	box-shadow: none;
 }
 
 .service_content{
@@ -2161,76 +2136,6 @@ input[type="radio"].asButton:disabled + label
     position: relative;
 }
 
-/**
- * Objects
- */
-.o-grid {
-  align-items: top;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-left: -1.5rem;
-}
-
-.o-grid__item {
-  box-sizing: border-box;
-  padding-left: 1.5rem;
-  width: 100%;
-}
-
-.o-grid--wide {
-  margin-left: -3rem;
-}
-.o-grid--wide > .o-grid__item {
-  padding-left: 3rem;
-}
-
-.o-box {
-  background-color: #0f2943;
-  margin-bottom: 2rem;
-  color: #fff;
-}
-
-.o-box p{
-	font-size: 16px;
-}
-
-.o-box:last-child {
-  margin-bottom: 0;
-}
-
-.o-square:before {
-  display: block;
-  padding-top: 100%;
-}
-
-/**
- * Utilities
- */
-.u-1\/2 {
-  width: 50%;
-}
-
-
-.is-sticky {
-  position: fixed;
-}
-
-.is-sunk {
-  position: absolute;
-  bottom: 0;
-}
-
-.is-sunk-wrapper {
-  position: relative;
-}
-
-.js-sticky .ourclient_inner{
-	margin-top:65px;
-}
-
 section .container-fluid .line {
     border-bottom: 1px solid #3a3a3a21 !important; 
     padding-bottom: 20px;
@@ -2252,14 +2157,41 @@ section .container-fluid .line:before {
     transition: all .8s cubic-bezier(.19,1,.22,1);
 }
 
-
 section .container-fluid .line:hover:before {
     transform: scaleX(1)
 }
 
 
-
 /*Servicepage_Webdevelopment*/
+
+.services_thumbnail {
+    margin-top: 60px;
+}
+.service_image {
+    width: 100%
+}
+.services_thumbnail>p:first-child {
+    text-align: center;
+}
+.services_thumbnail i {
+    color: #0f2943;
+    font-size: 50px;
+}
+.services_thumbnail i:hover{
+	color: var(--button-color);
+}
+.services_thumbnail h4 {
+    font-size: 20px;
+    font-weight: 700;
+	text-align: center;
+	line-height: 33px;
+	height: 70px;
+}
+.thumbnailser_text {
+    background: #f3f1e6;
+    padding: 20px;
+	height: 70%;
+}
 
 .carousel {
   width: 100%;
@@ -2275,9 +2207,9 @@ section .container-fluid .line:hover:before {
 }
 .carousel--item {
   display: inline-block;
-  width: 35vw;
+  width: 50vw;
   padding: 1vw;
-  margin: 2vw;
+  margin: 1vw;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2304,11 +2236,12 @@ section .container-fluid .line:hover:before {
 }
 .carousel--item h2 {
     position: absolute;
+	left: -17%;
     z-index: 9;
     bottom: 1.8vw;
     font-size: 5vw;
-    bottom: -3.6vw;
-    color: rgb(0 0 0 / 28%);
+    bottom: 10vw;
+    color: rgb(0 0 0 / 50%);
 }
 .carousel--progress {
     position: relative;
@@ -2332,10 +2265,6 @@ section .container-fluid .line:hover:before {
   transform-origin: 0% 0%;
 }
 
-.service_webdev div{
-	background-color: #0a1723;
-	padding: 20px
-}
 
 .portfoliocarou{
 	--x: 0px;
@@ -2353,7 +2282,7 @@ section .container-fluid .line:hover:before {
 }
 
 .image-stack{
-	background: #f2f2f2;
+	background: #f3f1e6;
     padding: 34px;
 }
 .services_webdevelopment{
@@ -2474,6 +2403,7 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 	}
 }
 
+
 .center-circle {
 	position: absolute;
 	width: 230px;
@@ -2583,4 +2513,25 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 }
 #accordionExample1 .accordion-collapse.show{
 	background-color: #fff;
+}
+
+.faq .accordion-button.collapsed{
+	border-bottom: 1px solid #e6e6e6;
+}
+
+/*About Us html page*/
+.aboutus_banner{
+	background-image: url(../../assets/img/business/aboutus_bannerimg.png) !important;
+	background-size: contain;
+	background-size: 100% 100%;
+  	width: 100%;
+  	height: auto;
+}
+.aboutus_content h3{
+	font-size: 42px;
+	text-align: center;
+	line-height: 55px;
+}
+.aboutus_content p{
+	text-align: center;
 }
