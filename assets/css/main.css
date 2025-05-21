@@ -2097,13 +2097,13 @@ input[type="radio"].asButton:disabled + label
 }
 
 .call-to-action {
-    --color-default: #ffffff;
     --color-background: #000000;
     --color-background-rgb: 0, 0, 0;
     padding: 80px 0;
     position: relative;
     -webkit-clip-path: inset(0);
     clip-path: inset(0);
+	color: #ffffff;
 }
 
 .call-to-action img {
