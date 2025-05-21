@@ -105,20 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-$(document).ready(function () {
-    $("#news-slider").owlCarousel({
-      items: 4,
-      itemsDesktop: [1199, 3],
-      itemsDesktopSmall: [980, 2],
-      itemsMobile: [600, 1],
-      navigation: true,
-      navigationText: ["", ""],
-      pagination: true,
-      autoPlay: true
-    });
-});
-
 const images = document.querySelectorAll('.round_about');
 
 document.addEventListener('mousemove', (event) => {
@@ -157,3 +143,5 @@ for (let i = 0; i < acc.length; i++) {
   
   });
 }
+
+
