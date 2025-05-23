@@ -2290,7 +2290,7 @@ section .container-fluid .line:hover:before {
     padding: 34px;
 }
 .services_webdevelopment{
-	background-image: linear-gradient(29deg, rgb(31 30 30 / 80%) 42%, rgb(62 124 87 / 48%) 61%, rgba(255, 255, 255, 1) 93%), url(../../assets/img/business/image01.jpg) !important;
+	background-image: linear-gradient(29deg, rgb(31 30 30 / 80%) 42%, rgb(62 124 87 / 48%) 61%, rgba(255, 255, 255, 1) 93%), url(../../assets/img/business/image_01.jpg) !important;
 	background-size: 100% ;
   	width: 100%;
   	height: auto;
