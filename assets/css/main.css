@@ -724,7 +724,7 @@ footer .container-fluid .copyrights p {
 ------------------------------*/
 
 .hero {
-	background-image: url(../../assets/img/business/homebackground.png);
+	background-image: url(../../assets/img/business/image_34.png);
 	background-size: 100% 100%;
 	width: 100%;
 	min-height: 100vh;
@@ -1350,7 +1350,7 @@ footer .container-fluid .copyrights p {
 .ourproject {
 	--x: 0px;
   	--y: 0px;
-	background-image: url(../../assets/img/business/ourproject.png);
+	background-image: url(../../assets/img/business/image_54.png);
 	background-color: var(--button-color);
 	background-size: contain;
 	background-size: 100% 100%;
@@ -1610,7 +1610,7 @@ footer .container-fluid .copyrights p {
 .industrial{
 	--x: 0px;
   	--y: 0px;
-	background-image: url(../../assets/img/business/rectangle.png);
+	background-image: url(../../assets/img/business/image_62.png);
 	background-color: var(--button-color);
 	background-size: contain;
 	background-size: 100% 100%;
@@ -1656,7 +1656,7 @@ footer .container-fluid .copyrights p {
 ------------------------------*/
 
 .contact{ 
-	background-image: url(../../assets/img/business/homebackground.png);
+	background-image: url(../../assets/img/business/image_34.png);
     background-size: contain;
 }
 
@@ -2008,7 +2008,7 @@ input[type="radio"].asButton:disabled + label
 /*Service Page*/
 
 .service_banner{
-	background-image: url(../../assets/img/business/servicebanner.png);
+	background-image: url(../../assets/img/business/image_65.png);
 	background-size: 100% 100%;
     /* background-attachment: fixed; */
 	width: 100%;
@@ -2273,7 +2273,7 @@ section .container-fluid .line:hover:before {
 .portfoliocarou{
 	--x: 0px;
   	--y: 0px;
-	background-image: url(../../assets/img/business/rectangle.png);
+	background-image: url(../../assets/img/business/image_62.png);
 	background-color: var(--button-color);
 	background-size: contain;
 	/* background-size: 100% 100%; */
@@ -2290,7 +2290,7 @@ section .container-fluid .line:hover:before {
     padding: 34px;
 }
 .services_webdevelopment{
-	background-image: linear-gradient(29deg, rgb(31 30 30 / 80%) 42%, rgb(62 124 87 / 48%) 61%, rgba(255, 255, 255, 1) 93%), url(../../assets/img/business/01.jpg) !important;
+	background-image: linear-gradient(29deg, rgb(31 30 30 / 80%) 42%, rgb(62 124 87 / 48%) 61%, rgba(255, 255, 255, 1) 93%), url(../../assets/img/business/image01.jpg) !important;
 	background-size: 100% ;
   	width: 100%;
   	height: auto;
@@ -2524,7 +2524,7 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 
 /*About Us html page*/
 .aboutus_banner{
-	background: url(../../assets/img/business/webdevelop_backgroundimg.jpg) left center no-repeat;
+	background: url(../../assets/img/business/image_84.jpg) left center no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
