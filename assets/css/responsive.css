@@ -12,6 +12,7 @@
         display: none;
     }
     .model_video{width:100%}
+    
 }
 @media screen and (max-width: 900px) {
     .form-control{
@@ -83,5 +84,13 @@
     }
     .service_domain{
         display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1700px){
+    .spectacledcoder-carousel 
+    {
+        overflow-x: scroll;
     }
 }

@@ -26,6 +26,7 @@
 /* Smooth scroll */
 :root {
 	scroll-behavior: smooth;
+	
 }
 
 /*--------------------------------------------------------------
@@ -98,7 +99,7 @@ a {
 
 p {
 	line-height: 1.8;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -113,11 +114,13 @@ h6 {
 }
 
 h2{
-	font-size: 42px;
+	font-size: 36px;
 	font-weight: 900;
 	/* text-transform: uppercase; */
 }
-
+h3 {
+    font-size: 1.5rem;
+}
 section {
 	color: var(--color-default);
 	background-color: var(--color-background);
@@ -1344,7 +1347,10 @@ footer .container-fluid .copyrights p {
 .services_talkbtn .home_headertext{
 	transform: rotate(270deg);
 }
-
+.accordion-header.tooltip1 {
+    margin-bottom: 0;
+    display: block !important;
+}
 /*Our project*/
 
 .ourproject {
@@ -2082,7 +2088,7 @@ input[type="radio"].asButton:disabled + label
 }
 
 .servicepage_accordian button.accordion-button {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -2191,9 +2197,7 @@ section .container-fluid .line:hover:before {
 	height: 70px;
 }
 .thumbnailser_text {
-    background: rgb(15 41 60 / 4%);
-    padding: 20px;
-	border-radius: 10px;
+    border-radius: 10px;
     height: 70%;
 }
 
@@ -2501,7 +2505,7 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 }
 
 .faq.servicepage_accordian button.accordion-button {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
 	padding: 2% 60px;
 }
@@ -2739,4 +2743,175 @@ figure.snip0016:hover figcaption::before {
 	position: absolute;
 	bottom: 20%;
 }
+
+
+
+.spectacledcoder-carousel 
+{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+	flex-direction: column;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    scroll-behavior: smooth;
+    zoom: 0.9;
+}
+       
+.spectacledcoder-carousel .carousel_item 
+{
+     margin: auto;
+     /* width: 100%;
+     height: 500px; */
+     display: flex;
+     /* margin-left: 25%;
+     margin-right: 25%; */
+	}
+        .spectacledcoder-carousel .carousel_item .card_scroll
+        {
+
+			width: 100%;
+            height: 100%;
+			margin: 0 20px;
+            /* margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 350px;
+            height: 500px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column; */
+        }
+        .spectacledcoder-carousel .carousel_item .card_scroll .card-img
+        {
+            margin: auto;
+            width: 300px;
+    		/* height: 45%; */
+            display: flex;
+            flex-direction: column;
+        }
+		
+        .spectacledcoder-carousel .carousel_item .card_scroll .card-img .img
+        {
+            margin: auto;
+            object-fit: cover;
+            border-radius: 20px;
+            transition:  all 1s;
+            background-color: #b2c8ff;
+        }
+        
+        .spectacledcoder-carousel .carousel_item .card_scroll .spectacledcoder-btn:hover p
+        {
+            transition: all 0.2s;
+            color: black;
+        }
+        .spectacledcoder-carousel .carousel_item .card_scroll h4
+        {
+            width: 100%;
+            height: 10%;
+            text-align: center;
+            margin: auto;
+            transition:  all 1s;
+			padding-top: 15px;
+        }
+        .spectacledcoder-carousel .carousel_item .card_scroll p
+        {
+            width: 100%;
+            height: 20%;
+            margin: auto;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+      
+        .spectacledcoder-carousel .carousel_item .card_scroll:hover .card-img
+        {
+            height: 50%;
+        }
+        .spectacledcoder-carousel .carousel_item .card_scroll:hover .img
+        {
+            height: 250px;
+            transition: all 0.5s;
+            filter: blur(7px);
+            box-shadow: 1px 1px 20px rgba(184, 184, 184, 0.731);
+           
+        }
+        .spectacledcoder-carousel .carousel_item .card_scroll:hover h4
+        {
+            height: 20%;
+            z-index: 10;
+            color: rgb(1, 1, 1);
+        }
+        .spectacledcoder-carousel .carousel_item .card_scroll:hover p
+        {
+            opacity: 100;
+            height: 40%;
+        }
+        .spectacledcoder-carousel .carousel_item .card_scroll:hover .spectacledcoder-btn
+        {
+            margin-top: -50%;
+            position: relative;
+            display: block;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        
+        overflow-x: auto;
+        margin-top: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background-color: rgba(255, 255, 255, 0);
+        border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: rgb(44, 44, 44); 
+        border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover 
+        {
+            cursor: grabbing;
+            background: #000000; 
+        }
+
+        /* width */
+        .spectacledcoder-carousel::-webkit-scrollbar {
+        height: 5px;
+        overflow-x: auto;
+        margin-top: 10px;
+        }
+
+        .spectacledcoder-carousel::-webkit-scrollbar-button
+        {
+            width: 100px;
+            height: 100px;
+        }
+        /* Track */
+        .spectacledcoder-carousel::-webkit-scrollbar-track {
+            background-color: rgba(190, 190, 190, 0);
+        border-radius: 10px;
+        }
+        
+        /* Handle */
+        .spectacledcoder-carousel::-webkit-scrollbar-thumb {
+        background: rgb(44, 44, 44); 
+        border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        .spectacledcoder-carousel::-webkit-scrollbar-thumb:hover 
+        {
+            cursor: grabbing;
+            background: #972e2e; 
+        }
+
+		.card-img img{ width: 100%;height: 210px;
+    border-radius: 20px;}
 
