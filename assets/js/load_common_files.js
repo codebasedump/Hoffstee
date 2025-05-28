@@ -26,7 +26,6 @@ const loadHeader = () => {
     console.log('header');
 }
 
-
 const loadFooter = () => {
     fetch('./footer.html')
     .then(res => {
@@ -38,18 +37,11 @@ const loadFooter = () => {
     console.log('footer');
 }
 
-// const contactCommon = () =>{
-//     fetch('../contact_common.html')
-//     .then(res =>{
-//         return res.text();
-//     })
-//     .then(data =>{
-//         document.querySelector('#contact').innerHTML = data;
-//     })
-//     console.log('Contact Common');
-// }
 
 loadHeader();
 loadFooter();
-// contactCommon();
+
+
+
+
 

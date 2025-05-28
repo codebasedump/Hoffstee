@@ -1,4 +1,4 @@
-document.getElementById('form').addEventListener('submit', function(event) {
+export function handleFormSubmit(event) {
 	event.preventDefault();
 		const path = window.location.pathname;
 
@@ -133,7 +133,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
       		document.getElementById('sentmessage').style.visibility = "hidden";
 		},
 	  );
-});
+}
 
 function setErrorFor(input) {
 	const formControl = input.parentElement;

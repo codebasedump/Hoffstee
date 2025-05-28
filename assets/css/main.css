@@ -32,6 +32,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 .img100{
 	width:100%
 }
@@ -81,6 +87,7 @@ i.bi.bi-plus {
 @keyframes mymove {
   50% {transform: rotate(180deg);}
 }
+
 
 body {
 	color: var(--color-default);
@@ -1363,7 +1370,6 @@ footer .container-fluid .copyrights p {
   	background-position: var(--x) var(--y);
   	width: 100%;
   	height: auto;
-  	border: 1px solid white;
 }
 
 .ourproject_inner h2, .ourproject_inner p{
@@ -2014,7 +2020,7 @@ input[type="radio"].asButton:disabled + label
 /*Service Page*/
 
 .service_banner{
-	background-image: url(../../assets/img/business/image_65.png);
+	background: linear-gradient(205deg, #0f2943 0%, rgba(15, 41, 67, 1) 42%, rgba(67, 15, 15, 1) 100%);
 	background-size: 100% 100%;
     /* background-attachment: fixed; */
 	width: 100%;
@@ -2294,7 +2300,7 @@ section .container-fluid .line:hover:before {
     padding: 34px;
 }
 .services_webdevelopment{
-	background-image: linear-gradient(29deg, rgb(31 30 30 / 80%) 42%, rgb(62 124 87 / 48%) 61%, rgba(255, 255, 255, 1) 93%), url(../../assets/img/business/image_01.jpg) !important;
+	background: linear-gradient(205deg, #0f2943 0%, rgba(15, 41, 67, 1) 42%, rgba(67, 15, 15, 1) 100%);
 	background-size: 100% ;
   	width: 100%;
   	height: auto;
@@ -2484,7 +2490,7 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 }
 
 .faq{
-	background-color: #f3f1e6;
+	background-color: #f3f1e691;
 }
 
 .faq .container-fluid{
@@ -2507,7 +2513,7 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 .faq.servicepage_accordian button.accordion-button {
     font-size: 22px;
     font-weight: bold;
-	padding: 2% 60px;
+	padding:1.5% 60px
 }
 
 #accordionExample1 .accordion-item{
@@ -2550,7 +2556,6 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 }
 .aboutus_content .clientslide_right div, .aboutus_content .clientslide_left div{
 	display: inline;
-    /* background: linear-gradient(212deg, rgb(230 190 121 / 79%) 4%, rgb(139 180 221 / 19%) 46%); */
 	background: #B3EC11;
     background: linear-gradient(212deg, rgb(179 236 17 / 16%) 4%, rgb(98 177 255 / 14%) 46%);
     min-width: 500px;
@@ -2568,7 +2573,9 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 
 .aboutus_content p {
     text-align: center;
+	
 }
+
 
 .aboutus_content .client_image i{
 	font-size: 42px;
@@ -2613,6 +2620,10 @@ ul.card-list li:nth-child(8), ul.card-list li:nth-child(8) .card {
 			transform:rotate(360deg); 
 		} 
 	}
+
+.aboutus_specialist{
+	background-color: #f3f1e691;
+}
 
 .aboutus_specialist img{
 	width:100%
@@ -2914,4 +2925,3 @@ figure.snip0016:hover figcaption::before {
 
 		.card-img img{ width: 100%;height: 210px;
     border-radius: 20px;}
-
