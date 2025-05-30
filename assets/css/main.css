@@ -433,7 +433,9 @@ section {
 	--color-nav-hover: #c11b5e;
 	/* background-color: var(--color-secondary); */
 }
-
+.header_common{
+	background-color: var(--color-background);
+}
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
@@ -795,9 +797,12 @@ footer .container-fluid .copyrights p {
 }
 
 .homeheading {
-	height: 50px;
+	/* height: 50px; */
     float: left;
-    margin-right: 0.3em;
+    /* margin-right: 4.3em; */
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top: 15px !important;
 }
 
 .home_head b {
@@ -1002,11 +1007,12 @@ footer .container-fluid .copyrights p {
 }
 
 .button_navigate .qube .front {
-	background-color: var(--color-default);
-	color: rgb(255 255 255 / 91%);
+	background-color: #eee;
+	color: #212529;
 	border-radius: 35px;
 	border: 2px solid var(--color-default);
 	font-weight: 600;
+	font-size: 18px;
 }
 
 .button_navigate .qube .front::before {
@@ -1035,6 +1041,7 @@ footer .container-fluid .copyrights p {
 	transform: rotateX(0deg) translateZ(60px);
 	border-radius: 35px;
 	font-weight: 600;
+	font-size: 18px;
 }
 
 .button_navigate .qube:hover .front {
@@ -2182,7 +2189,7 @@ input[type="radio"].asButton:disabled+label {
 .service_banner p,
 .service_banner h3 {
 	color: var(--font-color);
-	padding: 0 11%;
+	padding: 0 0%;
 }
 
 .service_devstra .o-square {
@@ -2276,8 +2283,13 @@ input[type="radio"].asButton:disabled+label {
 	height: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
-
 	opacity: 0.2;
+}
+
+.calltoaction_button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .call-to-action .cta-btn {
