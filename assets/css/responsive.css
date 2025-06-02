@@ -12,7 +12,14 @@
         display: none;
     }
     .model_video{width:100%}
-    
+    .contact_inner{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .service_accordian .accordion0, .service_accordian .accordion1, .service_accordian .accordion2, .service_accordian .accordion3, .service_accordian .accordion4, .service_accordian .accordion5{
+        transform: none;
+    }
 }
 @media screen and (max-width: 900px) {
     .form-control{
@@ -41,6 +48,22 @@
         width: 24%;
         top: -17%;
     }
+    .button_navigate .qube{
+        width: 215px;
+    }
+    .headert_talkexpert_btn{
+        margin-top:25px
+    }
+    .sidebar{
+        top:18%
+    }
+     .clientslide_right div, .clientslide_left div{
+        min-width: 300px;
+    }
+    .ourclient img{
+        width:100%
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -50,15 +73,46 @@
     .services_btn, .services .nav-item .nav-link{
          text-align: left;
     }
-    .sidebar{
-        top:127px
+    
+    .headert_talkexpert_btn{
+        position: relative;
     }
+    .menu{display: none;}
+    .headert_talkexpert_btn .getintouch{
+        position: absolute;
+    }
+    .header{
+        padding: 30px 0;
+    }
+    #news-slider {
+        margin-top: 35%
+    }
+    .social-links.d-flex {
+        padding-top: 20px;
+    }
+    .businessgoal_innerdiv img:first-child, .businessgoal_innerdiv img:last-child{
+        width:100%;
+        position: static;
+    }
+   .industrial_content{
+        width:100%;
+        padding: 18px 0;
+   }
+   .hero h2{
+        font-size: 32px;
+   }
     
 }
 
 @media screen and (max-width: 500px) {
     .client_image{
         width: 100%;
+    }
+    .sidebar{
+        top:25%
+    }
+    .services{
+        background: none;
     }
 }
 
@@ -92,5 +146,11 @@
     .spectacledcoder-carousel 
     {
         overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 10%;
+    }
+    .servicepage_accordian .accordion .accordion-button .mailArrow{
+        right: 0;
     }
 }
+

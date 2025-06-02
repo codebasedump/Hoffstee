@@ -2,14 +2,11 @@ export function handleFormSubmit(event) {
 	event.preventDefault();
 		const path = window.location.pathname;
 
-		const form = document.getElementById('form');
-
 		const firstname = document.getElementById('firstname').value;
 		const lastname = document.getElementById('lastname').value;
 		const phoneno = document.getElementById('phoneno').value;
 		const emailid = document.getElementById('emailid').value;
 		const message = document.getElementById('message').value;
-
 
 		const firstError = document.getElementById('first-error');
 		const lastError = document.getElementById('last-error');
@@ -18,7 +15,6 @@ export function handleFormSubmit(event) {
 		const messageError = document.getElementById('message-error');
 
 		
-
 		function isPhone(phone) {
 			return /^[+]{1}(?:[0-9\-\\(\\)\\/.]\s?){6,15}[0-9]{1}$/.test(phone);
 		}
@@ -84,55 +80,40 @@ export function handleFormSubmit(event) {
 		}
 
 		if (path === "/contact.html") {
-			const checkboxes = document.getElementById('websitedesign');
-			const checkboxes1 = document.getElementById('webdevelopment');
-			const checkboxes2 = document.getElementById('productdiscovery');
-			const checkboxes3 = document.getElementById('userresearch');
-			const checkboxes4 = document.getElementById('userexperience');
-			const checkboxes5 = document.getElementById('digitalmarketing');
-			const checkboxes6 = document.getElementById('designsystem');
-			const checkboxes7 = document.getElementById('wordpress');
-			const checkboxes8 = document.getElementById('maintainsupport');
-			const checkboxes9 = document.getElementById('ecommerce');
-			const checkboxes10 = document.getElementById('branddesign');
-			const checkboxes11 = document.getElementById('printdesign');
-			const checkboxes12 = document.getElementById('logodesign');
-			const checkboxes13 = document.getElementById('other');
 
-			let checked = false;
-			if (checkboxes.checked || checkboxes1.checked || checkboxes2.checked ||
-				checkboxes3.checked || checkboxes4.checked || checkboxes5.checked ||
-				checkboxes6.checked || checkboxes7.checked || checkboxes8.checked ||
-				checkboxes9.checked || checkboxes10.checked || checkboxes11.checked ||
-				checkboxes12.checked || checkboxes13.checked) {
-				checked = true;
+			function areCheckboxesChecked() {
+				return Array.from(document.querySelectorAll('input[type="checkbox"]')).some(checkbox => checkbox.checked);
 			}
-
-			if (!checked) {
+			if (!areCheckboxesChecked()) {
 				document.getElementById('checkboxError').style.display = 'inline';
 				return false;
 			} else {
 				document.getElementById('checkboxError').style.display = 'none';
 			}
 		}
-	
-	emailjs.sendForm('service_c5n38bl', 'template_tzqul6p', this).then(
-		(response) => {
-			console.log('SUCCESS!', response.status, response.text);
-			document.getElementById('firstname').value = '';
-			document.getElementById('lastname').value= '';
-			document.getElementById('emailid').value= '';
-			document.getElementById('phoneno').value= '';
-			document.getElementById('message').value = '';
-			document.getElementById('sentmessage').style.visibility = "visible";
-      		document.getElementById('errormessage').style.visibility = "hidden";
-		},
-		(error) => {
-			console.log('FAILED...', error);
-		  	document.getElementById('errormessage').style.visibility = "visible";
-      		document.getElementById('sentmessage').style.visibility = "hidden";
-		},
-	  );
+		emailjs.sendForm('service_c5n38bl', 'template_tzqul6p', this).then(
+			(response) => {
+				console.log('SUCCESS!', response.status, response.text);
+
+				// Clear form fields dynamically
+				['firstname', 'lastname', 'emailid', 'phoneno', 'message'].forEach(id => {
+					document.getElementById(id).value = '';
+				});
+
+				toggleVisibility('sentmessage', true);
+				toggleVisibility('errormessage', false);
+			},
+			(error) => {
+				console.log('FAILED...', error);
+				toggleVisibility('errormessage', true);
+				toggleVisibility('sentmessage', false);
+			}
+		);
+
+		// Utility function to manage visibility
+		const toggleVisibility = (id, isVisible) => {
+			document.getElementById(id).style.visibility = isVisible ? "visible" : "hidden";
+		};
 }
 
 function setErrorFor(input) {
