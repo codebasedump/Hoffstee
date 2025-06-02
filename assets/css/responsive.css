@@ -20,6 +20,10 @@
     .service_accordian .accordion0, .service_accordian .accordion1, .service_accordian .accordion2, .service_accordian .accordion3, .service_accordian .accordion4, .service_accordian .accordion5{
         transform: none;
     }
+    .businessgoal_innerdiv img:first-child, .businessgoal_innerdiv img:last-child{
+        width:100%;
+        position: static;
+    }
 }
 @media screen and (max-width: 900px) {
     .form-control{
@@ -63,7 +67,9 @@
     .ourclient img{
         width:100%
     }
-    
+    /* .lds-ellipsis{
+        left: 36%
+    } */
 }
 
 @media screen and (max-width: 600px) {
@@ -90,10 +96,7 @@
     .social-links.d-flex {
         padding-top: 20px;
     }
-    .businessgoal_innerdiv img:first-child, .businessgoal_innerdiv img:last-child{
-        width:100%;
-        position: static;
-    }
+    
    .industrial_content{
         width:100%;
         padding: 18px 0;
@@ -101,7 +104,10 @@
    .hero h2{
         font-size: 32px;
    }
-    
+   .home_head{
+        padding: 0px 10px;
+   } 
+   
 }
 
 @media screen and (max-width: 500px) {
@@ -113,6 +119,12 @@
     }
     .services{
         background: none;
+    }
+    .home_head b{
+        float:none
+    }
+    .home_head{
+        display: none;
     }
 }
 

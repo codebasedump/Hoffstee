@@ -25,7 +25,6 @@ const loadHeader = () => {
     })
     console.log('header');
 }
-
 const loadFooter = () => {
     fetch('./footer.html')
     .then(res => {
@@ -36,7 +35,6 @@ const loadFooter = () => {
     })
     console.log('footer');
 }
-
 
 loadHeader();
 loadFooter();
