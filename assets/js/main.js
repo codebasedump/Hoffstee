@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
+  
   window.addEventListener('load', function(e) {
       if (window.location.hash) {
           if (document.querySelector(window.location.hash)) {
@@ -102,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
   window.addEventListener('load', aosInit);
-
 });
 
 const images = document.querySelectorAll('.round_about');
@@ -129,7 +129,6 @@ $(window).mousemove(function (e) {
 var header = document.getElementById("accordionExample1");
 const acc = document.getElementsByClassName("accordion-button");
 
-
 for (let i = 0; i < acc.length; i++) {
  acc[i].addEventListener("click", function() {
     if(this.classList.contains('active')){
@@ -140,6 +139,5 @@ for (let i = 0; i < acc.length; i++) {
       }
       this.classList.add("active");
     }
-  
   });
 }

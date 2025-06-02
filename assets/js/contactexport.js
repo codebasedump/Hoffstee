@@ -29,7 +29,5 @@ export const contactCommon = () => {
         } else {
             console.error('Form not found after loading contact_common.html');
         }
-       
     }
-   
 };
