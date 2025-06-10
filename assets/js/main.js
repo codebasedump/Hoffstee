@@ -3,23 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Scroll top button
    */
-  let scrollTop = document.querySelector('.scroll-top');
+  const scrollTop = document.querySelector('.scroll-top');
+  if (scrollTop) {
+    // Toggle "active" based on scroll position
+    const toggleScrollTop = () =>
+      scrollTop.classList.toggle('active', window.scrollY > 100);
 
-  function toggleScrollTop() {
-      if (scrollTop) {
-          window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-      }
-  }
-  
-  scrollTop.addEventListener('click', (e) => {
+    // Smooth scroll to top on click
+    scrollTop.addEventListener('click', e => {
       e.preventDefault();
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      });
-  });
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
+  }
 
   // Preloader
   $(window).on('load', function () {
@@ -28,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         $('.preloader').delay(333).fadeOut('slow'); // will fade out the white DIV that covers the website.
         $('body').delay(333);
     }, 500)
-});
+  });
 
   /**
    * Preloader
@@ -39,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
           preloader.remove();
       });
   }
+  
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
@@ -111,11 +110,7 @@ document.addEventListener('mousemove', (event) => {
   images.forEach((image) => {
     const x = event.clientX / window.innerWidth;
     const y = event.clientY / window.innerHeight;
-    const width = image.offsetWidth;
-    const height = image.offsetHeight;
-
     image.style.transform = `translateX(${(x - 0.5) * 100}px) translateY(${(y - 0.5) * 50}px)`;
-
   });
 });
 
@@ -126,18 +121,12 @@ $(window).mousemove(function (e) {
   );
 });
 
-var header = document.getElementById("accordionExample1");
-const acc = document.getElementsByClassName("accordion-button");
 
-for (let i = 0; i < acc.length; i++) {
- acc[i].addEventListener("click", function() {
-    if(this.classList.contains('active')){
-      this.classList.remove("active");
-    } else {
-      if(document.querySelector('.accordion-button.active')){
-        document.querySelector('.accordion-button.active').classList.remove('active');
-      }
-      this.classList.add("active");
-    }
-  });
-}
+document.querySelectorAll('.accordion-button').forEach(btn =>
+  btn.addEventListener('click', function() {
+    this.classList.contains('active')
+      ? this.classList.remove('active')
+      : (document.querySelector('.accordion-button.active')?.classList.remove('active'),
+         this.classList.add('active'));
+  })
+);

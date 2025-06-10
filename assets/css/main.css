@@ -133,7 +133,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 26px;
 }
 
 section {
@@ -156,7 +156,6 @@ section {
 
 .textshadow {
 	color: #0970ed;
-	/* background-image: linear-gradient(45deg, #0970ed , #30f42e 50%, #99ac16 100%);  */
 	background-image: linear-gradient(45deg, #0970ed, #30f42e);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -512,6 +511,11 @@ section {
 	font-family: var(--font-primary);
 }
 
+.footer .social-links{
+	display: flex;
+	justify-content: end;
+}
+
 .footer .social-links a {
 	display: flex;
 	align-items: center;
@@ -855,8 +859,11 @@ footer .container-fluid .copyrights p {
 
 .header_menu:hover {
     background-color: var(--color-default);
+	border: 4px solid #fff;
 }
-
+.header_menu span:hover{
+	background-color: #fff;
+}
 .header_menu span {
 	width: 24px;
 	height: 24px;
@@ -1012,7 +1019,7 @@ footer .container-fluid .copyrights p {
 	border-radius: 35px;
 	border: 2px solid var(--color-default);
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .button_navigate .qube .front::before {
@@ -1041,7 +1048,7 @@ footer .container-fluid .copyrights p {
 	transform: rotateX(0deg) translateZ(60px);
 	border-radius: 35px;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .button_navigate .qube:hover .front {
@@ -1113,9 +1120,9 @@ footer .container-fluid .copyrights p {
 	width: auto;
 	position: fixed;
 	top: 105px;
-	right: -359px;
+	right: -425px;
 	height: auto;
-	padding: 25px;
+	padding: 18px;
 	transition: all 0.3s ease-out;
 	z-index: 9;
 	text-align: left;
@@ -1135,14 +1142,14 @@ footer .container-fluid .copyrights p {
 
 .sidebar ul li a {
 	padding: 10px 14px;
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--color-default);
 	text-decoration: none;
 	display: block;
 	position: relative;
 	z-index: 1;
 	transition: all 0.3s ease-out;
-	text-transform: uppercase;
+	
 	font-weight: 700;
 }
 
@@ -2316,7 +2323,6 @@ input[type="radio"].asButton:disabled+label {
 section .container-fluid .line {
 	border-bottom: 1px solid #3a3a3a21 !important;
 	padding-bottom: 20px;
-	padding-right: 40px;
 	position: relative;
 	z-index: 1;
 }
@@ -2706,7 +2712,7 @@ ul.card-list li:nth-child(8) .card {
 }
 
 .faq {
-	background-color: #f3f1e691;
+	background-color: #f3f1e6fc;
 }
 
 .faq .container-fluid {
@@ -2746,7 +2752,7 @@ ul.card-list li:nth-child(8) .card {
 }
 
 .faq .accordion-button.collapsed {
-	border-bottom: 1px solid #0f29430f;
+	border-bottom: 1px solid #ffc10730;
 }
 
 /*About Us html page*/
@@ -3234,4 +3240,42 @@ figure.snip0016:hover figcaption::before {
 	opacity: 100;
 	height: 40%;
 	transition: all 0.5s;
+}
+
+/*Seo Services*/
+
+.services_seoagency {
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_111.jpg);
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	background-position: center;
+
+}
+.seo_services{
+	position: absolute;
+    width: 50%;
+    opacity: 0.1;
+    justify-self: anchor-center;
+}
+
+/*paid media*/
+.services_paidmedia{
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_115.jpg);
+	/* background-size: cover; */
+	width: 100%;
+	height: auto;
+	background-position: center;
+
+}
+
+/*Seo Services*/
+
+.services_socialmedia {
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 52%) 42%, #0f2943 100%), url(../../assets/img/business/image_129.jpg);
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	background-position: center;
+
 }

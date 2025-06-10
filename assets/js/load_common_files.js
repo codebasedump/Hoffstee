@@ -8,19 +8,26 @@ const loadHeader = () => {
             var menu_btn = document.querySelector("#toggle");
             var togglespan = document.querySelector("#toggle span");
             var sidebar = document.querySelector(".sidebar");
-
-            const sidenav_a = document.querySelectorAll('.sidenav');
-
+           
             menu_btn.addEventListener("click", () => {
-            togglespan.classList.toggle("toggle");
-            sidebar.classList.toggle("sidebarshow");
+             togglespan.classList.toggle("toggle");
+                sidebar.classList.toggle("sidebarshow");
             });
 
-            sidenav_a.forEach(function(el) {
-            el.onclick = function() {
-                togglespan.classList.toggle("toggle");
-                sidebar.classList.toggle("sidebarshow");
-            };
+            const submenuTrigger = document.querySelector('[data-bs-toggle="collapse"]');
+            const arrowIcon = submenuTrigger.querySelector("i"); 
+            const targetMenu = document.querySelector(".showall");
+
+            submenuTrigger.addEventListener("click", function (event) {
+                event.preventDefault();
+                
+                if (targetMenu.classList.contains("active")) {
+                    submenuTrigger.classList.remove("active"); // Removes active class for styling
+                    arrowIcon.classList.replace("bi-arrow-down-right", "bi-arrow-up-right");
+                } else {
+                    submenuTrigger.classList.add("active"); // Adds active class for styling
+                    arrowIcon.classList.replace("bi-arrow-up-right", "bi-arrow-down-right");
+                }
             });
     })
     console.log('header');
