@@ -3,7 +3,7 @@ const path = window.location.pathname;
 export const contactCommon = () => {
    
     if (path !== "/contact.html") {
-        fetch('../contact_common.html')
+        fetch('../contact-common.html')
             .then(res => res.text())
             .then(data => {
                 document.querySelector('#contact').innerHTML = data;

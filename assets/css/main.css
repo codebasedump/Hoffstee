@@ -126,10 +126,14 @@ h6 {
 	font-weight: 700;
 }
 
-h2 {
+h1 {
 	font-size: 36px;
 	font-weight: 900;
-	/* text-transform: uppercase; */
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 900;
 }
 
 h3 {
@@ -384,6 +388,10 @@ main {
 	color: var(--color-secondary);
 }
 
+#submenu3 li a{
+	font-size:14px
+}
+
 .padding {
 	padding: 0
 }
@@ -580,7 +588,7 @@ section {
 	-webkit-text-stroke: 0.2vw #ffffff59;
 	text-transform: uppercase;
 	bottom: 0px;
-	opacity: 0.2;
+	opacity: 0.9;
 }
 
 .footer_end::before {
@@ -1745,7 +1753,6 @@ footer .container-fluid .copyrights p {
 
 .clientslide_right div,
 .clientslide_left div {
-	/* font: 16px/1.2 "Roboto"; */
 	padding: 15px;
 	display: flex;
 	align-items: center;
@@ -1830,6 +1837,8 @@ footer .container-fluid .copyrights p {
 
 /* Contact Section - Home Page
 ------------------------------*/
+
+
 
 .contact {
 	background-image: url(../../assets/img/business/image_109.webp);
@@ -2190,7 +2199,7 @@ input[type="radio"].asButton:disabled+label {
 	width: 100%;
 	min-height: 100%;
 	position: relative;
-	padding: 160px 0 80px 0;
+	padding: 168px 0 80px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2756,8 +2765,12 @@ ul.card-list li:nth-child(8) .card {
 }
 
 /*About Us html page*/
+.aboutheading{
+	text-align: center;
+}
+
 .aboutus_banner {
-	background: url(../../assets/img/business/image_84.jpg) left center no-repeat;
+	background: url(../../assets/img/business/image_84.jpg) right center no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -2828,7 +2841,7 @@ ul.card-list li:nth-child(8) .card {
 	right: 0;
 	top: -240px;
 	transform: rotate(-18deg);
-	opacity: 0.4;
+	
 }
 
 .aboutus_img {
