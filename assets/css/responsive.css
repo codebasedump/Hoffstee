@@ -120,9 +120,7 @@
     .home_head b{
         float:none
     }
-    .home_head{
-        display: none;
-    }
+    
 }
 
 @media screen and (min-width: 901px) and (max-width: 1200px) {
