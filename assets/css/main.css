@@ -113,7 +113,7 @@ p {
 	line-height: 1.8;
 	font-size: 16px;
 	font-weight: 500;
-	padding: 15px 0 0;
+	/* padding: 15px 0 0; */
 }
 
 h1,
@@ -127,12 +127,12 @@ h6 {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 42px;
 	font-weight: 900;
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 900;
 }
 
@@ -584,7 +584,7 @@ section {
 .footer_end {
 	position: relative;
 	font-size: 18vw;
-	color: #fbfdff00;
+	color: #dee2e600;
 	-webkit-text-stroke: 0.2vw #ffffff59;
 	text-transform: uppercase;
 	bottom: 0px;
@@ -1022,7 +1022,7 @@ footer .container-fluid .copyrights p {
 }
 
 .button_navigate .qube .front {
-	background-color: #eee;
+	background-color: #dee2e6;
 	color: #212529;
 	border-radius: 35px;
 	border: 2px solid var(--color-default);
@@ -1431,11 +1431,12 @@ footer .container-fluid .copyrights p {
 }
 
 .services #pills-tabContent {
-	display: flex;
+	/* display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	right: 7%;
+	right: 7%; */
+	width: 100%;
 }
 
 .tab-pane img {
@@ -1519,6 +1520,7 @@ footer .container-fluid .copyrights p {
 	background-position: var(--x) var(--y);
 	width: 100%;
 	height: auto;
+	border-radius: 5%;
 }
 
 .ourproject_inner h2,
@@ -1531,7 +1533,7 @@ footer .container-fluid .copyrights p {
 }
 
 .post-slide {
-	background: #fff;
+	background: #dee2e6;
 	margin: 20px 15px 20px;
 	border-radius: 15px;
 	padding-top: 1px;
@@ -1573,7 +1575,7 @@ footer .container-fluid .copyrights p {
 }
 
 .post-slide .post-content {
-	background: #fff;
+	background: #dee2e6;
 	padding: 2px 20px 40px;
 	border-radius: 25px;
 }
@@ -1589,18 +1591,16 @@ footer .container-fluid .copyrights p {
 	top: -13%;
 	right: 90px;
 	padding: 0 18px 0 15px;
-	border-radius: 50px;
 	box-shadow: 3px 14px 25px -10px #92b4d0;
 	transition: background 0.5s ease 0s;
 }
 
 .owl-controls .owl-buttons .owl-next {
-	background: #fff;
+	background: #dee2e6;
 	position: absolute;
 	top: -13%;
 	right: 15px;
 	padding: 0 15px 0 18px;
-	border-radius: 50px;
 	box-shadow: -3px 14px 25px -10px #92b4d0;
 	transition: background 0.5s ease 0s;
 }
@@ -1628,7 +1628,7 @@ footer .container-fluid .copyrights p {
 /*our client*/
 
 .ourclient {
-	background-color: var(--specific-background);
+	background-color: var(--color-background);
 }
 
 .ourclient img {
@@ -1798,6 +1798,7 @@ footer .container-fluid .copyrights p {
 	background-position: var(--x) var(--y);
 	width: 100%;
 	height: auto;
+	border-radius: 5%;
 
 }
 
@@ -1812,7 +1813,7 @@ footer .container-fluid .copyrights p {
 	height: 70px;
 	width: auto;
 	display: inline-block;
-	margin: 20px 9px;
+	margin: 25px 15px;
 	background: linear-gradient(to right, #fff 50%, transparent 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
@@ -2744,7 +2745,7 @@ ul.card-list li:nth-child(8) .card {
 .faq.servicepage_accordian button.accordion-button {
 	font-size: 20px;
 	font-weight: bold;
-	padding: 25px 60px
+	padding: 35px 60px
 }
 
 #accordionExample1 .accordion-item {
@@ -2796,8 +2797,7 @@ ul.card-list li:nth-child(8) .card {
 
 .aboutus_content .clientslide_right div{
 	display: inline;
-	background: #B3EC11;
-	background: linear-gradient(135deg, #21252978, #10b9814a, #ffd70078);
+	background: linear-gradient(135deg, #21252954, #10b9812e, #ffd7004f);
 	min-width: 500px;
 	height: 100%;
 	width: 100%;
