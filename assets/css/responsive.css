@@ -26,6 +26,9 @@
         width:100%;
         position: static;
     }
+    .ourproject, .industrial{
+        border-radius: 0;
+    }
 }
 @media screen and (max-width: 900px) {
     .form-control{
@@ -76,7 +79,7 @@
         width: 46%;
     }
     .services_btn, .services .nav-item .nav-link{
-         text-align: left;
+         text-align: center;
     }
     
     .headert_talkexpert_btn{
