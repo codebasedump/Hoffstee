@@ -121,7 +121,6 @@ $(window).mousemove(function (e) {
   );
 });
 
-
 document.querySelectorAll('.accordion-button').forEach(btn =>
   btn.addEventListener('click', function() {
     this.classList.contains('active')
@@ -130,3 +129,13 @@ document.querySelectorAll('.accordion-button').forEach(btn =>
          this.classList.add('active'));
   })
 );
+
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+   s1.async=true;
+   s1.src='https://embed.tawk.to/682ae6086392a3190c78079b/1irjp54gf';
+   s1.charset='UTF-8';
+   s1.setAttribute('crossorigin','*');
+   s0.parentNode.insertBefore(s1,s0);
+})();

@@ -1513,14 +1513,14 @@ footer .container-fluid .copyrights p {
 .ourproject {
 	--x: 0px;
 	--y: 0px;
-	background-image: url(../../assets/img/business/image_54.png);
+	background-image: url(../../assets/img/business/image_54.webp);
 	background-color: var(--button-color);
 	background-size: contain;
 	background-size: 100% 100%;
 	background-position: var(--x) var(--y);
 	width: 100%;
 	height: auto;
-	border-radius: 5%;
+	border-radius: 25px;
 }
 
 .ourproject_inner h2,
@@ -1791,14 +1791,14 @@ footer .container-fluid .copyrights p {
 .industrial {
 	--x: 0px;
 	--y: 0px;
-	background-image: url(../../assets/img/business/image_62.png);
+	background-image: url(../../assets/img/business/image_62.webp);
 	background-color: var(--button-color);
 	background-size: contain;
 	background-size: 100% 100%;
 	background-position: var(--x) var(--y);
 	width: 100%;
 	height: auto;
-	border-radius: 5%;
+	border-radius: 25px;
 
 }
 
@@ -2479,7 +2479,7 @@ section .container-fluid .line:hover:before {
 .portfoliocarou {
 	--x: 0px;
 	--y: 0px;
-	background-image: url(../../assets/img/business/image_62.png);
+	background-image: url(../../assets/img/business/image_62.webp);
 	background-color: var(--button-color);
 	background-size: contain;
 	/* background-size: 100% 100%; */
@@ -2498,7 +2498,7 @@ section .container-fluid .line:hover:before {
 }
 
 .services_webdevelopment {
-	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_70.jpg);
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_70.webp);
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -2771,7 +2771,7 @@ ul.card-list li:nth-child(8) .card {
 }
 
 .aboutus_banner {
-	background: url(../../assets/img/business/image_84.jpg) right center no-repeat;
+	background: url(../../assets/img/business/image_84.webp) right center no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -3170,7 +3170,7 @@ figure.snip0016:hover figcaption::before {
 }
 
 .uiux_services {
-	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_97.jpg);
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_97.webp);
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -3178,7 +3178,7 @@ figure.snip0016:hover figcaption::before {
 }
 
 .services_branding {
-	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_105.jpg);
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_105.webp);
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -3186,7 +3186,7 @@ figure.snip0016:hover figcaption::before {
 }
 
 .services_graphicsdesign {
-	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_104.jpg);
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_104.webp);
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -3258,7 +3258,7 @@ figure.snip0016:hover figcaption::before {
 /*Seo Services*/
 
 .services_seoagency {
-	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_111.jpg);
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_111.webp);
 	background-size: cover;
 	width: 100%;
 	height: auto;
@@ -3274,7 +3274,7 @@ figure.snip0016:hover figcaption::before {
 
 /*paid media*/
 .services_paidmedia{
-	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_115.jpg);
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 81%) 42%, #21252900 100%), url(../../assets/img/business/image_115.webp);
 	/* background-size: cover; */
 	width: 100%;
 	height: auto;
@@ -3285,7 +3285,7 @@ figure.snip0016:hover figcaption::before {
 /*Seo Services*/
 
 .services_socialmedia {
-	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 52%) 42%, #0f2943 100%), url(../../assets/img/business/image_129.jpg);
+	background: linear-gradient(205deg, #0f2943 0%, rgb(15 41 67 / 52%) 42%, #0f2943 100%), url(../../assets/img/business/image_129.webp);
 	background-size: cover;
 	width: 100%;
 	height: auto;
