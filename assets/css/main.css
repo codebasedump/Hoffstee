@@ -1607,14 +1607,14 @@ footer .container-fluid .copyrights p {
 
 .owl-controls .owl-buttons .owl-prev:after,
 .owl-controls .owl-buttons .owl-next:after {
-	content: "\f104";
+	content: "→";
 	font-family: FontAwesome;
 	color: #333;
 	font-size: 30px;
 }
 
 .owl-controls .owl-buttons .owl-next:after {
-	content: "\f105";
+	content: "←";
 }
 
 @media only screen and (max-width: 1280px) {
