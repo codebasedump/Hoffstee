@@ -755,10 +755,6 @@ footer .container-fluid .copyrights {
 	padding-right: 40px
 }
 
-footer .container-fluid .copyrights p {
-	color: #4c4c4c
-}
-
 footer .LogoFooter {
 	width: 100%;
 	overflow: hidden;
@@ -774,7 +770,6 @@ footer .container-fluid .copyrights {
 }
 
 footer .container-fluid .copyrights p {
-	color: #4c4c4c;
 	font-size: 14px;
 }
 

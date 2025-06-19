@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const images = document.querySelectorAll('.round_about');
 
-document.addEventListener('mousemove', (event) => {
+document.addEventListener('mousemove', (e) => {
   images.forEach((image) => {
-    const x = event.clientX / window.innerWidth;
-    const y = event.clientY / window.innerHeight;
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
     image.style.transform = `translateX(${(x - 0.5) * 100}px) translateY(${(y - 0.5) * 50}px)`;
   });
 });
