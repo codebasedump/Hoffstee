@@ -91,22 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-window.addEventListener('DOMContentLoaded', function () {
-    var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = "https://embed.tawk.to/682ae6086392a3190c78079b/1irjp54gf";
-    s1.charset = "UTF-8";
-    s1.setAttribute("crossorigin", "*");
-    s0.parentNode.insertBefore(s1, s0);
-  });
-
 const images = document.querySelectorAll('.round_about');
 
-document.addEventListener('mousemove', (event) => {
+document.addEventListener('mousemove', (e) => {
   images.forEach((image) => {
-    const x = event.clientX / window.innerWidth;
-    const y = event.clientY / window.innerHeight;
+    const x = e.clientX / window.innerWidth;
+    const y = e.clientY / window.innerHeight;
     image.style.transform = `translateX(${(x - 0.5) * 100}px) translateY(${(y - 0.5) * 50}px)`;
   });
 });
