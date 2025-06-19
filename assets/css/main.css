@@ -1384,6 +1384,11 @@ footer .container-fluid .copyrights p {
 
 /* Services Section - Home Page
 ------------------------------*/
+.services_heading{
+	color: var(--color-background);
+	font-weight: 700;
+}
+
 .pills_services {
 	text-align: center;
 	display: flex;
