@@ -2816,6 +2816,8 @@ ul.card-list li:nth-child(8) .card {
 	font-size: 28px;
 	text-transform: initial;
 	font-weight: 700;
+	color: #f9edc5;
+    padding: 19px 0px;
 }
 
 .aboutus_content p {
