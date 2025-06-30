@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://hoffstee.com/</loc>
+    <loc>https://hoffstee.com.au/</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/about.html</loc>
+    <loc>https://hoffstee.com.au/about.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/services-ui.html</loc>
+    <loc>https://hoffstee.com.au/services-ui.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/services-webdevelopment.html</loc>
+    <loc>https://hoffstee.com.au/services-webdevelopment.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/services-branding.html</loc>
+    <loc>https://hoffstee.com.au/services-branding.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/services-graphicdesign.html</loc>
+    <loc>https://hoffstee.com.au/services-graphicdesign.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/services-seo-agency.html</loc>
+    <loc>https://hoffstee.com.au/services-seo-agency.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/services-paidmedia.html</loc>
+    <loc>https://hoffstee.com.au/services-paidmedia.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/services-socialmedia.html</loc>
+    <loc>https://hoffstee.com.au/services-socialmedia.html</loc>
   </url>
   <url>
-    <loc>https://hoffstee.com/contact.html</loc>
+    <loc>https://hoffstee.com.au/contact.html</loc>
   </url>
   <!-- Add all other pages here -->
 </urlset>
