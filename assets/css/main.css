@@ -488,7 +488,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-	--color-background: #0F2943;
+	--color-background: #1f1674;
 	--color-box-background: #eaeaea;
 	color: var(--color-default);
 	background-color: var(--color-background);
@@ -1319,7 +1319,7 @@ footer .container-fluid .copyrights p {
 }
 
 .content_patchcolor {
-	background-color: var(--color-default);
+	background-color: #1f1674;
 	color: var(--color-background);
 }
 
@@ -2797,7 +2797,9 @@ ul.card-list li:nth-child(8) .card {
 
 .aboutus_content .clientslide_right div{
 	display: inline;
-	background: linear-gradient(135deg, #21252954, #10b9812e, #ffd7004f);
+	/* background: linear-gradient(135deg, #21252954, #10b9812e, #ffd7004f); */
+	background: #1f1674;
+	color: #fff;
 	min-width: 500px;
 	height: 100%;
 	width: 100%;
@@ -2814,6 +2816,8 @@ ul.card-list li:nth-child(8) .card {
 	font-size: 28px;
 	text-transform: initial;
 	font-weight: 700;
+	color: #f9edc5;
+    padding: 19px 0px;
 }
 
 .aboutus_content p {
