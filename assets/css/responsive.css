@@ -1,1 +1,235 @@
-@media screen and (max-width:1500px){.mobile{display:block}.desktop,.tab-pane img,.tooltip1 .tooltiptext{display:none}.client_image{width:19%}.model_video{max-width:100%}.contact_inner{margin-top:35px}}@media screen and (orientation:landscape) and (min-device-width:400px) and (max-device-width:900px){.sidebarshow{height:235px;overflow-y:scroll}.sidebar{top:38%!important}}@media screen and (max-width:900px){.form-control{width:100%;margin-left:0}.form_contact{height:auto}.home_head b,.services_talkbtn,.tab-pane img,.tooltip1 .tooltiptext{display:none}.client_image{width:32%}.industrial{background-size:contain}.aboutmain_div{padding:0}.about_img{width:24%;top:-17%}.button_navigate .qube{width:215px}.headert_talkexpert_btn{margin-top:25px}.sidebar{top:18%}.clientslide_left div,.clientslide_right div{min-width:300px}.ourclient img{width:100%}.home_head{padding:0 20px}}@media screen and (max-width:600px){.home_head,.menu{display:none}.client_image{width:46%}.services .nav-item .nav-link,.services_btn{text-align:center}.headert_talkexpert_btn{position:relative}.headert_talkexpert_btn .getintouch{position:absolute}.header{padding:30px 0}#news-slider{margin-top:35%}.social-links.d-flex{padding-top:20px}.industrial_content{width:100%;padding:18px 0}.hero h2{font-size:32px}.home_head{padding:0 10px}}@media screen and (max-width:500px){.client_image{width:100%}.sidebar{top:25%}.services{background:0 0}.home_head b{float:none}}@media screen and (min-width:901px) and (max-width:1200px){.form-control{width:100%}.client_image{width:23%}}@media screen and (max-width:1200px){.service_accordian .accordion,.service_accordian .accordion0,.service_accordian .accordion1,.service_accordian .accordion2,.service_accordian .accordion3,.service_accordian .accordion4,.service_accordian .accordion5{transform:none}.businessgoal_innerdiv img:first-child,.businessgoal_innerdiv img:last-child{width:100%;position:static}.industrial,.ourproject{border-radius:0}.service_accordian{height:auto}.mobile img{width:100%}.service_domain{display:none}}@media screen and (max-width:1700px){.spectacledcoder-carousel{overflow-x:scroll;overflow-y:hidden;padding-bottom:10%}.servicepage_accordian .accordion .accordion-button .mailArrow{right:0}}
+@media screen and (max-width:1500px) {
+	.mobile {
+		display: block
+	}
+
+	.desktop,
+	.tab-pane img,
+	.tooltip1 .tooltiptext {
+		display: none
+	}
+
+	.client_image {
+		width: 19%
+	}
+
+	.model_video {
+		max-width: 100%
+	}
+
+	.contact_inner {
+		margin-top: 35px
+	}
+    .findoutmore{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+    }
+    .post-slide{
+        padding: 28px;
+        
+    }
+}
+
+@media screen and (orientation:landscape) and (min-device-width:400px) and (max-device-width:900px) {
+	.sidebarshow {
+		height: 235px;
+		overflow-y: scroll
+	}
+
+	.sidebar {
+		top: 38% !important
+	}
+}
+
+@media screen and (max-width:900px) {
+	.form-control {
+		width: 100%;
+		margin-left: 0
+	}
+
+	.form_contact {
+		height: auto
+	}
+
+	.home_head b,
+	.services_talkbtn,
+	.tab-pane img,
+	.tooltip1 .tooltiptext {
+		display: none
+	}
+
+	.client_image {
+		width: 32%
+	}
+
+	.industrial {
+		background-size: contain
+	}
+
+	.aboutmain_div {
+		padding: 0
+	}
+
+	.about_img {
+		width: 24%;
+		top: -17%
+	}
+
+	.button_navigate .qube {
+		width: 215px
+	}
+
+	.headert_talkexpert_btn {
+		margin-top: 25px
+	}
+
+	.sidebar {
+		top: 18%
+	}
+
+	.clientslide_left div,
+	.clientslide_right div {
+		min-width: 300px
+	}
+
+	.ourclient img {
+		width: 100%
+	}
+
+	.home_head {
+		padding: 0 20px
+	}
+    
+    .findoutmore{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+	.home_head,
+	.menu {
+		display: none
+	}
+
+	.client_image {
+		width: 46%
+	}
+
+	.services .nav-item .nav-link,
+	.services_btn {
+		text-align: center
+	}
+
+	.headert_talkexpert_btn {
+		position: relative
+	}
+
+	.headert_talkexpert_btn .getintouch {
+		position: absolute
+	}
+
+	.header {
+		padding: 30px 0
+	}
+
+	#news-slider {
+		margin-top: 35%
+	}
+
+	.social-links.d-flex {
+		padding-top: 20px
+	}
+
+	.industrial_content {
+		width: 100%;
+		padding: 18px 0
+	}
+
+	.hero h2 {
+		font-size: 32px
+	}
+
+	.home_head {
+		padding: 0 10px
+	}
+    
+    
+}
+
+@media screen and (max-width:500px) {
+	.client_image {
+		width: 100%
+	}
+
+	.sidebar {
+		top: 25%
+	}
+
+	.services {
+		background: 0 0
+	}
+
+	.home_head b {
+		float: none
+	}
+}
+
+@media screen and (min-width:901px) and (max-width:1200px) {
+	.form-control {
+		width: 100%
+	}
+
+	.client_image {
+		width: 23%
+	}
+}
+
+@media screen and (max-width:1200px) {
+
+	.service_accordian .accordion,
+	.service_accordian .accordion0,
+	.service_accordian .accordion1,
+	.service_accordian .accordion2,
+	.service_accordian .accordion3,
+	.service_accordian .accordion4,
+	.service_accordian .accordion5 {
+		transform: none
+	}
+
+	.businessgoal_innerdiv img:first-child,
+	.businessgoal_innerdiv img:last-child {
+		width: 100%;
+		position: static
+	}
+
+	.industrial,
+	.ourproject {
+		border-radius: 0
+	}
+
+	.service_accordian {
+		height: auto
+	}
+
+	.mobile img {
+		width: 100%
+	}
+
+	.service_domain {
+		display: none
+	}
+}
+
+@media screen and (max-width:1700px) {
+	.spectacledcoder-carousel {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		padding-bottom: 10%
+	}
+
+	.servicepage_accordian .accordion .accordion-button .mailArrow {
+		right: 0
+	}
+}
