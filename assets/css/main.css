@@ -3003,10 +3003,9 @@ figure.snip0016:hover figcaption::before {
 }
 .speakvoice{
 	margin: 0 0 0 25px;
-    background: #fff;
+    background: transparent;
     border: 0;
-    padding: 11px;
-    border-radius: 25px;
+    padding: 0px;
     color: #2e1fb6;
     font-weight: 700;
 }	

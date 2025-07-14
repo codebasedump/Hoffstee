@@ -157,7 +157,9 @@
 	.home_head {
 		padding: 0 10px
 	}
-    
+    h1{
+		font-size: 33px;
+	}
     
 }
 
@@ -177,8 +179,16 @@
 	.home_head b {
 		float: none
 	}
-	.speakvoice{font-size: 23px;position: relative; left:-7px}
-	.speakvoice span{display:none}
+
+	.speakvoice{
+		font-size: 23px;
+		position: relative; 
+		left: -22px;
+	}
+
+	.speakvoice span{
+		display:none
+	}
 	
 }
 
