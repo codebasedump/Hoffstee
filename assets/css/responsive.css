@@ -104,6 +104,9 @@
     .findoutmore{
         width: 100%;
     }
+	.services_heading{
+		font-size: 32px;padding-top: 50px
+	}
 }
 
 @media screen and (max-width:600px) {
@@ -174,6 +177,9 @@
 	.home_head b {
 		float: none
 	}
+	.speakvoice{font-size: 23px;position: relative; left:-7px}
+	.speakvoice span{display:none}
+	
 }
 
 @media screen and (min-width:901px) and (max-width:1200px) {
