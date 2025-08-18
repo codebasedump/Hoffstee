@@ -1,70 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Homepage (Canonical root) -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hoffstee.com.au/</loc>
-    <lastmod>2025-07-17</lastmod>
+    <lastmod>2025-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- About Page-->
   <url>
     <loc>https://hoffstee.com.au/about.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- Services pages -->
   <url>
-    <loc>https://hoffstee.com.au/services-ui.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://hoffstee.com.au/canberra.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hoffstee.com.au/services-webdevelopment.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://hoffstee.com.au/contact.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://hoffstee.com.au/griffith.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hoffstee.com.au/melbourne.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hoffstee.com.au/shepparton.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hoffstee.com.au/sydney.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hoffstee.com.au/wagga-wagga.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hoffstee.com.au/services-branding.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoffstee.com.au/services-graphicdesign.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hoffstee.com.au/services-seo-agency.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoffstee.com.au/services-paidmedia.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.89</priority>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoffstee.com.au/services-seo-agency.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hoffstee.com.au/services-socialmedia.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Contact Pages -->
   <url>
-    <loc>https://hoffstee.com.au/contact.html</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://hoffstee.com.au/services-ui.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-  <!-- Add all other pages here -->
+  <url>
+    <loc>https://hoffstee.com.au/services-webdevelopment.html</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

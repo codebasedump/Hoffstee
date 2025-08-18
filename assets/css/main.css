@@ -106,7 +106,7 @@ body {
 	letter-spacing: 1px;
 	overflow-x: hidden
 }
-
+.pr{padding-right:5%}
 .about_headertext,
 .call-to-action .cta-btn,
 .footer .footer-about .logo span,
@@ -202,6 +202,9 @@ section {
 	height: 2.5rem;
 	z-index: 2;
 	pointer-events: none
+}
+.textcenter{
+	text-align: center;
 }
 
 .cursor div {
@@ -795,7 +798,9 @@ footer .container-fluid .copyrights {
 	float: left;
 	text-transform: capitalize;
 	padding-top: 15px !important;
-	padding-right: 10px
+	padding-right: 10px;
+	font-size: 24px;
+    font-weight: 700;
 }
 
 .home_head b {
@@ -825,6 +830,10 @@ footer .container-fluid .copyrights {
 	justify-content: end
 }
 
+.headert_talkexpert_btn.btn_width .button_navigate .qube
+{
+	width: 290px;
+}
 .header_menu {
 	width: 65px !important;
 	height: 65px;
@@ -972,7 +981,7 @@ footer .container-fluid .copyrights {
 .button_navigate .qube {
 	position: relative;
 	height: 60px;
-	width: 250px;
+	width: 275px;
 	perspective: 1800px
 }
 
@@ -1203,6 +1212,31 @@ footer .container-fluid .copyrights {
 	display: flex;
 	justify-content: center
 }
+.bannerbtn_img{
+	width:20%;
+	-webkit-animation: 4s linear infinite spinbannerbtn;
+	-moz-animation: 4s linear infinite spinbannerbtn;
+	animation: 4s linear infinite spinbannerbtn
+}
+
+@-moz-keyframes spinbannerbtn {
+	100% {
+		-moz-transform: rotate(360deg)
+	}
+}
+
+@-webkit-keyframes spinbannerbtn {
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+@keyframes spinbannerbtn {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg)
+	}
+}
 
 .about_img {
 	width: 12%;
@@ -1430,15 +1464,8 @@ figure.snip0016 h2 span {
 
 .services_works .card:hover {
 	transform: scale(0.9, 0.9);
-	background-color: #a7bcc773; 
 }
-.services_works .card-title::after { content: "";
-  display: block;
-  width: 20%;
-  height: 2px; 
-  background-color: #cca776; 
-  margin-top: 8px;
-}
+
 .services_works .card-text{padding:30px 0;color: var(--color-default);}
 .services_works .card .icon{padding-bottom:20px;}
 .services_works .card i{font-size: 46px;}
@@ -1676,6 +1703,9 @@ figure.snip0016 h2 span {
 .industrial_content:hover {
 	background-position: left bottom;
 	color: var(--color-default)
+}
+.industrial_content:hover{
+	color: var(--button-color) !important
 }
 
 .contact_banner {
@@ -2294,7 +2324,6 @@ ul.card-list {
 .center-circle,
 .last-circle,
 .second-circle,
-svg,
 ul.card-list li {
 	position: absolute
 }
@@ -2938,37 +2967,21 @@ figure.snip0016:hover figcaption::before {
 
 /*features*/
 
-.featured-style3 {
-    padding: 112px 0 98px 0;
-    background-image: url(../..//assets/img/business/image_138.png);
-    background-repeat: no-repeat;
-    background-size: 72% 48%;
-    background-position: left bottom;
-    position: relative;
-}
-.featured-style3 .content {
-    height: 100%;
-    position: relative;
-}
-.featured .content .caption {
+.featured-style3 .col-lg-3{padding:0 25px}
+.content .caption {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 2px;
     position: relative;
 }
-.featured .content .heading {
+.content .heading {
     font-size: 36px;
     line-height: 48px;
     font-weight: 700;
     margin-bottom: 32px;
 }
 
-.featured-style3 .view-all {
-    left: 17px;
-    bottom: 25px;
-    position: absolute;
-}
 .view-all a {
     font-size: 16px;
     font-weight: 700;
@@ -2976,28 +2989,7 @@ figure.snip0016:hover figcaption::before {
     text-transform: uppercase;
     border-bottom: 2px solid #cca776 !important
 }
-.iconbox-features.type3 {
-    padding-left: 100px;
-}
-.iconbox-features.type3 .iconbox {
-    padding: 30px;
-    margin-bottom: 30px;
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 30px 0 #906d3f33;
-    -moz-box-shadow: 0 0 30px 0 #906d3f33;
-    box-shadow: 0 0 30px 0 #906d3f33;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-	border-radius: 10px;
-	transition: transform .2s linear;
-}
-.iconbox-features.type3 .iconbox:hover{
-	transform: scale(0.9, 0.9);
-	background-color: #a7bcc773; 
-}
+
 .iconbox-features.type3 .iconbox .iconbox-icon {
     margin-bottom: 31px;
 }
@@ -3012,4 +3004,160 @@ figure.snip0016:hover figcaption::before {
     font-size: 22px;
     font-weight: 700;
     color: #1f1674;
+} 
+
+.newsCard {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  color:#fff;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+figure img {
+display: block;
+object-fit: cover !important;
+object-position: center center !important; height: 100%;
+width: 100%;
+}
+
+.overlay{
+  background: rgb(40,26,54);
+  background: -moz-linear-gradient(0deg, rgba(40,26,54,1) 0%, rgba(89,59,116,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(40,26,54,1) 0%, rgba(89,59,116,0) 100%);
+  background: linear-gradient(0deg, rgba(40,26,54,1) 0%, rgba(89,59,116,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#281a36",endColorstr="#593b74",GradientType=1);
+  display: block;
+  position: absolute;
+  height: 350px;
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.newsCaption {
+  position: absolute;
+  top: auto;
+  bottom: 31px;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  z-index: 10;
+  padding: 15px;
+  -webkit-transform: translateY(80%);
+  transform: translateY(80%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition:  -webkit-transform 0.4s;
+  transition:  -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s,  -webkit-transform 0.4s;
+}
+.newsCaption i{font-size: 24px;}
+
+.newsCaption-title {
+  margin-top: 0px;
+}
+.newsCaption-content {
+  margin: 0;
+}
+
+.newsCaption-link {
+  color: #fff;
+  text-decoration: underline;
+  opacity: .8;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+          transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+.news-Slide-up:hover .overlay{ background: rgb(64,10,111);
+background: -moz-linear-gradient(0deg, rgba(64,10,111,1) 0%, rgba(89,59,116,0) 100%);
+background: -webkit-linear-gradient(0deg, rgba(64,10,111,1) 0%, rgba(89,59,116,0) 100%);
+background: linear-gradient(0deg, rgba(64,10,111,1) 0%, rgba(89,59,116,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endColorstr="#593b74",GradientType=1);
+}
+
+.news-Slide-up:hover .newsCaption {
+
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition:  -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+
+
+.section .section-heading {
+  margin-bottom: 60px;
+}
+.section .wrapper .team-item {
+    align-items: end;
+    width: 100%;
+    margin: 0 auto;
+}
+.section .wrapper .team-item .col-7{
+  padding:0 100px 43px 70px
+}
+.section .wrapper .team-item .img {
+  object-fit: cover;
+}
+.section .wrapper .team-item .detail:hover .text-sm {
+  color: #000;
+}
+.section .wrapper .team-item .title-sm {
+  margin-bottom: 20px;
+}
+
+.section .main_slider.owl-carousel .owl-nav {
+  bottom: -11%;
+}
+
+.main_slider.owl-carousel .owl-nav {
+  position: absolute;
+  right: 0;
+  margin-top: 0;
+}
+.main_slider.owl-carousel .owl-nav .owl-next,
+.main_slider.owl-carousel .owl-nav .owl-prev {
+  border: 2px solid #0f2943;
+  border-radius: 2px;
+  padding: 15px !important;
+}
+.main_slider.owl-carousel .owl-nav .owl-next:hover,
+.main_slider.owl-carousel .owl-nav .owl-prev:hover {
+  background: transparent;
+  border-color: #7631b5eb;
+}
+.main_slider.owl-carousel .owl-nav .owl-next:hover span svg *,
+.main_slider.owl-carousel .owl-nav .owl-prev:hover span svg * {
+  fill: #7631b5eb;
+}
+.main_slider.owl-carousel .owl-nav .owl-next {
+  margin-left: 40px;
+}
+
+.owl-theme .owl-nav {
+  text-align: center;
+}
+
+.banner_arrow {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .main-heading {
+    text-align: center;
+  }
+
+  .main_slider.owl-carousel .owl-nav {
+    position: unset;
+    margin-top: 16px;
+  }
 }
