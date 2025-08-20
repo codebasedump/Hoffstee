@@ -22,5 +22,30 @@
     "summary": "Learn how to optimize your site for search engines and attract regional customers.",
     "url": "blog-posts/seo-tips.html",
     "content": "<p>If you're a regional business, SEO isn't optional — it's your lifeline to visibility. Here are five tips to help you rank locally:</p>\n<h2 id=\"1-use-local-keywords\">1. Use Local Keywords</h2>\n<p>Include your town, region, and service area in page titles and descriptions.</p>\n<h2 id=\"2-claim-your-google-business-profile\">2. Claim Your Google Business Profile</h2>\n<p>This boosts your presence in map results and local packs.</p>\n<h2 id=\"3-optimize-page-speed\">3. Optimize Page Speed</h2>\n<p>Fast-loading pages improve rankings and user experience.</p>\n<h2 id=\"4-get-local-backlinks\">4. Get Local Backlinks</h2>\n<p>Partner with nearby organizations, directories, and media outlets.</p>\n<h2 id=\"5-write-region-specific-content\">5. Write Region-Specific Content</h2>\n<p>Blog about local events, case studies, and customer stories.</p>"
+  },
+  {
+    "title": "Designing for Mobile-First: Lessons from iOS 26 and Android UX Trends",
+    "slug": "mobile-first-design",
+    "date": "2025-08-20",
+    "summary": "Learn how the latest mobile OS updates influence design choices and what regional businesses should prioritize for mobile accessibility and speed.",
+    "url": "blog-posts/mobile-first-design.html",
+    "content": "<p>As mobile usage continues to outpace desktop, designing for mobile-first is no longer a trend — it’s a necessity...</p>"
+  },
+  {
+    "title": "AI-Powered Personalization: What It Means for Regional Businesses",
+    "slug": "ai-personalisation",
+    "date": "2025-08-20",
+    "summary": "Explore how tools like Gemini and GPT-5 are reshaping customer experiences — and how small businesses can ethically adopt personalization without compromising privacy.",
+    "url": "blog-posts/ai-personalisation.html",
+    "content": "<p>Explore how tools like Gemini and GPT-5 are reshaping customer experiences — and how small businesses can ethically adopt personalization without compromising privacy.</p>"
+  },
+  {
+    "title": "The Rise of Ethical Automation in Content Publishing",
+    "slug": "ethical-automation",
+    "date": "2025-08-20",
+    "summary": "With AI tools evolving rapidly, this post explores how automation can support ethical storytelling, reduce burnout, and maintain brand integrity.",
+    "url": "blog-posts/ethical-automation.html",
+    "content": "<p>With AI tools evolving rapidly, this post explores how automation can support ethical storytelling, reduce burnout, and maintain brand integrity.</p>"
   }
+
 ]
