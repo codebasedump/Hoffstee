@@ -83,10 +83,11 @@ fs.readdirSync(postsDir).forEach(file => {
   fs.writeFileSync(path.join(outputDir, `${slug}.html`), finalHtml);
   console.log(`✅ Generated: ${slug}.html`);
 
-  // Add to sitemap
+  const formattedDate = new Date(data.date).toISOString().split('T')[0];
+
   sitemap += `  <url>\n`;
   sitemap += `    <loc>${baseUrl}${slug}.html</loc>\n`;
-  sitemap += `    <lastmod>${data.date}</lastmod>\n`;
+  sitemap += `    <lastmod>${formattedDate}</lastmod>\n`;
   sitemap += `    <changefreq>monthly</changefreq>\n`;
   sitemap += `    <priority>0.6</priority>\n`;
   sitemap += `  </url>\n`;
