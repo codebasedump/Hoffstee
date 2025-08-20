@@ -113,7 +113,14 @@
 	.featured-style3 {
     	background-image: none;
 	}
+	.hero{background-image: none}
 	
+}
+@media screen and (max-width: 700px){
+	.d-flex{display: block !important}	
+	.section .wrapper .team-item .col-md-7 {
+    	padding: 25px 0px;
+	}
 }
 
 @media screen and (max-width:600px) {

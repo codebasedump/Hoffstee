@@ -1,5 +1,5 @@
 const loadHeader = () => {
-    fetch('./header.html')
+    fetch('../header.html')
     .then(res => {
         return res.text()
     })
@@ -33,7 +33,7 @@ const loadHeader = () => {
     console.log('header');
 }
 const loadFooter = () => {
-    fetch('./footer.html')
+    fetch('../footer.html')
     .then(res => {
         return res.text();
     })
