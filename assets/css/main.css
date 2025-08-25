@@ -775,7 +775,7 @@ footer .container-fluid .copyrights {
 }
 
 .hero {
-	background-image: url(../..//assets/img/business/image_109.webp);
+	background-image: url(../..//assets/img/business/hero-background.webp);
 	background-size: 100% 100%;
 	width: 100%;
 	padding: 160px 0 80px;
@@ -1709,14 +1709,14 @@ figure.snip0016 h2 span {
 }
 
 .contact_banner {
-	background-image: url(../..//assets/img/business/image_139.png);
+	background-image: url(../..//assets/img/business/contact-banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
 }
 
 .contact {
-	background-image: url(../..//assets/img/business/image_109.webp);
+	background-image: url(../..//assets/img/business/hero-background.webp);
 	background-size: contain
 }
 
@@ -2310,7 +2310,7 @@ ul.card-list {
 }
 
 .services_webdevelopment {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/image_70.webp) center/cover;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/service-webdev.webp) center/cover;
 	width: 100%;
 	height: auto
 }
@@ -2541,7 +2541,7 @@ figure.snip0016 a {
 }
 
 .aboutus_banner {
-	background: url(../..//assets/img/business/image_84.webp) right center/cover no-repeat;
+	background: url(../..//assets/img/business/aboutus-banner.webp) right center/cover no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	text-align: center;
@@ -2890,30 +2890,41 @@ figure.snip0016:hover figcaption::before {
 }
 
 .uiux_services {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/image_97.webp) center/cover;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/design-approach.webp) center/cover;
 	width: 100%;
 	height: auto
 }
 
 .services_branding {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/image_105.webp) center/cover;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/reliability.webp) center/cover;
 	width: 100%;
 	height: auto
 }
 
 .services_graphicsdesign {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/image_104.webp) center/cover;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/design-impression.webp) center/cover;
 	width: 100%;
 	height: auto
 }
 
+.blog_banner {
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/blog-banner.jpg) center/cover;
+	width: 100%;
+	height: auto
+}
+
+.blog_details_banner {
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/blog-details-banner.jpg) center/cover;
+	width: 100%;
+	height: auto
+}
 .ourproject.ourproject_services {
 	background-image: none
 }
 
 
 .services_seoagency {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/image_111.webp) center/cover;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center/cover, url(../..//assets/img/business/seo-agency.webp) center/cover;
 	width: 100%;
 	height: auto
 }
@@ -2926,13 +2937,13 @@ figure.snip0016:hover figcaption::before {
 }
 
 .services_paidmedia {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center, url(../..//assets/img/business/image_115.webp) center;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 81%) 42%, #21252900 100%) center, url(../..//assets/img/business/cost-per-conversion.webp) center;
 	width: 100%;
 	height: auto
 }
 
 .services_socialmedia {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 52%) 42%, #0f2943 100%) center/cover, url(../..//assets/img/business/image_129.webp) center/cover;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 52%) 42%, #0f2943 100%) center/cover, url(../..//assets/img/business/services-socialmedia.webp) center/cover;
 	width: 100%;
 	height: auto
 }
@@ -3162,13 +3173,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endCo
 
 /*Blog*/
 
-.blog_banner {
-	background-image: url(../..//assets/img/business/blog_banner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-}
-
 
 /*--------------------------------------------------------------
 # Page Title & Breadcrumbs
@@ -3190,12 +3194,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endCo
   color: var(--color-secondary);
 }
 
-.page-title nav {
+.breadcrumbs nav {
   background-color: #c7c7c730;
   padding: 20px 0;
 }
 
-.page-title nav ol {
+.breadcrumbs nav ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -3204,11 +3208,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endCo
   font-weight: 600;
 }
 
-.page-title nav ol li+li {
+.breadcrumbs nav ol li+li {
   padding-left: 10px;
 }
 
-.page-title nav ol li+li::before {
+.breadcrumbs nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -3246,7 +3250,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endCo
   font-weight: 500;
   color: #fff;
   border: 2px solid #2c3e50;
-  background-color: #2c3e50;
+  background-color: #2e1fb6;
   border-radius: 0;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -3318,4 +3322,50 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endCo
 .blog-post .content ol li::marker {
   font-weight: bold;
   color: #2c3e50;
+}
+
+.blog-subscribe {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #a7bcc773;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.blog-subscribe h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-subscribe form input {
+  width: 80%;
+  margin: 0.5rem auto;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: block;
+}
+
+.blog-subscribe form button {
+  background-color: #0078D4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.subscribe-status {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: green;
+  text-align: center;
+}
+.subscribe-status.error {
+  color: #d93025;
+}
+
+#pagination button {
+  min-width: 40px;
 }

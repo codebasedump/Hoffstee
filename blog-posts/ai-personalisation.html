@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>AI-Powered Personalization. What It Means for Regional Businesses | Hoffstee Blog</title>
   <meta name="description" content="Explore how tools like Gemini and GPT-5 are reshaping customer experiences — and how small businesses can ethically adopt personalization without compromising privacy." />
   <meta name="keywords" content="AI, personalization, ethical tech, customer experience, Hoffstee">
@@ -110,43 +111,39 @@
     </div>
     <!-- Preloader End -->
     <!--=======Header=======-->
-    <header id="header" class="header fixed-top d-flex align-items-center"> </header>
+    <header id="header" class="header header_common fixed-top d-flex align-items-center"> </header>
     <!-- End Header -->
     
     
-    <main class="container">
+    <main id="main">
       <!-- Blog Section - Home Page -->
-          <section id="blog_banner" class="page-title">
-            <div>
+          <section id="blog_banner" class="service_banner blog_details_banner page-title">
+
+             <div class="container">
                <div class="row">
                   <div class="col-md-12">
-                     <div class="heading">
-                        <div class="container">
-                           <div class="row d-flex justify-content-center text-center">
-                              <div class="col-lg-8">
-                              <h1>Blog Details</h1>
-                              <h4 class="home_headertext mt-3">Real Talk on Regional Digital Growth</h4>
-                              <p class="mt-3">Whether you're starting fresh or scaling big, Hoffstee is here to share strategies, stories, and solutions. Our blog explores ethical design, digital growth, and the power of local impact crafted for businesses across regional Australia.</p>
-                              </div>
-                           </div>
-                        </div>
-                  </div>
+                     <div class="home_head mb-4 mt-4">
+                        <p class="home_headertext homeheading">Blog Details</p>
+                     </div>
+                     <p>Whether you're starting fresh or scaling big, Hoffstee is here to share strategies, stories, and solutions. Our blog explores ethical design, digital growth, and the power of local impact crafted for businesses across regional Australia.</p>
                   </div>
                </div>
-              
             </div>
-         </section>
 
-        <article class="blog-post mb-4" role="article" aria-labelledby="post-title">
-          <div>
-            <h1 id="post-title">AI-Powered Personalization. What It Means for Regional Businesses</h1>
-            <p><time datetime="Wed Aug 20 2025 10:00:00 GMT+1000 (Australian Eastern Standard Time)">Wed Aug 20 2025 10:00:00 GMT+1000 (Australian Eastern Standard Time)</time></p>
-          </div>
-          <div class="summary">
-            <p>Explore how tools like Gemini and GPT-5 are reshaping customer experiences — and how small businesses can ethically adopt personalization without compromising privacy.</p>
-          </div>
-          <div class="content">
-            <p>As AI tools like Gemini and GPT-5 become more advanced, personalization is no longer reserved for enterprise giants. Regional businesses now have access to powerful technologies that can tailor customer experiences in real time — from dynamic content to predictive recommendations. But with this power comes a responsibility: to use personalization ethically, transparently, and in ways that build trust.</p>
+           
+         </section>
+        <section>
+          <div class="container">
+            <article class="blog-post mb-4" role="article" aria-labelledby="post-title">
+              <div>
+                <h1 id="post-title">AI-Powered Personalization. What It Means for Regional Businesses</h1>
+                <p><time datetime="Wed Aug 20 2025 10:00:00 GMT+1000 (Australian Eastern Standard Time)">Wed Aug 20 2025 10:00:00 GMT+1000 (Australian Eastern Standard Time)</time></p>
+              </div>
+              <div class="summary">
+                <p>Explore how tools like Gemini and GPT-5 are reshaping customer experiences — and how small businesses can ethically adopt personalization without compromising privacy.</p>
+              </div>
+              <div class="content">
+                <p>As AI tools like Gemini and GPT-5 become more advanced, personalization is no longer reserved for enterprise giants. Regional businesses now have access to powerful technologies that can tailor customer experiences in real time — from dynamic content to predictive recommendations. But with this power comes a responsibility: to use personalization ethically, transparently, and in ways that build trust.</p>
 <p>At Hoffstee, we believe that small businesses deserve smart tools that respect user privacy and reflect authentic brand values. This post explores what AI-powered personalization means, how it can be applied locally, and how to balance automation with transparency.</p>
 <h2 id="🧠-what-is-ai-personalization">🧠 What Is AI Personalization?</h2>
 <p>AI personalization uses machine learning and natural language processing to deliver tailored experiences based on user behavior, preferences, and context. It can include:</p>
@@ -189,11 +186,31 @@
 <p>AI-powered personalization can help regional businesses compete with larger brands — but only if it’s done with care. At Hoffstee, we help small businesses build customer experiences that are smart, respectful, and deeply human.</p>
 <p>Curious how personalization could work for your business without compromising trust? Let’s explore it together.</p>
 
+              </div>
+            </article>
+
+            <!-- 🔔 Subscription Form Starts Here -->
+            <section class="blog-subscribe mt-5">
+              <h3>Stay Ahead with Hoffstee Insights</h3>
+              <p>Subscribe to receive the latest trends, strategies, and ethical tech updates.</p>
+
+              <form id="subscribe-form" class="mt-4">
+                <input type="text" name="subscriber_name" placeholder="Your Name" required />
+                <input type="email" name="subscriber_email" placeholder="Your Email" required class="mt-4"/>
+                <input type="text" name="title" value="AI-Powered Personalization. What It Means for Regional Businesses" hidden />
+                <button type="submit">Subscribe</button>
+              </form>
+              <!-- ✅ Inline message container -->
+              <div id="subscribe-status" class="subscribe-status"></div>
+
+            </section>
+            <!-- 🔔 Subscription Form Ends Here -->
+
+
           </div>
-        </article>
+        </section>
 
     </main>
-  
   
   <!--=======Footer=======-->
     <footer id="footer" class="footer"></footer>
@@ -217,6 +234,7 @@
     </script>
     <script type="text/javascript" src="../assets/js/main.js">
     </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!-- End -->
 
      <!-- Google Tag Manager (noscript) -->
@@ -226,5 +244,32 @@
       </iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+      (function() {
+        emailjs.init("POQ7mudMGX4SBTua-"); // Replace with your actual EmailJS user ID
+      })();
+
+      document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("subscribe-form");
+      const status = document.getElementById("subscribe-status");
+
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          emailjs.sendForm("default_service", "template_mcmq9kg", this)
+            .then(() => {
+              status.textContent = "Subscribed successfully! Thank you.";
+              form.reset();
+            })
+            .catch((err) => {
+              status.textContent = "Subscription failed. Please try again.";
+              status.classList.add("error");
+              console.error("Subscription error:", err);
+            });
+        });
+      }
+    });
+    </script>
 </body>
 </html>
