@@ -1708,13 +1708,6 @@ figure.snip0016 h2 span {
 	color: var(--button-color) !important
 }
 
-.contact_banner {
-	background-image: url(../..//assets/img/business/contact-banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-}
-
 .contact {
 	background-image: url(../..//assets/img/business/hero-background.webp);
 	background-size: contain
@@ -2532,7 +2525,7 @@ figure.snip0016 a {
 }
 
 .contact_banner {
-	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 45%) 42%, #000000e8 100%) center / cover, url(../..//assets/img/business/image_139.png) center / cover;
+	background: linear-gradient(205deg, #0f2943 0, rgb(15 41 67 / 45%) 42%, #000000e8 100%) center / cover, url(../..//assets/img/business/contact-banner.png) center / cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	text-align: center;
