@@ -2,4 +2,3 @@ User-agent: *
 Disallow:
 
 Sitemap: https://hoffstee.com.au/sitemap.xml
-
