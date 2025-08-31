@@ -77,93 +77,83 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Hoffstee",
-        "url": "https://hoffstee.com.au/",
-        "logo": "https://hoffstee.com.au/assets/img/Logo_hoffstee.png",
-        "description": "Hoffstee is a purpose-led digital agency based in Leeton, NSW, delivering ethical and scalable solutions across Australia. Our offerings include web design and development, SEO optimization, eCommerce platforms, accessibility-first UX, voice navigation, and AI-powered workflows. We specialize in thoughtful branding and structured data strategies that empower businesses and communities alike.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Hoffstee"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+61-475851245",
-          "contactType": "customer support"
-        },
-        "sameAs": ["https://www.linkedin.com/company/hoffstee", "https://www.instagram.com/hoffsteee", "https://www.facebook.com/Hoffstee/"]
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Hoffstee",
+            "url": "https://hoffstee.com.au/",
+            "logo": "https://hoffstee.com.au/assets/img/Logo_hoffstee.png",
+            "description": "Hoffstee is a purpose-led digital agency based in Leeton, NSW, delivering ethical and scalable solutions across Australia. Our offerings include web design and development, SEO optimization, eCommerce platforms, accessibility-first UX, voice navigation, and AI-powered workflows.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Hoffstee"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+61-475851245",
+              "contactType": "customer support"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/hoffstee",
+              "https://www.instagram.com/hoffsteee",
+              "https://www.facebook.com/Hoffstee/"
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://hoffstee.com.au/#local",
+            "name": "Hoffstee",
+            "image": "https://hoffstee.com.au/assets/img/Logo_hoffstee.png",
+            "url": "https://hoffstee.com.au/",
+            "telephone": "+61-475851245",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "U 4 10 Cypress Street",
+              "addressLocality": "Leeton",
+              "addressRegion": "NSW",
+              "postalCode": "2705",
+              "addressCountry": "AU"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "08:00",
+              "closes": "18:00"
+            },
+            "areaServed": [
+              { "@type": "Place", "name": "Leeton" },
+              { "@type": "Place", "name": "Griffith" },
+              { "@type": "Place", "name": "Wagga Wagga" },
+              { "@type": "Place", "name": "Shepparton" },
+              { "@type": "Place", "name": "Canberra" },
+              { "@type": "Place", "name": "Sydney" },
+              { "@type": "Place", "name": "Melbourne" }
+            ]
+          },
+          {
+            "@type": "Service",
+            "serviceType": "Ethical Web Design & SEO",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Hoffstee",
+              "url": "https://hoffstee.com.au"
+            },
+            "areaServed": {
+              "@type": "Place",
+              "name": "Australia"
+            },
+            "description": "We provide ethical web design, SEO optimization, and scalable publishing solutions for regional businesses."
+          }
+        ]
       }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Hoffstee",
-        "@id": "https://hoffstee.com.au/",
-        "image": "https://hoffstee.com.au/assets/img/Logo_hoffstee.png",
-        "url": "https://hoffstee.com.au/",
-        "telephone": "+61-475851245",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Cypress Street",
-          "addressLocality": "Leeton",
-          "addressRegion": "NSW",
-          "postalCode": "2705",
-          "addressCountry": "AU"
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "08:00",
-          "closes": "18:00"
-        },
-        "areaServed": [{
-          "@type": "Place",
-          "name": "Leeton"
-        },
-        {
-          "@type": "Place",
-          "name": "Griffith"
-        },
-        {
-          "@type": "Place",
-          "name": "Wagga Wagga"
-        },
-        {
-          "@type": "Place",
-          "name": "Shepparton"
-        },
-        {
-          "@type": "Place",
-          "name": "Canberra"
-        },
-        {
-          "@type": "Place",
-          "name": "Sydney"
-        },
-        {
-          "@type": "Place",
-          "name": "Melbourne"
-        }]
-      }
-    </script>
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Ethical Web Design & SEO",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Hoffstee",
-          "url": "https://hoffstee.com.au"
-        },
-        "areaServed": {
-          "@type": "Place",
-          "name": "Australia"
-        },
-        "description": "We provide ethical web design, SEO optimization, and scalable publishing solutions for regional businesses."
-      }
-    </script>
+      </script>
   </head>
   
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -241,33 +231,33 @@
                   Hoffstee is a Leeton-based web design and SEO agency serving small businesses and care providers across regional NSW. Our in-house team of brand specialists, designers, and developers craft scalable, conversion-focused websites tailored for the Riverina community.
                 </p>
               </div>
-              <div class="col-md-6 external desktop" data-aos="fade-left" data-aos-delay="500">
-                <div class="home_rightpanel horizontal-scroll-wrapper ">
-                  <div class="img-wrapper banner_right01 slower">
-                    <img src="assets/img/business/home-banner.webp" alt="">
-                  </div>
-                  <div class="img-wrapper banner_right02 faster">
-                    <img src="assets/img/business/home-banner1.webp" alt="">
-                  </div>
-                  <div class="img-wrapper banner_right03 slower vertical">
-                    <img src="assets/img/business/home-banner2.webp" alt="">
-                  </div>
-                  <div class="img-wrapper banner_right04 slower slower-down">
-                    <img src="assets/img/business/home-banner3.webp" alt="">
-                  </div>
-                  <div class="img-wrapper banner_right05 slower last">
-                    <img src="assets/img/business/home-banner4.webp" alt="">
-                  </div>
-                  <div class="img-wrapper banner_right06 slower last">
-                    <img src="assets/img/business/whatsnew.webp" alt="">
-                  </div>
-                  <div class="img-wrapper banner_right07 slower last">
-                    <img src="assets/img/business/whatsnow.webp" alt="">
-                  </div>
-                </div>
-              </div>
+             <div class="col-md-6 external desktop" data-aos="fade-left" data-aos-delay="500">
+                        <div class="home_rightpanel horizontal-scroll-wrapper ">
+                           <div class="img-wrapper banner_right01 slower">
+                              <img src="assets/img/business/home-banner.webp" alt="pointing to some design approach">
+                           </div>
+                           <div class="img-wrapper banner_right02 faster">
+                              <img src="assets/img/business/home-banner1.webp" alt="sydney opera house design">
+                           </div>
+                           <div class="img-wrapper banner_right03 slower vertical">
+                              <img src="assets/img/business/home-banner2.webp" alt="bringing the new technology ideas">
+                           </div>
+                           <div class="img-wrapper banner_right04 slower slower-down">
+                              <img src="assets/img/business/home-banner3.webp" alt="multiple cultural design pattern">
+                           </div>
+                           <div class="img-wrapper banner_right05 slower last">
+                              <img src="assets/img/business/home-banner4.webp" alt="traditional for indian cultural design">
+                           </div>
+                           <div class="img-wrapper banner_right06 slower last">
+                              <img src="assets/img/business/whatsnew.webp" alt="whats new">
+                           </div>
+                           <div class="img-wrapper banner_right07 slower last">
+                              <img src="assets/img/business/whatsnow.webp" alt="whats now">
+                           </div>
+                        </div>   
+                     </div>
               <div class="col-md-6 mobile">
-                <img src="assets/img/business/homebanner-mobile.webp" alt="">
+                <img src="assets/img/business/homebanner-mobile.webp" alt="home banner mobile">
               </div>
             </div>
           </div>
@@ -326,7 +316,7 @@
               </div>
             </div>
             <img src="assets/img/business/company-profile.webp" class="img-fluid round_about"
-            alt="">
+            alt="Hoffstee play show">
           </div>
         </section>
         <!-- End About Section -->
@@ -507,7 +497,7 @@
               <div class="col-md-1 services_talkbtn">
                 <div class="headert_talkexpert_btn">
                   <a href="contact.html" class="getintouch home_headertext button_navigate"
-                  aria-label="Redirect to Contact">
+                  aria-label="redirect to contact">
                     <div class="qube">
                       <div class="front">
                         Get in touch
@@ -1007,7 +997,7 @@
                       convert visitors into customers.
                     </p>
                     <div class="view-all">
-                      <a href="services-webdevelopment.html">
+                      <a href="services-webdevelopment.html" aria-label="read more about Website Development">
                         READ MORE
                       </a>
                     </div>
@@ -1018,7 +1008,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="icon">
-                       <img src="assets/img/business/graphicsdesign_icon.gif" alt="Graphic Design & Branding">
+                       <img src="assets/img/business/graphicsdesign_icon.gif" alt="graphic design & branding">
                     </div>
                     <h3 class="card-title">
                       Graphic Design & Branding
@@ -1028,7 +1018,7 @@
                       thats ethical, expressive.
                     </p>
                     <div class="view-all">
-                      <a href="services-graphicdesign.html">
+                      <a href="services-graphicdesign.html" aria-label="read more about graphic design branding">
                         READ MORE
                       </a>
                     </div>
@@ -1039,7 +1029,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="icon">
-                      <img src="assets/img/business/customapp_icon.gif" alt="Custom Web Applications">
+                      <img src="assets/img/business/customapp_icon.gif" alt="custom web applications">
                     </div>
                     <h3 class="card-title">
                       Custom Web Applications
@@ -1049,7 +1039,7 @@
                       and scale with your growth.
                     </p>
                     <div class="view-all">
-                      <a href="services-ui.html">
+                      <a href="services-ui.html" aria-label="read more about custom web applications">
                         READ MORE
                       </a>
                     </div>
@@ -1060,7 +1050,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="icon">
-                      <img src="assets/img/business/seo_icon.gif" alt="SEO Agency">
+                      <img src="assets/img/business/seo_icon.gif" alt="SEO agency">
                     </div>
                     <h3 class="card-title">
                       SEO Agency
@@ -1070,7 +1060,7 @@
                       with ethical digital strategies that work.
                     </p>
                     <div class="view-all">
-                      <a href="services-seo-agency.html">
+                      <a href="services-seo-agency.html" aria-label="read more about SEO agency">
                         READ MORE
                       </a>
                     </div>
@@ -1081,7 +1071,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="icon">
-                      <img src="assets/img/business/socialmedia_icon.gif" alt="Social Media Marketing">
+                      <img src="assets/img/business/socialmedia_icon.gif" alt="social media marketing">
                     </div>
                     <h3 class="card-title">
                       Social Media Marketing
@@ -1091,7 +1081,7 @@
                       audience, engage with trust, and build long-term success.
                     </p>
                     <div class="view-all">
-                      <a href="services-socialmedia.html">
+                      <a href="services-socialmedia.html" aria-label="read more about social media marketing">
                         READ MORE
                       </a>
                     </div>
@@ -1102,7 +1092,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="icon">
-                      <img src="assets/img/business/webhostingandmaintance-icon.gif" alt="Web Hosting & Maintenance">
+                      <img src="assets/img/business/webhostingandmaintance-icon.gif" alt="web hosting & maintenance">
                     </div>
                     <h3 class="card-title">
                       Web Hosting & Maintenance
@@ -1112,7 +1102,7 @@
                       all powered by Hoffstee.
                     </p>
                     <div class="view-all">
-                      <a href="services-webdevelopment.html">
+                      <a href="services-webdevelopment.html" aria-label="read more about web hosting & maintenance">
                         READ MORE
                       </a>
                     </div>
@@ -1142,7 +1132,7 @@
                 </div>
                 <div class="read-more">
                   <div class="view-all">
-                    <a href="about.html">
+                    <a href="about.html" aria-label="read more about Our features">
                       READ MORE
                     </a>
                   </div>
@@ -1152,9 +1142,9 @@
             <div class="row mt-5">
               <!-- CARD 1-->
               <div class="col-lg-3">
-                <a href='about.html' class="url-box">
+              
                   <figure class='newsCard news-Slide-up '>
-                    <img src="assets/img/business/topnotchquality.webp" />
+                    <img src="assets/img/business/topnotchquality.webp" alt="top notch quality"/>
                     <div class='newsCaption px-3'>
                       <div class="d-flex align-items-center justify-content-between cnt-title">
                         <h3 class='newsCaption-title text-white m-0'>
@@ -1173,14 +1163,14 @@
                     <span class="overlay">
                     </span>
                   </figure>
-                </a>
+               
               </div>
               <!-- end card1-->
               <!-- CARD 2-->
               <div class="col-lg-3">
-                <a href='about.html' class="url-box">
+                
                   <figure class='newsCard news-Slide-up '>
-                    <img src="assets/img/business/fastturnaround.jpg" />
+                    <img src="assets/img/business/fastturnaround.jpg" alt="fast turnarounds"/>
                     <div class='newsCaption px-3'>
                       <div class="d-flex align-items-center justify-content-between cnt-title">
                         <h3 class='newsCaption-title text-white m-0'>
@@ -1199,14 +1189,14 @@
                     <span class="overlay">
                     </span>
                   </figure>
-                </a>
+                
               </div>
               <!-- end card2-->
               <!-- CARD 3-->
               <div class="col-lg-3">
-                <a href='about.html' class="url-box">
+                
                   <figure class='newsCard news-Slide-up '>
-                    <img src="assets/img/business/reliability.webp" />
+                    <img src="assets/img/business/reliability.webp" alt="reliability & flexibility"/>
                     <div class='newsCaption px-3'>
                       <div class="d-flex align-items-center justify-content-between cnt-title">
                         <h3 class='newsCaption-title text-white m-0'>
@@ -1225,14 +1215,14 @@
                     <span class="overlay">
                     </span>
                   </figure>
-                </a>
+                
               </div>
               <!-- end card3-->
               <!-- CARD 3-->
               <div class="col-lg-3">
-                <a href='about.html' class="url-box">
+               
                   <figure class='newsCard news-Slide-up '>
-                    <img src="assets/img/business/reasonablepricing.webp" />
+                    <img src="assets/img/business/reasonablepricing.webp" alt="resonable pricing"/>
                     <div class='newsCaption px-3'>
                       <div class="d-flex align-items-center justify-content-between cnt-title">
                         <h3 class='newsCaption-title text-white m-0'>
@@ -1251,7 +1241,7 @@
                     <span class="overlay">
                     </span>
                   </figure>
-                </a>
+               
               </div>
               <!-- end card3-->
             </div>
@@ -1286,7 +1276,7 @@
               <div class="item">
                 <div class="team-item d-flex">
                   <div class="col-12 col-md-5">
-                    <img src="assets/img/business/artisan-furniture.png" class="img mx-auto" alt=""
+                    <img src="assets/img/business/artisan-furniture.png" class="img mx-auto" alt="artisan furniture"
                     />
                   </div>
                   <div class="col-12 col-md-7">
@@ -1305,7 +1295,7 @@
               <div class="item">
                 <div class="team-item d-flex">
                   <div class="col-12 col-md-5">
-                    <img src="assets/img/business/vignesh-agro-products.png" class="img mx-auto" alt=""
+                    <img src="assets/img/business/vignesh-agro-products.png" class="img mx-auto" alt="vignesh agro products"
                     />
                   </div>
                   <div class="col-12 col-md-7">
@@ -1327,7 +1317,7 @@
               <div class="item">
                 <div class="team-item d-flex">
                   <div class="col-12 col-md-5">
-                    <img src="assets/img/business/zestechno.png" class="img mx-auto" alt=""
+                    <img src="assets/img/business/zestechno.png" class="img mx-auto" alt="zestechno"
                     />
                   </div>
                   <div class="col-12 col-md-7">
@@ -1349,7 +1339,7 @@
               <div class="item">
                 <div class="team-item d-flex">
                   <div class="col-12 col-md-5">
-                    <img src="assets/img/business/nstarx.png" class="img mx-auto" alt=""
+                    <img src="assets/img/business/nstarx.png" class="img mx-auto" alt="nstarx"
                     />
                   </div>
                   <div class="col-12 col-md-7">
@@ -1391,58 +1381,58 @@
                   <div class="text-center clientslide_right">
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/zestechno-logo.webp" alt="">
+                        <img src="assets/img/business/zestechno-logo.webp" alt="Zestechno">
                       </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/space-cafe.webp" alt="">
+                        <img src="assets/img/business/space-cafe.webp" alt="space cafe">
                        </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/pure-organic.webp" alt="">
+                        <img src="assets/img/business/pure-organic.webp" alt="pure organic">
                       </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/lamma.webp" alt="">
+                        <img src="assets/img/business/lamma.webp" alt="lamma">
                       </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/vineshagroproductslogo.png" alt="">
+                        <img src="assets/img/business/vineshagroproductslogo.png" alt="vineshagroproducts">
                       </figure>
                     </div>
                   </div>
                   <div class="text-center clientslide_right">
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/zestechno-logo.webp" alt=""
+                        <img src="assets/img/business/zestechno-logo.webp" alt="zestechno logo"
                         />
                       </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/space-cafe.webp" alt=""
+                        <img src="assets/img/business/space-cafe.webp" alt="space cafe logo"
                         />
                       </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/pure-organic.webp" alt=""
+                        <img src="assets/img/business/pure-organic.webp" alt="pure organic logo"
                         />
                       </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/lamma.webp" alt=""
+                        <img src="assets/img/business/lamma.webp" alt="lamma logo"
                         />
                       </figure>
                     </div>
                     <div class="client_image">
                       <figure>
-                        <img src="assets/img/business/vineshagroproductslogo.png" alt=""
+                        <img src="assets/img/business/vineshagroproductslogo.png" alt="vineshagroproducts logo"
                         />
                       </figure>
                     </div>
@@ -1640,7 +1630,7 @@
     <!-- End Footer -->
     <!-- Scroll Top Button -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
-    aria-label="Scroll Down">
+    aria-label="scroll up">
       <i class="bi bi-arrow-up-short">
       </i>
     </a>
