@@ -85,6 +85,8 @@ fs.readdirSync(postsDir).forEach(file => {
 
   const formattedDate = new Date(data.date).toISOString().split('T')[0];
 
+
+
   sitemap += `  <url>\n`;
   sitemap += `    <loc>${baseUrl}${slug}.html</loc>\n`;
   sitemap += `    <lastmod>${formattedDate}</lastmod>\n`;
