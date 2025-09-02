@@ -52,8 +52,7 @@ AI is no longer just for tech giants. In 2025, it's reshaping how small and regi
 
 Explore AI-powered solutions with Hoffstee and future-proof your business.
 
-👉 **Book a free consult**  
-📥 **Download our checklist**: *“Is Your Business AI-Ready?”*
+👉 **Book a free consult** 
 
 ---
 
