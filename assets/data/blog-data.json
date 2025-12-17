@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Automating Content Publishing with Node.js",
+    "slug": "automation-content",
+    "date": "2025-08-25",
+    "summary": "Discover how to streamline your blog workflow using Markdown and scripting.",
+    "url": "blog-posts/automation-content.html",
+    "content": "<p>Automation is the key to scaling content without burning out. At Hoffstee, we use Node.js to convert Markdown into SEO-friendly HTML, update listings, and publish with a single command.</p>\n<h2 id=\"why-it-works\">Why It Works</h2>\n<ul>\n<li>Reduces manual repetition</li>\n<li>Keeps formatting consistent</li>\n<li>Supports future growth</li>\n</ul>\n<h2 id=\"how-to-get-started\">How to Get Started</h2>\n<ol>\n<li>Write your post in Markdown</li>\n<li>Run the generator script</li>\n<li>Push to GitHub — done!</li>\n</ol>"
+  },
+  {
+    "title": "Ethical Design for Regional Businesses",
+    "slug": "ethical-design",
+    "date": "2025-08-19",
+    "summary": "Explore how thoughtful design choices build trust and impact for small businesses in NSW.",
+    "url": "blog-posts/ethical-design.html",
+    "content": "<p>In regional Australia, ethical design isn’t just a buzzword—it’s a business imperative...</p>\n<h2 id=\"why-it-matters\">Why It Matters</h2>\n<p>Design choices affect how users perceive your values...</p>"
+  },
+  {
+    "title": "SEO Tips for Local Visibility",
+    "slug": "seo-tips",
+    "date": "2025-08-22",
+    "summary": "Learn how to optimize your site for search engines and attract regional customers.",
+    "url": "blog-posts/seo-tips.html",
+    "content": "<p>If you're a regional business, SEO isn't optional — it's your lifeline to visibility. Here are five tips to help you rank locally:</p>\n<h2 id=\"1-use-local-keywords\">1. Use Local Keywords</h2>\n<p>Include your town, region, and service area in page titles and descriptions.</p>\n<h2 id=\"2-claim-your-google-business-profile\">2. Claim Your Google Business Profile</h2>\n<p>This boosts your presence in map results and local packs.</p>\n<h2 id=\"3-optimize-page-speed\">3. Optimize Page Speed</h2>\n<p>Fast-loading pages improve rankings and user experience.</p>\n<h2 id=\"4-get-local-backlinks\">4. Get Local Backlinks</h2>\n<p>Partner with nearby organizations, directories, and media outlets.</p>\n<h2 id=\"5-write-region-specific-content\">5. Write Region-Specific Content</h2>\n<p>Blog about local events, case studies, and customer stories.</p>"
+  },
+  {
+    "title": "Designing for Mobile-First: Lessons from iOS 26 and Android UX Trends",
+    "slug": "mobile-first-design",
+    "date": "2025-08-20",
+    "summary": "Learn how the latest mobile OS updates influence design choices and what regional businesses should prioritize for mobile accessibility and speed.",
+    "url": "blog-posts/mobile-first-design.html",
+    "content": "<p>As mobile usage continues to outpace desktop, designing for mobile-first is no longer a trend — it’s a necessity...</p>"
+  },
+  {
+    "title": "AI-Powered Personalization: What It Means for Regional Businesses",
+    "slug": "ai-personalisation",
+    "date": "2025-08-20",
+    "summary": "Explore how tools like Gemini and GPT-5 are reshaping customer experiences — and how small businesses can ethically adopt personalization without compromising privacy.",
+    "url": "blog-posts/ai-personalisation.html",
+    "content": "<p>Explore how tools like Gemini and GPT-5 are reshaping customer experiences — and how small businesses can ethically adopt personalization without compromising privacy.</p>"
+  },
+  {
+    "title": "The Rise of Ethical Automation in Content Publishing",
+    "slug": "ethical-automation",
+    "date": "2025-08-20",
+    "summary": "With AI tools evolving rapidly, this post explores how automation can support ethical storytelling, reduce burnout, and maintain brand integrity.",
+    "url": "blog-posts/ethical-automation.html",
+    "content": "<p>With AI tools evolving rapidly, this post explores how automation can support ethical storytelling, reduce burnout, and maintain brand integrity.</p>"
+  },
+  {
+    "title": "AI Trends in 2025: What Regional Businesses Must Know",
+    "slug": "ai-trends-2025",
+    "date": "2025-08-25",
+    "summary": "Explore the top AI trends shaping business in 2025 — from smarter NLP to ethical automation — and how regional businesses can stay ahead.",
+    "url": "blog-posts/ai-trends-2025.html",
+    "content": "<p>Artificial Intelligence is no longer a futuristic concept — it’s the engine driving modern business. In 2025, regional businesses are embracing AI to streamline operations, personalize customer experiences, and stay competitive.</p><p><strong>1. Small Business AI Adoption Is Surging</strong><br>AI tools are now accessible to small teams. From automated scheduling to intelligent content creation, businesses are reporting 85% higher sales, 84% higher profits, and 82% workforce growth.</p><p><strong>2. Smarter Machine Learning</strong><br>Technologies like transfer learning and federated learning are enabling more accurate predictions with less data. Ethical use of ML helps businesses optimize without compromising privacy.</p><p><strong>3. NLP Gets More Human</strong><br>Tools like GPT-5 and Gemini are powering chatbots, virtual assistants, and content engines that understand nuance and context better than ever.</p><p><strong>4. AI-Driven Marketing</strong><br>AI personalization boosts ROI by 10–30%. Platforms like HubSpot and Salesforce now offer real-time campaign insights tailored to customer behavior.</p><p><strong>5. Tools to Watch</strong><br>Google Gemini for memory-based personalization, X’s Grok “Imagine” for animated content, and Oracle Cloud + Google AI for scalable infrastructure.</p><p><strong>Final Thought:</strong> AI is a strategic advantage. Regional businesses that adopt it ethically and creatively will lead the next wave of digital transformation.</p>"
+  },
+  {
+    "title": "Automating SEO Health Checks for Regional Businesses",
+    "slug": "automated-seo-health-checks",
+    "date": "2025-08-31",
+    "summary": "Discover how Hoffstee uses Node.js and n8n to automate SEO audits—ensuring faster indexing, cleaner metadata, and better visibility for ethical regional brands.",
+    "url": "blog-posts/automated-seo-health-checks.html",
+    "content": "<p>SEO is no longer just about keywords—it's about maintaining a healthy, structured site that search engines trust. At Hoffstee, we’ve built automated workflows using Node.js and n8n to proactively monitor broken links, validate structured data, and optimize metadata.</p><p><strong>Why Automate SEO?</strong><br>Manual audits are slow and reactive. Automation allows for scheduled checks, real-time alerts, and consistent improvements—without the burnout.</p><p><strong>Our Stack</strong><br>We use Node.js scripts to crawl site health, validate Open Graph tags, and check heading hierarchy. n8n triggers these audits weekly or after each blog publish, pushing results to GitHub or Slack.</p><p><strong>Ethical SEO</strong><br>We prioritize accessibility, transparency, and local relevance. Our audits help regional businesses stay visible without chasing trends or compromising values.</p><p><strong>Final Thought:</strong> Automation isn’t just efficient—it’s empowering. With the right tools, regional businesses can maintain SEO excellence and focus on what matters most: serving their communities.</p>"
+  },
+  {
+    "title": "AI in 2025: What Regional Businesses Must Know to Stay Ahead",
+    "slug": "ai-2025-regional-business-trends",
+    "date": "2025-09-03",
+    "summary": "Explore the top AI trends transforming regional businesses in 2025—from multimodal tools to predictive analytics—and how Hoffstee empowers ethical, scalable adoption.",
+    "url": "blog-posts/ai-2025-regional-business-trends.html",
+    "content": "<p>AI is no longer just for tech giants. In 2025, it's reshaping how small and regional businesses operate, compete, and grow. This blog helps readers understand the latest AI trends, how they apply locally, and how Hoffstee is guiding ethical adoption.</p><p><strong>The AI Boom: Why 2025 Is a Pivotal Year</strong><br>Global AI market projected to hit $638 billion. Over 83% of businesses now list AI as a top strategic priority. Even small businesses can now leverage tools once reserved for enterprise players.</p><p><strong>Top 5 AI Trends Regional Businesses Should Watch</strong><br>Multimodal AI, AI Agents, Emotionally Intelligent AI, Predictive AI, and AI-Powered Search are transforming customer service, marketing, and operations.</p><p><strong>Real-World Use Cases for Regional Australia</strong><br>Retailers personalize recommendations, service providers automate intake, and logistics firms optimize workflows with AI simulations.</p><p><strong>Hoffstee’s Role in Ethical, Scalable AI Adoption</strong><br>Our modular architecture and automation expertise make integration seamless. We prioritize ethical automation and user-centric design. Our admin dashboards are AI-ready.</p><p><strong>Call to Action: Let’s Build Smarter Together</strong><br>Explore AI-powered solutions with Hoffstee. Download our checklist: “Is Your Business AI-Ready?”</p>"
+  }
+]
