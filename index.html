@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethical Web Design & SEO | Hoffstee Digital Agency, leeton, NSW Australia</title>
+    <title>Web Design & SEO for Regional NSW | Hoffstee Digital Agency, Leeton, NSW Australia</title>
 
-    <meta name="description" content="Hoffstee is a digital agency specializing in ethical web design, SEO, and scalable eCommerce solutions. We help businesses grow with integrity and innovation.">
-    <meta name="keywords" content="web design, branding, digital marketing, SEO services, UI design, website development, Hoffstee, NSW, Australia">
+    <meta name="description" content="Hoffstee is a Leeton-based digital agency offering ethical web design, SEO, and scalable eCommerce solutions for regional NSW businesses.">
+    <meta name="keywords" content="web design Leeton, SEO agency NSW, ethical digital marketing, Riverina websites, Hoffstee, website development Australia">
     <!-- Favicons -->
     <link rel="canonical" href="https://hoffstee.com.au/">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
@@ -23,7 +23,7 @@
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Hoffstee Ethical Web Design & SEO Solutions">
-    <meta property="og:description" content="Hoffstee is a digital agency specializing in ethical web design, SEO, and scalable eCommerce solutions. We help businesses grow with integrity and innovation.">
+    <meta property="og:description" content="Hoffstee is a Leeton-based digital agency offering ethical web design, SEO, and scalable eCommerce solutions for regional NSW businesses.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hoffstee.com.au/" />
     <meta property="og:image" content="/assets/img/business/home-banner1.webp">
@@ -71,6 +71,23 @@
           publicKey: "POQ7mudMGX4SBTua-",
         });
       })();
+
+      const container = document.getElementById("globeContainer");
+        const globe = document.getElementById("globe");
+
+        container.addEventListener("mousemove", (e) => {
+            const rect = container.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+            globe.style.transform =
+                `rotateX(${y * -20 + 20}deg) rotateY(${x * 40}deg)`;
+        });
+
+        container.addEventListener("mouseleave", () => {
+            globe.style.transform = "rotateX(20deg) rotateY(0deg)";
+        });
+
     </script>
     <script type="application/ld+json">
       {
@@ -200,10 +217,16 @@
     <!-- Preloader End -->
     <!--=======Header=======-->
     <header id="header" class="header fixed-top d-flex align-items-center"> </header>
+      
     <!-- End Header -->
     <main id="main" class="main">
       <div class="wrapper_pages">
         <!-- Hero Section - Home Page -->
+         <div class="global-container-main">
+              <div class="globe-container" id="globeContainer">
+                 <div class="glow"></div>
+              </div>
+          </div>
         <section id="home" class="hero">
           <div class="container-fluid">
             <div class="row">
@@ -219,15 +242,13 @@
                   </p>
                 </div>
                 <h1 id="banner_h2" class="mt-2 padding-gap">
-                  Hoffstee is a
                   <span class="textshadow">Leeton-based web design & SEO agency</span>
-
-                  delivering ethical, conversion-focused digital solutions for regional NSW businesses.
-
+                    Ethical, conversion-focused digital solutions for regional NSW businesses.
                 </h1>
                 <p class="bannertext_first">
                   Hoffstee is a Leeton-based web design and SEO agency serving small businesses and care providers across regional NSW. Our in-house team of brand specialists, designers, and developers craft scalable, conversion-focused websites tailored for the Riverina community.
                 </p>
+                
               </div>
              <div class="col-md-6 external desktop" data-aos="fade-left" data-aos-delay="500">
                         <div class="home_rightpanel horizontal-scroll-wrapper ">
