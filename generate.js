@@ -62,15 +62,28 @@ fs.readdirSync(postsDir).forEach(file => {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "${data.title}",
-    "datePublished": "${data.date}",
     "description": "${data.summary}",
+    "image": "https://hoffstee.com.au/assets/img/${slug}.jpg",
     "author": {
       "@type": "Organization",
       "name": "Hoffstee"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hoffstee",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hoffstee.com.au/assets/img/favicon.png"
+      }
+    },
+    "datePublished": "${new Date(data.date).toISOString()}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://hoffstee.com.au/blog-posts/${slug}.html"
     }
   }
   </script>`;
-
+  
   const finalHtml = template
     .replace(/{{title}}/g, data.title)
     .replace(/{{date}}/g, data.date)
