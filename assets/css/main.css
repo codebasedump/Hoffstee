@@ -40,6 +40,10 @@ body,section{
     --easing:cubic-bezier(0.000, 0.37, 1.000, 0.63);
     --color-default:#0F2943;
     --color-background:#ffffff;
+    --accent: #cca776;
+    --accent-dim: rgba(200,241,53,0.12);
+    --text-muted: rgba(255,255,255,0.45);
+    --text-dim: rgba(0, 0, 0, 0.25);
     --font-color:#ffffff;
     --button-color:#2E1FB6;
     --color-services:#b6bec6;
@@ -310,7 +314,7 @@ section{
     color:var(--color-secondary)
 }
 .header .logo img{
-    height:32px
+    height:62px
 }
 .header .logo h1{
     font-size:22px;
@@ -964,7 +968,7 @@ footer .container-fluid .copyrights{
 .about_img{
     width:12%;
     position:absolute;
-    top:-44%;
+    top:-35%;
     cursor:pointer;
     -webkit-animation:4s linear infinite spin;
     -moz-animation:4s linear infinite spin;
@@ -1958,7 +1962,7 @@ ul.card-list li:nth-child(8),ul.card-list li:nth-child(8) .card{
     display:block
 }
 .faq{
-    background-color:#a7bcc773
+    /* background-color:#a7bcc773 */
 }
 .faq .container-fluid{
     margin:0;
@@ -1974,7 +1978,7 @@ ul.card-list li:nth-child(8),ul.card-list li:nth-child(8) .card{
 .faq.servicepage_accordian button.accordion-button{
     font-size:20px;
     font-weight:700;
-    padding:35px 60px
+    padding:20px 40px;
 }
 #accordionExample1 .accordion-collapse{
     padding:0 60px;
@@ -2722,3 +2726,123 @@ figure img{
 .globe-container:hover .globe {
      animation-play-state: paused;
 }
+
+
+ /* Project info panel */
+    /* Project info panel */
+    .project-info {
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .project-number {
+      font-size: 5rem; color: var(--color-default); line-height: 1;
+      margin-bottom: 20px; transition: color 0.3s;
+    }
+    .project-card:hover .project-number { color: var(--accent); }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+    .project-tag {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 4px 10px;
+      border: 1px solid var(--border-hover);
+    }
+    .project-tag.highlight { border:1px solid var(--accent); color: var(--accent); }
+    .project-card h3 {
+      font-size: 1.7rem; font-weight: 800; color: var(--text);
+      line-height: 1.15; margin-bottom: 16px; letter-spacing: -0.02em;
+    }
+    .project-card p { color: var(--text-muted); line-height: 1.7; }
+    .project-results {
+      margin-top: 24px; padding-top: 24px;
+      border-top: 1px solid var(--border);
+      display: flex; gap: 24px; flex-wrap: wrap;
+    }
+    .result-item { }
+    .result-val {  font-size: 22px; color: var(--accent); line-height: 1; font-weight: 600;}
+    .result-label { font-size: 14px;color: var(--color-default); font-weight: 600;margin-top: 10px; }
+    .project-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--text); text-decoration: none;
+      margin-top: 28px; transition: color 0.2s;
+      border-bottom: 1px solid var(--border-hover); padding-bottom: 4px;
+    }
+    .project-cta:hover { color: var(--accent); border-color: var(--accent); }
+
+    /* Existing project cards (artisan etc) in a secondary grid */
+    .project-secondary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); margin-top: 2px; }
+    .project-secondary-card {
+      background: var(--surface); padding: 36px 40px;
+      border: none; transition: background 0.3s;
+    }
+    .project-secondary-card:hover { background: #181818; }
+    .proj-sec-num { font-family: var(--font-display); font-size: 1.5rem; color: var(--text-dim); margin-bottom: 12px; }
+    .proj-sec-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .proj-sec-tag { font-size: 0.6rem; color: var(--text-dim); border: 1px solid var(--border); padding: 2px 8px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .project-secondary-card h4 { font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .project-secondary-card p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; }
+    .proj-sec-result { margin-top: 14px; font-size: 0.75rem; color: var(--accent); font-weight: 600; }
+
+    
+    /* ✅ FIX: Primary CTA button — clear, prominent, single action */
+      .btn-primary-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #fff;
+        color: #000;
+        border: 2px solid #fff;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+        margin-top: 28px;
+      }
+      .btn-primary-cta:hover { background: transparent; }
+      .btn-secondary-cta {
+        background-color: #000000;
+        border-radius: 50px;
+        padding:15px 20px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        border: 2px solid rgba(255,255,255,0.4);
+        font-weight: 600;
+        color:#fff;
+        text-decoration: none;
+        transition: border-color 0.2s, background 0.2s;
+        margin-left:25px;
+        margin-top: 28px;
+      }
+      .btn-secondary-cta:hover { border-color: #fff; color:#ffc107; ;}
+    .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .hero-stat-num { font-weight: 800;line-height: 1.5; font-size:16px }
+    .hero-stat-label { font-weight: 600; margin-top: 4px; font-size:13px}
+
+    /* ✅ NEW: Process section */
+    .process-section { padding: 80px 0; }
+    .process-step { text-align: center; padding: 0 20px; }
+    .process-num {
+        width: 56px; height: 56px; border-radius: 50%;
+        border: 2px solid rgba(255,255,255,0.3);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 32px; font-weight: 800;
+        margin: 0 auto 16px;
+    }
+    
+    .process-connector { border-top: 1px dashed rgba(255,255,255,0.2); margin-top: 28px; }
+
+
+    /* ── FAQ STRIP ── */
+    .faq-strip { padding: 80px 0; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); cursor: pointer; }
+    .faq-question { display: flex; justify-content: space-between; align-items: center; }
+    .faq-answer { margin-top: 14px; display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-toggle { transition: transform .2s; flex-shrink: 0; font-size: 32px;}
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+    .websitepages_link{right:0}
