@@ -2780,3 +2780,58 @@ figure img{
     .faq-toggle { transition: transform .2s; flex-shrink: 0; font-size: 32px;}
     .faq-item.open .faq-toggle { transform: rotate(45deg); }
     .websitepages_link{right:0}
+
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; /* adjust width as you like */
+    max-width: 90%; /* keeps it responsive */
+    background: #111;
+    color: #fff;
+    padding: 18px 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cookie-banner a {
+    color: #4da3ff;
+    text-decoration: underline;
+}
+
+#cookie-accept {
+    background: #4da3ff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+#cookie-accept:hover {
+    background: #1c7ed6;
+}
+
+@media (max-width: 600px) {
+    .cookie-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        width: 90%;
+    }
+}

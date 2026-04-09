@@ -1,0 +1,123 @@
+/* ----------------------------------------------------
+   LEGAL PAGE CONTAINER
+---------------------------------------------------- */
+.legal-page {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px 60px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ----------------------------------------------------
+   HEADINGS
+---------------------------------------------------- */
+.legal-page h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.legal-page h2 {
+    font-size: 26px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* ----------------------------------------------------
+   PARAGRAPHS
+---------------------------------------------------- */
+.legal-page p {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+/* ----------------------------------------------------
+   LISTS
+---------------------------------------------------- */
+.legal-page ul {
+    padding-left: 22px;
+    margin-bottom: 20px;
+}
+
+.legal-page ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* ----------------------------------------------------
+   LINKS
+---------------------------------------------------- */
+.legal-page a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-page a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------------
+   DIVIDERS
+---------------------------------------------------- */
+.legal-divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin: 40px 0;
+}
+
+/* ----------------------------------------------------
+   TABLE OF CONTENTS (OPTIONAL)
+---------------------------------------------------- */
+.legal-toc {
+    background: #f8f9fa;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-left: 4px solid #007bff;
+}
+
+.legal-toc h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.legal-toc ul {
+    padding-left: 20px;
+}
+
+.legal-toc ul li {
+    margin-bottom: 8px;
+}
+
+.legal-toc a {
+    color: #007bff;
+    font-weight: 500;
+}
+
+/* ----------------------------------------------------
+   MOBILE RESPONSIVE
+---------------------------------------------------- */
+@media (max-width: 768px) {
+    .legal-page {
+        padding: 30px 25px;
+        margin: 40px 15px;
+    }
+
+    .legal-page h1 {
+        font-size: 32px;
+    }
+
+    .legal-page h2 {
+        font-size: 22px;
+    }
+}
