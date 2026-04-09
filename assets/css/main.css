@@ -601,13 +601,13 @@ footer .container-fluid .copyrights{
     justify-content:right
 }
 .homeheading{
-    float:left;
-    text-transform:capitalize;
-    padding-top:15px!important;
-    padding-right:10px;
-    font-size:24px;
-    font-weight:700;
-    color:#fff!important
+    float: left;
+    text-transform: capitalize;
+    padding-top: 12px !important;
+    padding-right: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff !important;
 }
 .home_head b{
     float:left;
@@ -1113,7 +1113,7 @@ footer .container-fluid .copyrights{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:60vh;
+    height:70vh;
     color:var(--color-secondary);
     font-weight:700;
     font-size:18px;
@@ -2586,81 +2586,6 @@ figure img{
     transition:.3s;
     text-align:center
 }
-.blog-post{
-    padding:2rem;
-    background-color:#fff;
-    border-radius:8px;
-    color:#333
-}
-.blog-post h1{
-    font-size:2rem;
-    font-weight:700;
-    margin-bottom:.5rem
-}
-.blog-post time{
-    font-style:italic;
-    color:#777;
-    font-size:.95rem
-}
-.blog-post .summary p{
-    font-size:1.05rem;
-    font-weight:500;
-    margin-bottom:1.5rem;
-    color:#555
-}
-.blog-post .content{
-    line-height:1.7;
-    font-size:1rem;
-    color:#444;
-    margin-top:50px
-}
-.blog-post .content h2{
-    font-size:18px
-}
-.blog-post .content ol,.blog-post .content ul{
-    padding-left:1.5rem;
-    margin-bottom:1.5rem
-}
-.blog-post .content li{
-    margin-bottom:.75rem;
-    font-size:1rem;
-    position:relative
-}
-.blog-post .content ul li::marker{
-    color:#2c3e50
-}
-.blog-post .content ol li::marker{
-    font-weight:700;
-    color:#2c3e50
-}
-.blog-subscribe{
-    margin-top:3rem;
-    padding:2rem;
-    background:#a7bcc773;
-    border-radius:12px;
-    text-align:center
-}
-.blog-subscribe h3{
-    font-size:1.5rem;
-    margin-bottom:.5rem
-}
-.blog-subscribe form input{
-    width:80%;
-    margin:.5rem auto;
-    padding:.75rem;
-    border:1px solid #ccc;
-    border-radius:6px;
-    display:block
-}
-.blog-subscribe form button{
-    background-color:#0078d4;
-    color:#fff;
-    padding:.75rem 1.5rem;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    margin-top:1rem
-}
 .subscribe-status{
     margin-top:1rem;
     font-size:.95rem;
@@ -2830,7 +2755,7 @@ figure img{
             border-top: 1px solid rgba(255,255,255,0.15);
     }
     .hero-stat-num { font-weight: 800;line-height: 1.5; font-size:16px }
-    .hero-stat-label { font-weight: 600; margin-top: 4px; font-size:13px}
+    .hero-stat-label { font-weight: 600; margin-top: 4px; font-size:16px}
 
     /* ✅ NEW: Process section */
     .process-section { padding: 80px 0; }
