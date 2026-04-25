@@ -54,190 +54,7 @@
 
     <!-- Appozy-specific page styles -->
     <style>
-      .appozy-hero {
-        background: linear-gradient(135deg, #faf5ff 0%, #e0e7ff 50%, #ecfeff 100%);
-        padding: 8% 0 60px;
-        border-radius: 24px;
-      }
-      .appozy-eyebrow {
-        display: inline-block;
-        padding: 6px 14px;
-        background: #7c3aed;
-        color: white;
-        border-radius: 99px;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        margin-bottom: 20px;
-      }
-      .appozy-h1 {
-        font-size: clamp(32px, 4vw, 52px);
-        font-weight: 800;
-        color: #1a1a1a;
-        line-height: 1.15;
-        margin-bottom: 16px;
-      }
-      .appozy-h1 .accent {
-        background: linear-gradient(135deg, #7c3aed, #4f46e5);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-      .appozy-lede {
-        color: #525252;
-        font-size: 18px;
-        line-height: 1.7;
-        margin-bottom: 28px;
-      }
-      .btn-appozy-primary {
-        display: inline-block;
-        padding: 16px 32px;
-        background: linear-gradient(135deg, #7c3aed, #4f46e5);
-        color: white !important;
-        text-decoration: none;
-        border-radius: 14px;
-        font-weight: 700;
-        font-size: 15px;
-        box-shadow: 0 6px 20px rgba(124, 58, 237, 0.3);
-        transition: all 0.2s ease;
-      }
-      .btn-appozy-primary:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 28px rgba(124, 58, 237, 0.4);
-        color: white !important;
-      }
-      .btn-appozy-secondary {
-        display: inline-block;
-        padding: 16px 32px;
-        background: white;
-        color: #7c3aed !important;
-        text-decoration: none;
-        border-radius: 14px;
-        font-weight: 700;
-        font-size: 15px;
-        border: 2px solid #7c3aed;
-        transition: all 0.2s ease;
-      }
-      .btn-appozy-secondary:hover {
-        background: #7c3aed;
-        color: white !important;
-      }
-      .appozy-hero-img {
-        width: 100%;
-        border-radius: 20px;
-        box-shadow: 0 30px 80px rgba(124, 58, 237, 0.25);
-        transform: rotate(-1deg);
-      }
-      .appozy-trust {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px 36px;
-        margin-top: 28px;
-        color: #737373;
-        font-size: 13px;
-        font-weight: 600;
-      }
-      .appozy-feature-card {
-        background: white;
-        border-radius: 20px;
-        padding: 32px 28px;
-        border: 1px solid #ede9fe;
-        height: 100%;
-        transition: all 0.25s ease;
-      }
-      .appozy-feature-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 20px 40px rgba(124, 58, 237, 0.1);
-        border-color: #c4b5fd;
-      }
-      .appozy-feature-icon {
-        width: 52px;
-        height: 52px;
-        border-radius: 14px;
-        background: linear-gradient(135deg, #f5f3ff, #ede9fe);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
-        margin-bottom: 18px;
-      }
-      .appozy-feature-title {
-        font-size: 18px;
-        font-weight: 700;
-        color: #1a1a1a;
-        margin-bottom: 10px;
-      }
-      .appozy-feature-desc {
-        color: #525252;
-        font-size: 14px;
-        line-height: 1.7;
-        margin: 0;
-      }
-      .appozy-step {
-        text-align: center;
-        padding: 32px 20px;
-        background: white;
-        border-radius: 20px;
-        border: 1px solid #ede9fe;
-        height: 100%;
-      }
-      .appozy-step-num {
-        display: inline-block;
-        width: 48px;
-        height: 48px;
-        line-height: 48px;
-        border-radius: 50%;
-        background: linear-gradient(135deg, #7c3aed, #4f46e5);
-        color: white;
-        font-weight: 800;
-        font-size: 20px;
-        margin-bottom: 18px;
-      }
-      .appozy-plan {
-        background: white;
-        border: 1px solid #ede9fe;
-        border-radius: 20px;
-        padding: 32px 28px;
-        height: 100%;
-        position: relative;
-      }
-      .appozy-plan.featured {
-        border-color: #7c3aed;
-        border-width: 2px;
-        box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
-      }
-      .appozy-plan-badge {
-        position: absolute;
-        top: -12px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 6px 14px;
-        background: linear-gradient(135deg, #7c3aed, #4f46e5);
-        color: white;
-        border-radius: 99px;
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-      .appozy-plan-name { font-size: 14px; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
-      .appozy-plan-price { font-size: 34px; font-weight: 800; color: #1a1a1a; margin-bottom: 4px; }
-      .appozy-plan-price small { font-size: 14px; color: #737373; font-weight: 500; }
-      .appozy-plan-desc { color: #737373; font-size: 13px; margin-bottom: 20px; }
-      .appozy-plan ul { list-style: none; padding: 0; margin: 0; }
-      .appozy-plan li { color: #525252; font-size: 14px; line-height: 1.7; padding: 4px 0 4px 24px; position: relative; }
-      .appozy-plan li::before { content: "✓"; position: absolute; left: 0; color: #10b981; font-weight: 700; }
-      .appozy-final-cta {
-        background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 50%, #2563eb 100%);
-        color: white;
-        padding: 80px 32px;
-        border-radius: 24px;
-        text-align: center;
-        margin: 40px 12px;
-      }
-      .appozy-final-cta h2 { color: white; font-size: clamp(28px, 3vw, 40px); font-weight: 800; margin-bottom: 16px; }
-      .appozy-final-cta p { color: rgba(255,255,255,0.9); font-size: 18px; max-width: 640px; margin: 0 auto 32px; line-height: 1.6; }
-      .appozy-final-cta .btn-appozy-primary { background: white; color: #7c3aed !important; }
-      .appozy-final-cta .btn-appozy-primary:hover { background: #f5f3ff; }
+      
     </style>
 
     <!-- Schema.org — SoftwareApplication for Appozy -->
@@ -332,7 +149,7 @@
                   Booking software built for <span class="accent">Australian small businesses</span>.
                 </h1>
                 <p class="appozy-lede">
-                  Appozy is a simple online booking platform — like Calendly at 1/3 the price,
+                  Appozy is a simple online booking platform - like Calendly at 1/3 the price,
                   built in Australia with AUD pricing, Stripe payments, and Zoom + Google Meet
                   integrations. Approved on the Zoom App Marketplace 2026.
                 </p>
@@ -392,9 +209,9 @@
               </div>
             </div>
             <div class="row g-4">
-              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">1</div><h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:8px;">Sign up free</h3><p style="color:#525252; font-size:14px; line-height:1.6; margin:0;">Create your account with email or Google/Microsoft. No credit card required.</p></div></div>
-              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">2</div><h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:8px;">Create a calendar</h3><p style="color:#525252; font-size:14px; line-height:1.6; margin:0;">Pick your industry, set hours, connect Zoom or Google Meet. Done in 60 seconds.</p></div></div>
-              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">3</div><h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:8px;">Share your link</h3><p style="color:#525252; font-size:14px; line-height:1.6; margin:0;">Send your booking URL anywhere — emails, socials, WhatsApp. Clients self-book, you focus on the work.</p></div></div>
+              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">1</div><h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Sign up free</h3><p style="font-size:14px; line-height:1.6; margin:0;">Create your account with email or Google/Microsoft. No credit card required.</p></div></div>
+              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">2</div><h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Create a calendar</h3><p style="font-size:14px; line-height:1.6; margin:0;">Pick your industry, set hours, connect Zoom or Google Meet. Done in 60 seconds.</p></div></div>
+              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">3</div><h3 style="font-size:18px; font-weight:700; margin-bottom:8px;">Share your link</h3><p style="font-size:14px; line-height:1.6; margin:0;">Send your booking URL anywhere — emails, socials, WhatsApp. Clients self-book, you focus on the work.</p></div></div>
             </div>
           </div>
         </section>
@@ -475,7 +292,7 @@
             </div>
             <div class="row mt-4">
               <div class="col-12" style="text-align:center;">
-                <p style="color:#737373; font-size:14px; margin-top:20px;">
+                <p style="font-size:14px; margin-top:20px;">
                   Need more? <a href="https://appozy.com/pricing" target="_blank" rel="noopener" style="color:#7c3aed; font-weight:600;">Enterprise plan</a> with unlimited seats, dedicated account manager and 4-hour SLA available on request.
                 </p>
               </div>
@@ -508,7 +325,7 @@
                 <div class="accordion" id="appozyFaq">
                   <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="accordion-button faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afaq1" aria-expanded="false">Is Appozy really free?<span class="faq-toggle">+</span></button>
-                    <div id="afaq1" class="accordion-collapse collapse" data-bs-parent="#appozyFaq"><div class="accordion-body"><p>Yes. The Free plan is <strong>free forever</strong> — 1 calendar, 50 bookings per month, public booking page, Zoom + Google Meet integration, email confirmations and real-time notifications. No credit card required to start.</p></div></div>
+                    <div id="afaq1" class="accordion-collapse collapse" data-bs-parent="#appozyFaq"><div class="accordion-body"><p>Yes. The Free plan is <strong>free forever</strong> - 1 calendar, 50 bookings per month, public booking page, Zoom + Google Meet integration, email confirmations and real-time notifications. No credit card required to start.</p></div></div>
                   </div>
                   <div class="faq-item" onclick="toggleFaq(this)">
                     <button class="accordion-button faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afaq2" aria-expanded="false">How is Appozy different from Calendly?<span class="faq-toggle">+</span></button>
