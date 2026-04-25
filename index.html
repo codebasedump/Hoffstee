@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design Leeton NSW | Websites That Win Customers | Hoffstee</title>
 
-    <meta name="description" content="Hoffstee builds websites that win customers for Leeton, Griffith &amp; regional NSW businesses. Mobile-first, Google-ready, from $499. Free quote in 24 hours.">
+    <meta name="description" content="Hoffstee — Australian startup. We build Appozy, a simple booking platform for small businesses (free plan, AUD pricing, Zoom Marketplace approved), plus custom websites, SEO &amp; branding for Leeton, Griffith &amp; regional NSW.">
+
     <meta name="keywords" content="web design Leeton NSW, website design Griffith NSW, Wagga Wagga web design, regional NSW web designer, small business website Leeton, SEO agency Leeton NSW, affordable website design Australia, Hoffstee digital agency, web developer near me Leeton, Riverina web design, law firm website design, medical clinic website, booking system developer Australia, web design Narrandera, web design Temora">
 
     <!-- Favicons -->
@@ -31,7 +32,8 @@
     <meta property="og:locale" content="en_AU" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Web Design Leeton NSW | Websites That Win Customers | Hoffstee">
-    <meta property="og:description" content="Hoffstee builds websites that win customers for Leeton, Griffith &amp; regional NSW. Mobile-first, Google-ready, from $1,500. Free quote in 24 hours.">
+    <meta property="og:description" content="Hoffstee — Australian startup. We build Appozy, a booking platform for small businesses (free plan, AUD pricing, Zoom Marketplace approved), plus websites, SEO &amp; branding for regional NSW.">
+
     <meta property="og:url" content="https://hoffstee.com.au/" />
     <meta property="og:image" content="https://hoffstee.com.au/assets/img/business/home-banner1.webp">
     <meta property="og:image:alt" content="Hoffstee web design agency — Leeton NSW, Australia">
@@ -41,7 +43,8 @@
     <meta property="article:modified_time" content="2026-03-30T08:00:00+10:00"/>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Web Design Leeton NSW | Websites That Win Customers | Hoffstee" />
-    <meta name="twitter:description" content="Mobile-first websites, SEO &amp; branding for Leeton &amp; regional NSW businesses. From $1,500. Free quote in 24 hours." />
+    <meta name="twitter:description" content="Makers of Appozy — simple booking software for Australian SMBs. Free plan, AUD, Zoom Marketplace approved. Plus websites, SEO &amp; branding by Hoffstee." />
+
     <meta name="twitter:image" content="https://hoffstee.com.au/assets/img/business/home-banner1.webp" />
     <meta name="twitter:image:alt" content="Hoffstee web design agency — Leeton NSW" />
     <!-- Fonts -->
@@ -186,6 +189,59 @@
             "sameAs": "https://www.linkedin.com/in/mohandass-deepavaliraja-51391a328"
           }
         },
+                {
+          "@type": "SoftwareApplication",
+          "@id": "https://hoffstee.com.au/#appozy",
+          "name": "Appozy",
+          "description": "Simple online booking software for Australian small businesses. Calendly alternative with AUD pricing, Stripe payments, and Zoom/Google Meet integrations. Approved on the Zoom App Marketplace.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://appozy.com",
+          "image": "https://hoffstee.com.au/assets/img/project_images/appozyhome.webp",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Free Plan",
+              "price": "0",
+              "priceCurrency": "AUD",
+              "description": "1 calendar, 50 bookings/month, free forever"
+            },
+            {
+              "@type": "Offer",
+              "name": "Starter Plan",
+              "price": "10",
+              "priceCurrency": "AUD",
+              "description": "3 calendars, 500 bookings/month, custom branding"
+            },
+            {
+              "@type": "Offer",
+              "name": "Pro Plan",
+              "price": "24",
+              "priceCurrency": "AUD",
+              "description": "10 calendars, unlimited bookings, AI Assistant, team management"
+            },
+            {
+              "@type": "Offer",
+              "name": "Business Plan",
+              "price": "49",
+              "priceCurrency": "AUD",
+              "description": "Unlimited calendars, custom domain, team up to 10 members"
+            }
+          ],
+          "publisher": {
+            "@id": "https://hoffstee.com.au/#business"
+          },
+          "featureList": [
+            "Public booking page",
+            "Embeddable booking widget",
+            "Zoom + Google Meet integration",
+            "AI Meeting Prep",
+            "Team management",
+            "Custom domain support",
+            "AUD pricing",
+            "Stripe payments"
+          ]
+        },
         {
           "@type": "WebSite",
           "@id": "https://hoffstee.com.au/#website",
@@ -254,6 +310,18 @@
   </head>
   
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+     <!-- ============================================
+         Appozy launch announcement banner
+         Fixed at the top above the navbar.
+         Pushes #header.fixed-top down so they don't
+         overlap. Dismissing it removes the offset.
+    ============================================ -->
+    <div id="appozy-launch-banner" style="background: linear-gradient(90deg, #7c3aed, #4f46e5); color: white; padding: 10px 20px; text-align: center; font-size: 14px; font-family: 'Montserrat', system-ui, sans-serif; position: fixed; top: 0; left: 0; right: 0; z-index: 10000; display: none;">
+      <span>🚀 <strong>NEW:</strong> Appozy is live — our flagship booking software for Aussie small businesses.</span>
+      <a href="https://appozy.com" target="_blank" rel="noopener" style="color: #fde68a; font-weight: 700; margin-left: 10px; text-decoration: underline;">Try Appozy Free →</a>
+      <button onclick="dismissAppozyBanner()" aria-label="Dismiss announcement" style="background:transparent; border:0; color:white; font-size:18px; position:absolute; right:12px; top:50%; transform:translateY(-50%); cursor:pointer; line-height:1;">×</button>
+    </div>
+    
     <!-- Preloader -->
     <div class="preloader">
       <i class="bi bi-plus loader_plus">
@@ -1103,6 +1171,51 @@
           <!-- End Section Title -->
         </section>
         <!-- End Services Section -->
+                 <!-- ============================================
+             Our Flagship Product — Appozy
+             Dedicated section positioning Appozy as
+             Hoffstee's in-house SaaS product.
+        ============================================ -->
+        <section id="our-product" class="our-product mt-5" data-aos="fade-up" data-aos-delay="400" aria-label="Appozy — our flagship booking software">
+          <div class="container-fluid">
+            <div class="row align-items-center" style="background: linear-gradient(135deg, #faf5ff 0%, #e0e7ff 50%, #ecfeff 100%); border-radius: 24px; padding: 48px 32px; border: 1px solid #ede9fe; margin: 0 12px;">
+              <div class="col-lg-7">
+                <div style="display: inline-block; padding: 6px 14px; background: #7c3aed; color: white; border-radius: 99px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 16px;">
+                  🚀 FLAGSHIP PRODUCT
+                </div>
+                <h2 style="font-size: clamp(26px, 3vw, 36px); font-weight: 800; color: #1a1a1a; margin: 0 0 12px; line-height: 1.2;">
+                  Appozy — Booking Software for Aussie Small Businesses
+                </h2>
+                <p style="color: #525252; font-size: 16px; line-height: 1.7; margin: 0 0 20px;">
+                  We don't just <em>build</em> websites — we build <strong>products</strong>.
+                  Appozy is our flagship: a simple online booking platform, like Calendly at
+                  1/3 the price, built in Australia with AUD pricing and Zoom + Google Meet
+                  integrations. Approved on the Zoom App Marketplace 2026.
+                </p>
+                <ul style="color: #525252; font-size: 15px; line-height: 1.9; padding-left: 0; list-style: none; margin: 0 0 24px;">
+                  <li>✅ <strong>Free plan forever</strong> — 1 calendar, 50 bookings/month</li>
+                  <li>🇦🇺 <strong>AUD pricing</strong> — paid plans from $10 AUD/month</li>
+                  <li>📅 <strong>Zoom + Google Meet</strong> — auto-generated meeting links</li>
+                  <li>✨ <strong>AI Meeting Prep</strong> — insights before every meeting (Pro plan)</li>
+                  <li>👥 <strong>Team management</strong> — multi-staff support (Business plan)</li>
+                </ul>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                  <a href="https://appozy.com" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 28px; background: linear-gradient(135deg, #7c3aed, #4f46e5); color: white; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 14px rgba(124, 58, 237, 0.3);">
+                    Try Appozy Free →
+                  </a>
+                  <a href="https://appozy.com/pricing" target="_blank" rel="noopener" style="display: inline-block; padding: 14px 28px; background: white; color: #7c3aed; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 14px; border: 2px solid #7c3aed;">
+                    See Pricing
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-5 d-none d-lg-block">
+                <img src="assets/img/project_images/appozyhome.webp" alt="Appozy booking software dashboard by Hoffstee" style="width: 100%; border-radius: 16px; box-shadow: 0 20px 60px rgba(124, 58, 237, 0.2); transform: rotate(-2deg);" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         <!-- Our projects Section - Home Page -->
         <section id="services_works" class="services_works mt-5" data-aos="fade-up"
         data-aos-delay="600">
@@ -1908,6 +2021,8 @@
         el.classList.toggle('open');
       }
       
+     
   </script>
+
   </body>
 </html>

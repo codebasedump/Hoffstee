@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Web Design Sydney | AI-Powered Websites & SEO | Hoffstee</title>
-      <meta name="description" content="Hoffstee builds high-converting, AI-powered websites for Sydney businesses. Mobile-first web design, SEO, and automation that wins customers. From $499. Free consultation.">
+      <meta name="description" content="Hoffstee builds high-converting AI-powered websites for Sydney businesses — mobile-first, SEO-ready, from $499. Plus our flagship Appozy booking software for Sydney SMBs. Free consultation.">
       <meta name="keywords" content="web design Sydney, website development Sydney NSW, SEO agency Sydney, AI-powered websites, Sydney web designer, eCommerce Sydney, affordable web design Sydney, Hoffstee digital agency">
 
       <link rel="canonical" href="https://hoffstee.com.au/sydney.html">
@@ -20,7 +20,7 @@
       <meta property="og:locale" content="en_AU" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Web Design Sydney | AI-Powered Websites & SEO | Hoffstee" />
-      <meta property="og:description" content="Hoffstee builds high-converting, AI-powered websites for Sydney businesses. Mobile-first, SEO-ready, from $499. Free consultation." />
+      <meta property="og:description" content="High-converting AI-powered websites for Sydney businesses + Appozy booking software for Sydney SMBs. Mobile-first, SEO-ready, from $499." />
       <meta property="og:url" content="https://hoffstee.com.au/sydney.html" />
       <meta property="og:image" content="https://hoffstee.com.au/assets/img/business/home-banner1.webp" />
       <meta property="og:image:width" content="1200" />
@@ -30,7 +30,7 @@
       <!-- Twitter Card -->
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Web Design Sydney | AI-Powered Websites & SEO | Hoffstee" />
-      <meta name="twitter:description" content="High-converting websites for Sydney businesses. Mobile-first, AI-powered, SEO-ready. Free consultation." />
+      <meta name="twitter:description" content="High-converting websites for Sydney + Appozy booking software for Sydney SMBs. AI-powered, SEO-ready. Free consultation." />
       <meta name="twitter:image" content="https://hoffstee.com.au/assets/img/business/home-banner1.webp" />
 
       <!-- Fonts -->
@@ -94,7 +94,7 @@
                      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Website Design & Development", "description": "Mobile-first, AI-powered websites for Sydney businesses. From $499 AUD."}},
                      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO — Search Engine Optimisation", "description": "Local and national SEO strategies that help Sydney businesses rank higher on Google."}},
                      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI-Powered Automation", "description": "Chatbots, lead capture, missed-call text-back and workflow automation for Sydney businesses."}},
-                     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Branding & Graphic Design", "description": "Logo, visual identity, and print design for Sydney startups and established brands."}}
+                     {"@type": "Offer", "itemOffered": {"@type": "SoftwareApplication", "name": "Appozy — Booking Software", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "url": "https://appozy.com", "description": "Hoffstee's flagship SaaS — simple online booking platform for Sydney small businesses. AUD pricing, free plan available, Zoom Marketplace approved.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "AUD", "description": "Free plan available, paid tiers from $10 AUD/month"}}}
                   ]
                },
                "priceRange": "$$",
@@ -146,10 +146,10 @@
                   },
                   {
                      "@type": "Question",
-                     "name": "How long does it take to build a website?",
+                     "name": "Do you offer booking software for Sydney service businesses?",
                      "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Most business websites launch within 4 to 6 weeks. Custom web applications with AI features may take 8 to 10 weeks. We follow agile sprints so you see progress weekly."
+                        "text": "Yes. Hoffstee built Appozy (https://appozy.com), our flagship booking platform — ideal for Sydney clinics, salons, consultants, coaches, and any business that takes appointments. AUD pricing, Zoom + Google Meet integrations, free plan available, approved on the Zoom App Marketplace."
                      }
                   }
                ]
@@ -160,6 +160,18 @@
    </head>
   
    <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+       <!-- ============================================
+         Appozy launch announcement banner
+         Fixed at the top above the navbar.
+         Pushes #header.fixed-top down so they don't
+         overlap. Dismissing it removes the offset.
+    ============================================ -->
+    <div id="appozy-launch-banner" style="background: linear-gradient(90deg, #7c3aed, #4f46e5); color: white; padding: 10px 20px; text-align: center; font-size: 14px; font-family: 'Montserrat', system-ui, sans-serif; position: fixed; top: 0; left: 0; right: 0; z-index: 10000; display: none;">
+      <span>🚀 <strong>NEW:</strong> Appozy is live — our flagship booking software for Aussie small businesses.</span>
+      <a href="https://appozy.com" target="_blank" rel="noopener" style="color: #fde68a; font-weight: 700; margin-left: 10px; text-decoration: underline;">Try Appozy Free →</a>
+      <button onclick="dismissAppozyBanner()" aria-label="Dismiss announcement" style="background:transparent; border:0; color:white; font-size:18px; position:absolute; right:12px; top:50%; transform:translateY(-50%); cursor:pointer; line-height:1;">×</button>
+    </div>
+
       <!-- Preloader -->
       <div class="preloader">
          <i class="bi bi-plus loader_plus"></i>

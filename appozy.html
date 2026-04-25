@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appozy — Booking Software for Australian Small Businesses | Hoffstee</title>
+
+    <meta name="description" content="Appozy is a simple online booking platform for Australian SMBs. Calendly alternative with AUD pricing, Zoom & Google Meet integrations, and a free plan forever. Approved on the Zoom App Marketplace. Built by Hoffstee.">
+    <meta name="keywords" content="Appozy, booking software Australia, Calendly alternative AUD, online appointment booking, scheduling software Australia, Zoom booking app, small business booking, Stripe booking, AI meeting prep, Hoffstee">
+
+    <link rel="canonical" href="https://hoffstee.com.au/appozy.html">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="geo.region" content="AU-NSW">
+    <meta name="geo.placename" content="Leeton, New South Wales">
+
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <link rel="alternate" hreflang="en-au" href="https://hoffstee.com.au/appozy.html" />
+    <link rel="alternate" hreflang="x-default" href="https://hoffstee.com.au/appozy.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Appozy — Booking Software for Australian Small Businesses | Hoffstee">
+    <meta property="og:description" content="A simple online booking platform for Australian SMBs. AUD pricing, Zoom/Meet integrated, AI meeting prep, free plan forever. Built by Hoffstee.">
+    <meta property="og:url" content="https://hoffstee.com.au/appozy.html" />
+    <meta property="og:image" content="https://hoffstee.com.au/assets/img/project_images/appozyhome.webp">
+    <meta property="og:image:alt" content="Appozy booking software dashboard — built by Hoffstee">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Hoffstee" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Appozy — Booking Software for Australian Small Businesses" />
+    <meta name="twitter:description" content="Calendly alternative with AUD pricing, Zoom/Meet, AI meeting prep. Free plan forever. Built by Hoffstee." />
+    <meta name="twitter:image" content="https://hoffstee.com.au/assets/img/project_images/appozyhome.webp" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS (reuse existing Hoffstee stylesheets) -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/aos/aos.css" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KN7Q4SX3');
+    </script>
+
+    <!-- Appozy-specific page styles -->
+    <style>
+      .appozy-hero {
+        background: linear-gradient(135deg, #faf5ff 0%, #e0e7ff 50%, #ecfeff 100%);
+        padding: 8% 0 60px;
+        border-radius: 24px;
+      }
+      .appozy-eyebrow {
+        display: inline-block;
+        padding: 6px 14px;
+        background: #7c3aed;
+        color: white;
+        border-radius: 99px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+      }
+      .appozy-h1 {
+        font-size: clamp(32px, 4vw, 52px);
+        font-weight: 800;
+        color: #1a1a1a;
+        line-height: 1.15;
+        margin-bottom: 16px;
+      }
+      .appozy-h1 .accent {
+        background: linear-gradient(135deg, #7c3aed, #4f46e5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .appozy-lede {
+        color: #525252;
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+      }
+      .btn-appozy-primary {
+        display: inline-block;
+        padding: 16px 32px;
+        background: linear-gradient(135deg, #7c3aed, #4f46e5);
+        color: white !important;
+        text-decoration: none;
+        border-radius: 14px;
+        font-weight: 700;
+        font-size: 15px;
+        box-shadow: 0 6px 20px rgba(124, 58, 237, 0.3);
+        transition: all 0.2s ease;
+      }
+      .btn-appozy-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 28px rgba(124, 58, 237, 0.4);
+        color: white !important;
+      }
+      .btn-appozy-secondary {
+        display: inline-block;
+        padding: 16px 32px;
+        background: white;
+        color: #7c3aed !important;
+        text-decoration: none;
+        border-radius: 14px;
+        font-weight: 700;
+        font-size: 15px;
+        border: 2px solid #7c3aed;
+        transition: all 0.2s ease;
+      }
+      .btn-appozy-secondary:hover {
+        background: #7c3aed;
+        color: white !important;
+      }
+      .appozy-hero-img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 30px 80px rgba(124, 58, 237, 0.25);
+        transform: rotate(-1deg);
+      }
+      .appozy-trust {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 36px;
+        margin-top: 28px;
+        color: #737373;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .appozy-feature-card {
+        background: white;
+        border-radius: 20px;
+        padding: 32px 28px;
+        border: 1px solid #ede9fe;
+        height: 100%;
+        transition: all 0.25s ease;
+      }
+      .appozy-feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(124, 58, 237, 0.1);
+        border-color: #c4b5fd;
+      }
+      .appozy-feature-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-bottom: 18px;
+      }
+      .appozy-feature-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+      }
+      .appozy-feature-desc {
+        color: #525252;
+        font-size: 14px;
+        line-height: 1.7;
+        margin: 0;
+      }
+      .appozy-step {
+        text-align: center;
+        padding: 32px 20px;
+        background: white;
+        border-radius: 20px;
+        border: 1px solid #ede9fe;
+        height: 100%;
+      }
+      .appozy-step-num {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #7c3aed, #4f46e5);
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+      .appozy-plan {
+        background: white;
+        border: 1px solid #ede9fe;
+        border-radius: 20px;
+        padding: 32px 28px;
+        height: 100%;
+        position: relative;
+      }
+      .appozy-plan.featured {
+        border-color: #7c3aed;
+        border-width: 2px;
+        box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
+      }
+      .appozy-plan-badge {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 6px 14px;
+        background: linear-gradient(135deg, #7c3aed, #4f46e5);
+        color: white;
+        border-radius: 99px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      .appozy-plan-name { font-size: 14px; font-weight: 700; color: #7c3aed; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
+      .appozy-plan-price { font-size: 34px; font-weight: 800; color: #1a1a1a; margin-bottom: 4px; }
+      .appozy-plan-price small { font-size: 14px; color: #737373; font-weight: 500; }
+      .appozy-plan-desc { color: #737373; font-size: 13px; margin-bottom: 20px; }
+      .appozy-plan ul { list-style: none; padding: 0; margin: 0; }
+      .appozy-plan li { color: #525252; font-size: 14px; line-height: 1.7; padding: 4px 0 4px 24px; position: relative; }
+      .appozy-plan li::before { content: "✓"; position: absolute; left: 0; color: #10b981; font-weight: 700; }
+      .appozy-final-cta {
+        background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 50%, #2563eb 100%);
+        color: white;
+        padding: 80px 32px;
+        border-radius: 24px;
+        text-align: center;
+        margin: 40px 12px;
+      }
+      .appozy-final-cta h2 { color: white; font-size: clamp(28px, 3vw, 40px); font-weight: 800; margin-bottom: 16px; }
+      .appozy-final-cta p { color: rgba(255,255,255,0.9); font-size: 18px; max-width: 640px; margin: 0 auto 32px; line-height: 1.6; }
+      .appozy-final-cta .btn-appozy-primary { background: white; color: #7c3aed !important; }
+      .appozy-final-cta .btn-appozy-primary:hover { background: #f5f3ff; }
+    </style>
+
+    <!-- Schema.org — SoftwareApplication for Appozy -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://hoffstee.com.au/appozy.html#appozy",
+          "name": "Appozy",
+          "alternateName": "Appozy by Hoffstee",
+          "description": "Simple online booking software for Australian small businesses. Calendly alternative with AUD pricing, Stripe payments, and Zoom/Google Meet integrations. Approved on the Zoom App Marketplace.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://appozy.com",
+          "image": "https://hoffstee.com.au/assets/img/project_images/appozyhome.webp",
+          "offers": [
+            { "@type": "Offer", "name": "Free Plan",     "price": "0",  "priceCurrency": "AUD", "description": "1 calendar, 50 bookings/month" },
+            { "@type": "Offer", "name": "Starter Plan",  "price": "10", "priceCurrency": "AUD", "description": "3 calendars, 500 bookings/month, custom branding" },
+            { "@type": "Offer", "name": "Pro Plan",      "price": "24", "priceCurrency": "AUD", "description": "10 calendars, unlimited bookings, AI Assistant, team (3)" },
+            { "@type": "Offer", "name": "Business Plan", "price": "49", "priceCurrency": "AUD", "description": "Unlimited calendars, custom domain, team (10)" }
+          ],
+          "publisher": { "@type": "Organization", "name": "Hoffstee", "url": "https://hoffstee.com.au", "email": "hello@hoffstee.com.au" },
+          "featureList": [
+            "Public booking page",
+            "Embeddable booking widget",
+            "Zoom and Google Meet integration",
+            "AI Meeting Prep",
+            "Team management",
+            "Custom domain support",
+            "AUD pricing",
+            "Stripe payments"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Is Appozy free?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Appozy has a Free plan forever that includes 1 calendar, 50 bookings per month, public booking page, embed widget, Zoom and Google Meet integration, email confirmations and real-time notifications. No credit card required." } },
+            { "@type": "Question", "name": "How is Appozy different from Calendly?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Appozy is built in Australia and prices in AUD, so Australian businesses don't pay USD conversion fees or foreign transaction fees. Paid plans start at $10 AUD/month — roughly a third of Calendly's equivalent tier. Appozy is also approved on the Zoom App Marketplace with native Zoom integration." } },
+            { "@type": "Question", "name": "Can I take payments through Appozy?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Appozy uses Stripe for subscription payments (for your own Appozy plan) and supports paid session booking on Pro and Business plans so guests can pre-pay when they book." } },
+            { "@type": "Question", "name": "Who owns Appozy?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Appozy is built and owned by Hoffstee, an Australian sole trader based in Leeton, NSW (ABN 30 162 898 854). Appozy is Hoffstee's flagship software product." } },
+            { "@type": "Question", "name": "What about my data?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Your data belongs to you. Appozy is GDPR and Australian Privacy Act compliant, uses HTTPS/TLS everywhere, and supports right-to-erasure with 30-day anonymisation. Full policy at appozy.com/privacy." } }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+
+    <!-- ============================================
+         Appozy launch announcement banner
+         Fixed at the top above the navbar.
+         Pushes #header.fixed-top down so they don't
+         overlap. Dismissing it removes the offset.
+    ============================================ -->
+    <div id="appozy-launch-banner" style="background: linear-gradient(90deg, #7c3aed, #4f46e5); color: white; padding: 10px 20px; text-align: center; font-size: 14px; font-family: 'Montserrat', system-ui, sans-serif; position: fixed; top: 0; left: 0; right: 0; z-index: 10000; display: none;">
+      <span>🚀 <strong>NEW:</strong> Appozy is live — our flagship booking software for Aussie small businesses.</span>
+      <a href="https://appozy.com" target="_blank" rel="noopener" style="color: #fde68a; font-weight: 700; margin-left: 10px; text-decoration: underline;">Try Appozy Free →</a>
+      <button onclick="dismissAppozyBanner()" aria-label="Dismiss announcement" style="background:transparent; border:0; color:white; font-size:18px; position:absolute; right:12px; top:50%; transform:translateY(-50%); cursor:pointer; line-height:1;">×</button>
+    </div>
+    
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <i class="bi bi-plus loader_plus"></i>
+      <div class="lds-ellipsis"><div>H</div><div>O</div><div>F</div><div>F</div><div>S</div><div>T</div><div>E</div><div>E</div></div>
+      <i class="bi bi-plus loader_plus1"></i>
+    </div>
+    <div id="cursor" class="cursor"><div class="ring"></div><div class="ring"><div></div></div></div>
+
+    <!-- Header (loaded dynamically) -->
+    <header id="header" class="header fixed-top d-flex align-items-center"></header>
+
+    <main id="main" class="main">
+      <div class="wrapper_pages">
+
+        <!-- ====== HERO ====== -->
+        <section class="appozy-hero" data-aos="fade-up" data-aos-delay="200">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <span class="appozy-eyebrow">🚀 FLAGSHIP PRODUCT BY HOFFSTEE</span>
+                <h1 class="appozy-h1">
+                  Booking software built for <span class="accent">Australian small businesses</span>.
+                </h1>
+                <p class="appozy-lede">
+                  Appozy is a simple online booking platform — like Calendly at 1/3 the price,
+                  built in Australia with AUD pricing, Stripe payments, and Zoom + Google Meet
+                  integrations. Approved on the Zoom App Marketplace 2026.
+                </p>
+                <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                  <a href="https://appozy.com" target="_blank" rel="noopener" class="btn-appozy-primary">Try Appozy Free →</a>
+                  <a href="https://appozy.com/pricing" target="_blank" rel="noopener" class="btn-appozy-secondary">See Pricing</a>
+                </div>
+                <div class="appozy-trust">
+                  <span>✅ Zoom Marketplace approved</span>
+                  <span>🇦🇺 Australian-built</span>
+                  <span>🔒 Stripe-secured</span>
+                  <span>💳 No credit card to start</span>
+                </div>
+              </div>
+              <div class="col-lg-5 mt-4 mt-lg-0 d-none d-lg-block">
+                <img src="assets/img/project_images/appozyhome.webp" alt="Appozy booking software dashboard" class="appozy-hero-img" loading="eager" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== FEATURES ====== -->
+        <section class="mt-5" data-aos="fade-up" data-aos-delay="200" aria-label="Appozy features">
+          <div class="container-fluid">
+            <div class="row mb-5">
+              <div class="col-12" style="text-align: center;">
+                <div class="content">
+                  <div class="caption">Features</div>
+                  <h2 class="heading">Everything you need to take bookings</h2>
+                  <p class="description">No bloat. Just the scheduling tools Australian small businesses actually use.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">📅</div><h3 class="appozy-feature-title">Public Booking Page</h3><p class="appozy-feature-desc">Share your unique booking link anywhere — email signature, Instagram bio, WhatsApp status. Mobile-first and fast.</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">📹</div><h3 class="appozy-feature-title">Zoom + Google Meet</h3><p class="appozy-feature-desc">Meeting links auto-generated for every video booking. Zoom takes priority when both are connected.</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">✨</div><h3 class="appozy-feature-title">AI Meeting Prep</h3><p class="appozy-feature-desc">Powered by Anthropic Claude. Get an AI-generated brief on each guest before every meeting (Pro plan).</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">🔔</div><h3 class="appozy-feature-title">Real-Time Notifications</h3><p class="appozy-feature-desc">WebSocket-powered live updates + browser push. Never miss a booking even when Appozy isn't open.</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">💳</div><h3 class="appozy-feature-title">Stripe Payments</h3><p class="appozy-feature-desc">Take upfront payment when guests book on Pro and Business plans. AUD-native, no FX conversion.</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">🌐</div><h3 class="appozy-feature-title">Custom Domain</h3><p class="appozy-feature-desc">Brand your booking page as book.yourbusiness.com.au on the Business plan. White-label ready.</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">👥</div><h3 class="appozy-feature-title">Team Management</h3><p class="appozy-feature-desc">Multi-staff support with role-based permissions and team audit log. Up to 10 members on Business.</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">🔗</div><h3 class="appozy-feature-title">Developer API</h3><p class="appozy-feature-desc">REST API with scoped keys, rate limiting, and full docs. Integrate Appozy into any workflow.</p></div></div>
+              <div class="col-md-6 col-lg-4"><div class="appozy-feature-card"><div class="appozy-feature-icon">🛡️</div><h3 class="appozy-feature-title">2FA + Secure by Default</h3><p class="appozy-feature-desc">Two-factor authentication, HttpOnly cookies, XSS-safe templates. Australian Privacy Act compliant.</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== HOW IT WORKS ====== -->
+        <section class="mt-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="container-fluid">
+            <div class="row mb-5">
+              <div class="col-12" style="text-align: center;">
+                <div class="content">
+                  <div class="caption">How it works</div>
+                  <h2 class="heading">Set up in under 2 minutes</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4">
+              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">1</div><h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:8px;">Sign up free</h3><p style="color:#525252; font-size:14px; line-height:1.6; margin:0;">Create your account with email or Google/Microsoft. No credit card required.</p></div></div>
+              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">2</div><h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:8px;">Create a calendar</h3><p style="color:#525252; font-size:14px; line-height:1.6; margin:0;">Pick your industry, set hours, connect Zoom or Google Meet. Done in 60 seconds.</p></div></div>
+              <div class="col-md-4"><div class="appozy-step"><div class="appozy-step-num">3</div><h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:8px;">Share your link</h3><p style="color:#525252; font-size:14px; line-height:1.6; margin:0;">Send your booking URL anywhere — emails, socials, WhatsApp. Clients self-book, you focus on the work.</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== PRICING ====== -->
+        <section class="mt-5" data-aos="fade-up" data-aos-delay="200" aria-label="Appozy pricing plans">
+          <div class="container-fluid">
+            <div class="row mb-5">
+              <div class="col-12" style="text-align: center;">
+                <div class="content">
+                  <div class="caption">Pricing</div>
+                  <h2 class="heading">Plans that grow with your business</h2>
+                  <p class="description">Start free, upgrade when you need more. AUD pricing. Cancel anytime.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row g-4 align-items-stretch">
+              <div class="col-md-6 col-lg-3">
+                <div class="appozy-plan">
+                  <div class="appozy-plan-name">Free</div>
+                  <div class="appozy-plan-price">$0 <small>/ month</small></div>
+                  <div class="appozy-plan-desc">For freelancers starting out</div>
+                  <ul>
+                    <li>1 calendar</li>
+                    <li>50 bookings / month</li>
+                    <li>Public booking page</li>
+                    <li>Zoom + Google Meet</li>
+                    <li>Email confirmations</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="appozy-plan featured">
+                  <span class="appozy-plan-badge">MOST POPULAR</span>
+                  <div class="appozy-plan-name">Starter</div>
+                  <div class="appozy-plan-price">$10 <small>AUD / month</small></div>
+                  <div class="appozy-plan-desc">For solo professionals</div>
+                  <ul>
+                    <li>Everything in Free</li>
+                    <li>3 calendars · 500 bookings</li>
+                    <li>Remove branding</li>
+                    <li>Custom brand colours</li>
+                    <li>Date overrides + holidays</li>
+                    <li>2FA</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="appozy-plan">
+                  <div class="appozy-plan-name">Pro</div>
+                  <div class="appozy-plan-price">$24 <small>AUD / month</small></div>
+                  <div class="appozy-plan-desc">For growing businesses</div>
+                  <ul>
+                    <li>Everything in Starter</li>
+                    <li>10 calendars · unlimited bookings</li>
+                    <li>AI Meeting Prep</li>
+                    <li>Developer API</li>
+                    <li>Team (3 members)</li>
+                    <li>Priority email support</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="appozy-plan">
+                  <div class="appozy-plan-name">Business</div>
+                  <div class="appozy-plan-price">$49 <small>AUD / month</small></div>
+                  <div class="appozy-plan-desc">For multi-staff teams</div>
+                  <ul>
+                    <li>Everything in Pro</li>
+                    <li>Unlimited calendars</li>
+                    <li>Custom domain</li>
+                    <li>White-label pages</li>
+                    <li>Team (10 members)</li>
+                    <li>CSV export + audit log</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-12" style="text-align:center;">
+                <p style="color:#737373; font-size:14px; margin-top:20px;">
+                  Need more? <a href="https://appozy.com/pricing" target="_blank" rel="noopener" style="color:#7c3aed; font-weight:600;">Enterprise plan</a> with unlimited seats, dedicated account manager and 4-hour SLA available on request.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <!-- ====== FINAL CTA ====== -->
+        <section class="appozy-final-cta mt-5" data-aos="fade-up" data-aos-delay="200">
+          <h2>Ready to stop chasing schedules?</h2>
+          <p>Sign up free in 60 seconds. No credit card. No lock-in. Built in Australia by Hoffstee.</p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center;">
+            <a href="https://appozy.com" target="_blank" rel="noopener" class="btn-appozy-primary">Create Free Account →</a>
+            <a href="contact.html" class="btn-appozy-secondary" style="background: rgba(255,255,255,0.1); color: white !important; border-color: rgba(255,255,255,0.3);">Talk to Hoffstee</a>
+          </div>
+        </section>
+
+        <!-- ====== FAQ ====== -->
+        <section id="faq" class="faq servicepage_accordian mt-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" style="text-align:center;">
+                <div class="content">
+                  <div class="caption">FAQ</div>
+                  <h2 class="heading">Common questions about Appozy</h2>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="accordion" id="appozyFaq">
+                  <div class="faq-item" onclick="toggleFaq(this)">
+                    <button class="accordion-button faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afaq1" aria-expanded="false">Is Appozy really free?<span class="faq-toggle">+</span></button>
+                    <div id="afaq1" class="accordion-collapse collapse" data-bs-parent="#appozyFaq"><div class="accordion-body"><p>Yes. The Free plan is <strong>free forever</strong> — 1 calendar, 50 bookings per month, public booking page, Zoom + Google Meet integration, email confirmations and real-time notifications. No credit card required to start.</p></div></div>
+                  </div>
+                  <div class="faq-item" onclick="toggleFaq(this)">
+                    <button class="accordion-button faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afaq2" aria-expanded="false">How is Appozy different from Calendly?<span class="faq-toggle">+</span></button>
+                    <div id="afaq2" class="accordion-collapse collapse" data-bs-parent="#appozyFaq"><div class="accordion-body"><p>Appozy is <strong>built in Australia and prices in AUD</strong>, so Australian businesses don't pay USD conversion or foreign transaction fees. Paid plans start at $10 AUD/month — roughly a third of Calendly's equivalent tier. Appozy is also officially approved on the Zoom App Marketplace.</p></div></div>
+                  </div>
+                  <div class="faq-item" onclick="toggleFaq(this)">
+                    <button class="accordion-button faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afaq3" aria-expanded="false">Can I take payments through Appozy?<span class="faq-toggle">+</span></button>
+                    <div id="afaq3" class="accordion-collapse collapse" data-bs-parent="#appozyFaq"><div class="accordion-body"><p>Yes. Appozy uses Stripe for subscription billing (for your own Appozy plan) and supports paid session booking on Pro and Business plans so guests can pre-pay when they book.</p></div></div>
+                  </div>
+                  <div class="faq-item" onclick="toggleFaq(this)">
+                    <button class="accordion-button faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afaq4" aria-expanded="false">Who owns Appozy?<span class="faq-toggle">+</span></button>
+                    <div id="afaq4" class="accordion-collapse collapse" data-bs-parent="#appozyFaq"><div class="accordion-body"><p>Appozy is built and owned by <strong>Hoffstee</strong>, an Australian sole trader based in Leeton, NSW (ABN 30 162 898 854). Appozy is Hoffstee's flagship software product.</p></div></div>
+                  </div>
+                  <div class="faq-item" onclick="toggleFaq(this)">
+                    <button class="accordion-button faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#afaq5" aria-expanded="false">What about my data?<span class="faq-toggle">+</span></button>
+                    <div id="afaq5" class="accordion-collapse collapse" data-bs-parent="#appozyFaq"><div class="accordion-body"><p>Your data belongs to you. Appozy is <strong>GDPR and Australian Privacy Act compliant</strong>, uses HTTPS/TLS everywhere, and supports right-to-erasure with 30-day anonymisation. Full policy at <a href="https://appozy.com/privacy" target="_blank" rel="noopener">appozy.com/privacy</a>.</p></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </main>
+
+    <!-- Footer (loaded dynamically) -->
+    <footer id="footer" class="footer"></footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="scroll up"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Scripts (same as index) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/load_common_files.js"></script>
+    <script type="module" src="assets/js/contactcommon.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/css/aos/aos.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KN7Q4SX3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <script>
+      function toggleFaq(el) {
+        const allItems = document.querySelectorAll('.faq-item');
+        allItems.forEach(function(item) { if (item !== el) item.classList.remove('open'); });
+        el.classList.toggle('open');
+      }
+    </script>
+  </body>
+</html>

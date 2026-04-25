@@ -148,3 +148,39 @@ window.addEventListener("load", function () {
         };
     }
 });
+
+ (function() {
+        var BANNER_HEIGHT = 44; // px — match the banner's actual rendered height
+
+        function showAppozyBanner() {
+          var banner = document.getElementById('appozy-launch-banner');
+          banner.style.display = 'block';
+          // Push the fixed header down so it doesn't sit under the banner
+          document.body.style.paddingTop = BANNER_HEIGHT + 'px';
+          // Some themes also need the fixed-top header offset explicitly
+          var header = document.getElementById('header');
+          if (header) header.style.top = BANNER_HEIGHT + 'px';
+        }
+
+        function hideAppozyBanner() {
+          var banner = document.getElementById('appozy-launch-banner');
+          banner.style.display = 'none';
+          document.body.style.paddingTop = '';
+          var header = document.getElementById('header');
+          if (header) header.style.top = '';
+        }
+
+        // Expose dismiss to the inline onclick
+        window.dismissAppozyBanner = function() {
+          hideAppozyBanner();
+          localStorage.setItem('appozyBannerDismissed', '1');
+        };
+
+        // Show on load if not previously dismissed
+        if (!localStorage.getItem('appozyBannerDismissed')) {
+          showAppozyBanner();
+          // Re-apply after the dynamic header loads (since loadHeader() runs async)
+          setTimeout(showAppozyBanner, 500);
+          setTimeout(showAppozyBanner, 1500);
+        }
+      })();

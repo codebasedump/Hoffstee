@@ -490,7 +490,6 @@ footer .container-fluid .socials_link_wrapper{
     gap:20px;
     flex-wrap:wrap;
     align-items:center;
-    padding-right:40px
 }
 footer .container-fluid .socials_link_wrapper .singleLineLink{
     opacity:1;
